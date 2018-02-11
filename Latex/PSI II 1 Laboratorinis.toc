@@ -1,3 +1,19 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
 \select@language {lithuanian}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.}Įžanga}{2}{section.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.}Reikalavimai}{3}{section.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.}Struktūrinis dalykinės srities modelis}{4}{section.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.}Užduotys}{5}{section.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.}Reikalavimų specifikacijos, dalykinės srities modelio ir užduočių diagramos peržiūros rezultatai}{6}{section.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.}Išvada}{7}{section.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.}Asmeninis darbo indėlis}{8}{section.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.}Žodynas}{9}{section.8}
