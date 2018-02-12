@@ -42,9 +42,75 @@
 
 \section{Įžanga}
 Mūsų komanda gavo kitos komandos pirmame semestre(PSI I) paruoštą slidinėjimo kurorto projektą. Šiame darbe sieksime toliau plėtoti ir keisti šį projektą. Toliau vystatnt projektą keisis daugumas dalių. Siekiant padaryti gerą produktą kai kurios  dalys bus pašalindos ir pridėtos naujos. Pirmame semestre projektuojant dėmesys buvo skiriamas klasikinei projektavimo paradigmai. Šiame darbe projektą rašysime pasinaudodami ICONIX principu, projektuojant dėmesys bus skiriamas GUI sudarymo ir iš to išplauks sistemos projektavimas ir sandara. 
+
 \section{Reikalavimai}
+Šioje dalyje bus pateikti funkciniai bei nefunkciniai reikalavimai sistemai. Stengsimės prisilaikyti ,,užsakovų"(grupės iš kurios gavome jų darbą) reikalavimus tačiau siekiant sukurti geresnę sistemą pridėsime kaikuriuos savo sugalvotus reikalavimus arba ignoruosime mums pateiktus reikalavimus. 
+\subsection{Slidininko sekimas realiu laiku}
+
+
+\begin{table}[htbp]
+	\begin{tabularx}{1\textwidth}{ |P{2.5cm}|X|P{3cm }| }  \hline
+		Nr. & Reikalavimas & Prioritetas(1-10) \\ \hline
+		FR - 1.01 & Sistema vartotojui turi suteikti galimybę matyti jo pozicija kurorte & 10 \\ \hline
+		FR - 1.02 & Sistemos pateiktame žemėlapyje turi būti sužymėtos teritorijos esančios kurorte & 8 \\ \hline
+		FR - 1.03 & Sistema žemėlapyje turi parodyti trasas ir bendrą informaciją apie jas & 8 \\ \hline
+		FR - 1.03.01 & Bendroje trasos informacijoje turi būti pateikta trasos užimtumas & 7 \\ \hline
+		FR - 1.03.02 & Bendroje trasos informacijoje turi būti pateikta jos greičio rekordas su vartotojo kuri pasiekė ta rekorda laiku & 6 \\ \hline
+		FR - 1.03.03 & Bendroje trasos informacijoje turi būti pateikta visų bandžiusių greičių lentelė(high score) & 6 \\ \hline
+		FR - 1.03.04 & Bendroje trasos informacijoje turi būti pateiktas vartotojo greičio rekordas toje trasoje & 7 \\ \hline
+		
+	\end{tabularx}
+\end{table}
+
 
 \section{Struktūrinis dalykinės srities modelis}
+\subsection{Reikalavimų veiksmažodžiai}
+	Kuriant dalykinės srities modelį pagal ICONIX pirmas žingsnis yra iš pateiktų(sukurtų) reikalavimų išrinkti veiksmažodžius ir iš jų sudaryti dalykinės srirties modelį. Iš  dabar turimų reikalavimų galime išskirti šiuos daiktavardžius:
+	\newline
+	\newline
+	Sistema, vartotojas,  pozicija, kurortas, žemėlapis, teritorija, trasas, informacija, užimtumas, rekordas, laikas, greičių lentelė. 
+	\newline
+	\newline
+	Sutvarkius šios daiktavardžius galime pradėti brėžti domain model. 
+\begin{figure}[H]
+		\centering	
+	\includegraphics[width=18cm,height=20cm,keepaspectratio]{DomainModel.png}
+	\caption{Domain model}
+	\label{fig:Domain model}
+\end{figure}
+Sudarius domain modelio drafta galime pradėti braižyti use case diagramą ir GUI darftini variantą. Ne viskas kas bus use case diagramoje yra domanin model diagramoje bet vėliau jis bus papildytas.
+
+
+
+Use case draftas
+
+\begin{figure}[H]
+		\centering	
+	\includegraphics[width=18cm,height=20cm,keepaspectratio]{UseCase.png}
+	\caption{Use case}
+	\label{fig:Use case}
+\end{figure}
+
+
+
+GUI draftas
+\begin{figure}[H]
+		\centering	
+	\includegraphics[width=18cm,height=20cm,keepaspectratio]{GUI.png}
+	\caption{GUI}
+	\label{fig:GUI}
+\end{figure}
+
+
+
+
+
+
+
+
+
+ 
+	
 
 \section{Užduotys}
 
