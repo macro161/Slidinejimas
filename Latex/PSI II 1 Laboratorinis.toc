@@ -12,12 +12,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.}Reikalavimų veiksmažodžiai}{4}{subsection.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.}Užduotys}{6}{section.4}
+\contentsline {section}{\numberline {4.}Užduotys}{7}{section.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.}Reikalavimų specifikacijos, dalykinės srities modelio ir užduočių diagramos peržiūros rezultatai}{7}{section.5}
+\contentsline {section}{\numberline {5.}Reikalavimų specifikacijos, dalykinės srities modelio ir užduočių diagramos peržiūros rezultatai}{8}{section.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.}Išvada}{8}{section.6}
+\contentsline {section}{\numberline {6.}Išvada}{9}{section.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.}Asmeninis darbo indėlis}{9}{section.7}
+\contentsline {section}{\numberline {7.}Asmeninis darbo indėlis}{10}{section.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.}Žodynas}{10}{section.8}
+\contentsline {section}{\numberline {8.}Žodynas}{11}{section.8}
