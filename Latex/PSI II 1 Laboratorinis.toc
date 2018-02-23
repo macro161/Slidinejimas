@@ -6,7 +6,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.}Reikalavimai}{3}{section.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.}Slidininko sekimas realiu laiku}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.1.}Reikalavimų pataisymai}{3}{subsection.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.}Slidininko sekimas realiu laiku}{3}{subsection.2.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.}Struktūrinis dalykinės srities modelis}{4}{section.3}
 \defcounter {refsection}{0}\relax 
