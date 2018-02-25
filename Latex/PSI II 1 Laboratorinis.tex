@@ -66,7 +66,7 @@ Mūsų komanda gavo kitos komandos pirmame semestre(PSI I) paruoštą slidinėji
 	FR & Vartotojo trasų laikai rodomi internetinėje aplikacijoje & N & NaN & NaN \\ \hline
 	FR & Sistema seka vartotojų poziciją specialaus žetono pagalba, kurį gauna kiekvienas vartotojas apsilankęs kurorte(Vieta sekama tik gavos vartotojo sutikimą) & M & Reikalavimas skliausteliuose turėtų būti perkeltas į nefunkcinius (pvz. saugumo) raiklavimus & Sistema seka vartotojo poziciją specialaus sekimo prietaiso pagalba, kurį gauna kiekevienas apsilankęs kurorte \\ \hline
 	FR & 3.3.1. Parašyti ataskaitą
-FR 45. Pradiniai duomenys
+FR 45. Pradiniai duomenyswhy 
 FR 45.1. Ataskaitos pavadinimas;
 FR 45.2. Ataskaitos turinys;
 FR 46. Veiksmai
@@ -84,6 +84,39 @@ FR 49.1. Darbuotojui pranešama, jog ataskaita sėkmingai išsiųstas. & M & try
 
 	
 	
+
+
+\end{tabularx}
+
+	
+\end{table}
+
+
+\begin{table}[htbp]
+
+
+\begin{tabularx}{1\textwidth}{  |P{1cm}|X|c|p{3.5cm}|X| }  \hline
+
+Nr. & Pradiniai reikalavimas&  Pakeitimo tipas & Klaidos aprašas  & Naujas reikalavimas \\ \hline
+FR & 
+FR 93. Pradiniai duomenys: 
+FR 93.1. Objekto kategorija(-os). 
+FR 94. Veiksmai: 
+FR 94.1. Meniu juostoje paspaudžiama ant mygtuko „Set the object state”;
+ FR 94.2. Iš objektų kategorijų sąrašo (kambarys, slidinėjimo trasa, slidinėjimo įranga) pasirenkama viena kategorija;
+ FR 94.3. Parodomas sąrašas objektų, priklausančių tai kategorijai;
+ FR 94.4. Pasirenkamas vienas objektas; FR 94.5. Pasirenkama data;
+ FR 94.6. Pažymima būsena, paspaudžiant ant mygtuko „Set the state”.
+ FR 95. Alternatyvūs scenarijai:
+ FR 95.1. Nutrūko ryšys su duomenų baze.
+ FR 96. Reikalavimai: 
+FR 96.1. Administratorius turi būti prisijungęs.
+ FR 97. Rezultatai:
+ FR 97.1. Duomenų bazėje pažymima objekto būseną. 
+& M & Reikalavimai parašyti nekorektiškai, reikalinga sukonkretinti ir suabstraktinti reikalavimus įvieną reikalavimą &
+Sistema administratoriui suteikia galimybę stebėti duombazės objektų būseną. Sistemoje administratorius gali stebėti arba keisti objektų būsenas. Pasirinkus veikmsą parodomas objektų kategorijų sąrašas. Nutrūkus ryšiui su duombaze yra išsaugoma paskutinė darbo būsena.\\ \hline
+
+
 
 
 \end{tabularx}
@@ -112,73 +145,6 @@ FR 49.1. Darbuotojui pranešama, jog ataskaita sėkmingai išsiųstas. & M & try
 
 	
 \end{table}
-
-
-\section{Struktūrinis dalykinės srities modelis}
-\subsection{Reikalavimų veiksmažodžiai}
-	Kuriant dalykinės srities modelį pagal ICONIX pirmas žingsnis yra iš pateiktų(sukurtų) reikalavimų išrinkti veiksmažodžius ir iš jų sudaryti dalykinės srirties modelį. Iš  dabar turimų reikalavimų galime išskirti šiuos daiktavardžius:
-	\newline
-	\newline
-	Sistema, vartotojas,  pozicija, kurortas, žemėlapis, teritorija, trasas, informacija, užimtumas, rekordas, laikas, greičių lentelė. 
-	\newline
-	\newline
-	Sutvarkius šios daiktavardžius galime pradėti brėžti domain model. 
-\begin{figure}[H]
-		\centering	
-	\includegraphics[width=18cm,height=20cm,keepaspectratio]{DomainModel.png}
-	\caption{Domain model}
-	\label{fig:Domain model}
-\end{figure}
-\begin{figure}[H]
-		\centering	
-	\includegraphics[width=18cm,height=20cm,keepaspectratio]{Domain2.png}
-	\caption{Domain model}
-	\label{fig:Domain model}
-\end{figure}
-Sudarius domain modelio drafta galime pradėti braižyti use case diagramą ir GUI darftini variantą. Ne viskas kas bus use case diagramoje yra domanin model diagramoje bet vėliau jis bus papildytas.
-
-
-
-Use case draftas
-
-\begin{figure}[H]
-		\centering	
-	\includegraphics[width=18cm,height=20cm,keepaspectratio]{UseCase.png}
-	\caption{Use case}
-	\label{fig:Use case}
-\end{figure}
-
-\begin{table}[htbp]
-
-\begin{tabularx}{1\textwidth}{ |P{17cm}|}  \hline
-
-Pagrindinis scenarijus \\ \hline
-Vartotojas prisijungia prie savo paskyros ir paspaudžia mygtuką ,,Atsiskaityti už paslaugas". Sistema pateikia pasirinkimą mokėti per E-bankininkystę arba BitCoin pervedimu. Vartotojas pasirenka norimą pasirinkimą \\ \hline
-Alternatyvus scenarijus \\ \hline
-Vartotojas pasirenka norimą apmokėjimo būdą, tačiau pasirinkas apmokėjimo būdas nėra pasiekiams. Vartotojui parodoma informacinę žinutę apie nepasiekiamą galimybė ir jis nukreipiamas atgal į apmokėjimo langą \\ \hline
-
-
-
-
-
-\end{tabularx}
-
-	
-\end{table}
-
-
-
-GUI draftas
-\begin{figure}[H]
-		\centering	
-	\includegraphics[width=18cm,height=20cm,keepaspectratio]{GUI.png}
-	\caption{GUI}
-	\label{fig:GUI}
-\end{figure}
-
-
-
-
 
 
 
