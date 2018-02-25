@@ -214,7 +214,34 @@ Klientui rezervuojant paslaugas sistema turi patvirtinti rezervacijos korektišk
 
 \begin{longtable}{ | p{0.04\textwidth}|p{0.43\textwidth}|p{0.09\textwidth}|p{0.15\textwidth}|p{0.21\textwidth}| }  \hline
 
-Nr. & Pradiniai reikalavimas&  Pakeitimo tipas & Klaidos aprašas  & Naujas reikalavimas \\ \\ \hline
+Nr. & Pradiniai reikalavimas&  Pakeitimo tipas & Klaidos aprašas  & Naujas reikalavimas \\ \hline
+NFR & NFR 28. Orų temperatūra rodoma temperatūros matavimo vienetu – celsijumi.  & N & NaN & NaN \\ \hline
+NFR & NFR 29. Rezervacijos/užsakymo/sutarties numeris pateikiamas vienetu tikslumu. & N & NaN & NaN \\ \hline
+NFR & NFR 30. Įrangos dydžiai - europietiški. Vaizduojami vienetų tikslumu.  & M & Patikslinama savoka ,,europietiški" į ,,metrinė sistema" &  Įrangos dydžiai užrašomi metrine sistema. Vaizduojami vienetų tikslumu. \\ \hline
+NFR & NFR 31. Keičiant naršyklės dydį, tinklalapis vaizdą pritaiko automatiškai. & N & NaN & NaN \\ \hline
+NFR & NFR 32. Sistema turi veikti bent 97proc. laiko, t.y. maksimalus leidžiamas sistemos nedarbo laikas yra 43 minutės 12 sekundės per parą. & N & NaN & NaN \\ \hline
+NFR & NFR 33. Registruojant naują esybę sistema turi patikrinti, ar: 
+  NFR 33.1. Esybės įvestas elektroninis paštas yra tinkamo formato ir anksčiau neregistruotas. 
+ NFR 33.2. Esybės sugalvotas slaptažodis yra tinkamo formato ir saugus. & M & Neaiški savoka ,,esybė", pakeičiam į ,,vartotojas" ir apjungiam reikalavimą į vieną dėl aiškumo ir konkretumo & Registruojant naują vartotoją sistema turi patikrini ar pateiktas elektroninis parašas yra tinkamo formato ir dar nėra registruotas sistemoje ir slaptažodžio formatas tinkamas. \\ \hline
+NFR & NFR 34. Esybei prisijungiant prie sistemos, sistema turi patikrinti, ar: 
+ NFR 34.1. Esybės įvestas elektroninis paštas ir slaptažodis yra tinkamo formato. 
+ NFR 34.2. Esybės įvestas elektroninis paštas ir slaptažodis yra duomenų bazėje. & M
+& Neaiški savoka ,,esybė", pakeičiam į ,,vartotojas" ir apjungiam reikalavimą į vieną dėl aiškumo ir konkretumo & Vartotojui prisijungiant sistema patikrina ar elektroninio parašo ir slaptažodžio formatai tinkami. Sistema taip pat patikrina ar elektroninis parašas ir slaptažodis yra duomenų bazėje. \\ \hline
+NFR & NFR 35. Esybei rezervuojant paslaugą sistema turi patikrinti, ar: 
+NFR 35.1. Esybės įvestas vardas, pavardė, elektroninis paštas yra tinkamos reikšmės ir formato. 
+NFR 35.2. Esybės įvestas telefono numeris yra tinkamo formato. & M & Neaiški savoka ,,esybė", pakleičiam į ,,vartotojas" ir apjungiam reikalavimą į vieną dėl aiškumo ir konkretumo & 
+Vartotojui rezervuojant paslaugas sistema turi patikrinti įvesto vardo, pavardės, el. pašto ir telefono numerio formatus. \\ \hline
+NFR & NFR 36. Esybei atlikus rezervaciją/užsakymą sistema turi patikrinti, ar rezervacijos/užsakymo numeris yra unikalus.  & N & NaN & NaN \\ \hline
+NFR & NFR 37. Modifikuojama tinklalapio atsarginė kopija po kiekvieno informacijos atnaujinimo apie slidinėjimo kurortą, orų prognozes, slidinėjimo trasas, įrangą, apgyvendinimo įstaigą, jų užimtumą bei po kiekvienos esybės registracijos ir įvestos informacijos pakeitimo.  & N & NaN & NaN \\ \hline
+NFR & NFR 38. Bandant pildyti laukus ne pagal pateiktus reikalavimus, užklausa negali būti įvykdyta.  & N & NaN & NaN \\ \hline
+NFR & NFR 39. Sistemoje turi būti įdiegtos apsaugos priemonės nuo duomenų sugadinimo, praradimo, klaidingų duomenų įvedimo į duomenų bazę. & N & NaN & NaN \\ \hline
+NFR & NFR 40. Po kiekvienos sėkmingos operacijos pakeitimai turi būti išsaugomi duomenų bazėje. & N & NaN & NaN \\ \hline
+NFR & NFR 41. Nepavykus prisijungti arba negavus duomenų iš duomenų bazės, sistema turi informuoti esybę parodydama klaidos pranešimą. & M & Pakeičiam ,,esybės" į ,,vartotojas" dėl aiškumo &  Nepavykus prisijungti arba negavus duomenų iš duomenų bazės, sistema turi informuoti vartotoją parodydama klaidos pranešimą. \\ \hline
+
+
+
+ 
+
 
 
 \end{longtable}
