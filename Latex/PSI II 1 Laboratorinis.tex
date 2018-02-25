@@ -150,9 +150,41 @@ FR 94.1. Meniu juostoje paspaudžiama ant mygtuko „Set the object state”;
 FR 96.1. Administratorius turi būti prisijungęs.
  FR 97. Rezultatai:
  FR 97.1. Duomenų bazėje pažymima objekto būseną. 
-& M & Reikalavimai parašyti nekorektiškai, reikalinga sukonkretinti ir suabstraktinti reikalavimus įvieną reikalavimą &
+& M & Reikalavimai parašyti nekorektiškai, reikalinga sukonkretinti ir suabstraktinti reikalavimus į vieną reikalavimą &
 Sistema administratoriui suteikia galimybę stebėti duombazės objektų būseną. Sistemoje administratorius gali stebėti arba keisti objektų būsenas. Pasirinkus veikmsą parodomas objektų kategorijų sąrašas. Nutrūkus ryšiui su duombaze yra išsaugoma paskutinė darbo būsena.\\ \hline
-
+FR & 3.4.4. Peržiūrėti statistiką
+FR 58. Pradiniai duomenys
+FR 58.1. Laikotarpis, kurio duomenis savininkas nori gauti;
+FR 58.2. Duomenų tipas (klientų srautas ir/arba pajamos)
+FR 59. Veiksmai
+FR 59.1. Pasirinkti duomenų tipą;
+FR 59.2. Pasirinkti laikotarpį;
+25
+FR 59.3. Spausti mygtuką „Get data”
+FR 60. Alternatyvūs scenarijai:
+FR 60.1. Pasirinktam laikotarpiui nėra įrašų duomenų bazėje, tada išvedamas pranešimas apie tai.
+FR 61. Reikalavimai:
+FR 61.1. Savininkas privalo būti prisijungęs prie savo paskyros;
+FR 61.2. Būtina pasirinkti egzistuojantį laikotarpį ( tai reiškia negali data “nuo” būti vėliau negu data “iki”);
+FR 62. Rezultatas:
+FR 62.1. Diagramoje pavaizduojami pasirinkti duomenys. & M &  Reikalavimai parašyti nekorektiškai, reikalinga sukonkretinti ir suabstraktinti reikalavimus į vieną reikalavimą & vartotojas turi galėti peržiūrėti statistiką. \\ \hline
+FR & 3.4.5. Peržiūrėti paslaugų ar įrangos tiekėjų sąrašą
+FR 63. Pradiniai duomenys
+FR 63.1. Paslaugų tipas(-ai) (įranga, elektros energija, šilumos energija, apsaugos tarnyba);
+FR 63.2. Laikotarpis, kurio duomenis savininkas nori gauti;
+FR 64. Veiksmai:
+FR 64.1. Pasirinkti paslaugų tipą(-us);
+FR 64.2. Pasirinkti laikotarpį (gali būti tuščias);
+FR 64.3. Spausti mygtuką „See suppliers”;
+FR 65. Alternatyvūs scenarijai:
+FR 65.1. Pasirinktai paslaugai nėra apibrėžtas tiekėjas, tada išvedamas pranešimas apie tai;
+FR 66. Reikalavimai:
+FR 66.1. Savininkas privalo būti prisijungęs prie savo paskyros;
+FR 66.2. Būtina pasirinkti bent vieną paslaugą;
+FR 66.3. Paslaugos privalo būti pavaizduotos drop-down sąraše;
+FR 66.4. Kol nepasirinkta nė viena paslauga, mygtukas yra išjungtas;
+FR 67. Rezultatas:
+FR 67.1. Pavaizduojamas sąrašas pasirinktų paslaugų tiekėjų. & M &  Reikalavimai parašyti nekorektiškai, reikalinga sukonkretinti ir suabstraktinti reikalavimus į vieną reikalavimą & vartotojas turi galėti peržiūrėti paslaugų ir įrangos tiekėjų sąrašus \\ \hline
 
 FR & 
 FR 98. Pradiniai duomenys: 
@@ -194,6 +226,22 @@ FR 107.1. Rezervacija patvirtinama;
  FR 107.2. Klientas gauna el. pašte laišką apie sėkmingą rezervaciją.
 & M &Reikalavimai išmetyti, neaiškiai surašyti ir kaikurie perdaug konkretų.Reikia sukonkretinti ir sutvarkyti & 
 Klientui rezervuojant paslaugas sistema turi patvirtinti rezervacijos korektiškumą. Sistema turi patikrinti ar teisingai įvesti rezervacijos duomenys, įrašyti rezervacijols duomenis į duomenų bazę ir patvirtinti rezervaciją. Paslaugai tapus nebepasiekiamai arba vartotojui įvedus neteisingus duomenis parodomas informacinis pranešimas apie nepavykusia rezervaciją ir priežastis dėl ko rezervuoti nepavyko \\ \hline
+FR&
+FR 68. Pradiniai duomenys:
+FR 68.1. Sutarties pavadinimas;
+FR 69. Veiksmai:
+FR 69.1. Pasirinkti norimą sutartį;
+26
+FR 69.2. Spausti mygtuką „Read the agreement”;
+FR 69.3. Alternatyvūs scenarijai:
+FR 69.4. Pasirinkta sutartis prieš akimirką buvo nutraukta, ir kitas savininkas pažymi apie tai, tada išvedamas pranešimas apie tai;
+FR 70. Reikalavimai:
+FR 70.1. Savininkas privalo būti prisijungęs prie savo paskyros;
+FR 70.2. Sutartys privalo būti pavaizduotos drop-down sąraše;
+FR 70.3. Kol nepasirinkta sutartis, mygtukas yra išjungtas;
+FR 70.4. Galima pasirinkti tik vieną sutartį. & M & Reikalavimų apibendrinimas & vartotojas turi galėti peržiūrėti sutartis \\ \hline
+
+
 \end{longtable}
 \begin{longtable}{ | p{0.04\textwidth}|p{0.43\textwidth}|p{0.09\textwidth}|p{0.15\textwidth}|p{0.21\textwidth}| }  \hline
 	Nr. & Reikalavimai & Prioritetas \\ \hline
