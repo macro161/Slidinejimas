@@ -116,6 +116,37 @@ FR 96.1. Administratorius turi būti prisijungęs.
 & M & Reikalavimai parašyti nekorektiškai, reikalinga sukonkretinti ir suabstraktinti reikalavimus įvieną reikalavimą &
 Sistema administratoriui suteikia galimybę stebėti duombazės objektų būseną. Sistemoje administratorius gali stebėti arba keisti objektų būsenas. Pasirinkus veikmsą parodomas objektų kategorijų sąrašas. Nutrūkus ryšiui su duombaze yra išsaugoma paskutinė darbo būsena.\\ \hline
 
+\end{tabularx}
+
+	
+\end{table}
+
+\begin{table}[htbp]
+
+
+\begin{tabularx}{1\textwidth}{  |P{1cm}|X|c|p{3.5cm}|X| }  \hline
+
+FR & 
+FR 98. Pradiniai duomenys: 
+FR 98.1. Ataskaitos data. 
+FR 99. Veiksmas:
+ FR 99.1. Meniu juostoje paspaudžiama ant mygtuko „Read the report”;
+ FR 99.2. Pasirenkama data (neprivaloma);
+ FR 99.3. Paspaudžiama ant mygtuko „Read the report”. 
+FR 100. Alternatyvūs scenarijai:
+FR 100.1. Nė vienos sutarties nėra duomenų bazėje, tada apie tai išvedamas 
+pranešimas. 
+FR 101. Reikalavimai: 
+FR 101.1. Administratorius yra prisijungęs.
+ FR 101.2. Ataskaitų sąrašas, jei nepasirinkta data, surikiuotas pagal datą nuo naujausio iki seniausio.
+ FR 101.3. Nepasirinkus nė vienos ataskaitos, mygtukas „Set the state” yra išjungtas. 
+FR 101.4. Ataskaitos negalima parsisiųsti (apsauga nuo duomenų nutekėjimo). 
+FR 102. Rezultatai:
+ FR 102.1. Naujame lange parodoma sutartis. 
+& M & Netikslūs ir perdaug konkretūs reikalavimai primenantys nefunkcinius reikalavimus. &
+Sistema administratoriui suteikia galimybę skaityti sutarčių ataskaitas. Administratorius pasirenka skaityti ataskaitas ir naujame lange parodomos visos ataskaitos esančios duomenų bazėje. Jeigu duomenų bazėje nei vienos sutarties nėra parodomas informacinis pranešimas. \\ \hline
+
+
 
 
 
@@ -123,6 +154,38 @@ Sistema administratoriui suteikia galimybę stebėti duombazės objektų būsen�
 
 	
 \end{table}
+
+\begin{table}[htbp]
+
+
+\begin{tabularx}{1\textwidth}{  |P{1cm}|X|c|p{3.5cm}|X| }  \hline
+
+FR & 
+FR 103. Pradiniai duomenys: 
+FR 103.1. Kliento duomenys;
+ FR 103.2. Rezervacijos užklausos duomenys.
+ FR 104. Veiksmai: 
+FR 104.1. Patikrinami kliento duomenys;
+ FR 104.2. Patikrinami užklausos duomenys;
+ FR 104.3. Patvirtinama rezervacija; 
+FR 104.4. Duomenų bazėje pažymima objekto būsena (užimta). 
+FR 105. Alternatyvūs scenarijai:
+ FR 105.1. Gautas pranešimas, kad prieš akimirką objektas, kurį klientas bandė išsinuomoti, tapo netinkamas rezervacijai dėl įvairių priežasčių;
+ FR 105.2. Klientas pateikė nevalidžius duomenis, tada rezervacija nepatvirtinama. 
+FR 106. Reikalavimai: FR 106.1. Kliento informacija validi;
+ FR 106.2. Duomenų bazėje objektas yra pažymėtas kaip tinkamas nuomai ir nerezervuotas.
+ FR 107. Rezultatai: 
+FR 107.1. Rezervacija patvirtinama;
+ FR 107.2. Klientas gauna el. pašte laišką apie sėkmingą rezervaciją.
+& M &Reikalavimai išmetyti, neaiškiai surašyti ir kaikurie perdaug konkretų.Reikia sukonkretinti ir sutvarkyti & 
+Klientui rezervuojant paslaugas sistema turi patvirtinti rezervacijos korektiškumą. Sistema turi patikrinti ar teisingai įvesti rezervacijos duomenys, įrašyti rezervacijols duomenis į duomenų bazę ir patvirtinti rezervaciją. Paslaugai tapus nebepasiekiamai arba vartotojui įvedus neteisingus duomenis parodomas informacinis pranešimas apie nepavykusia rezervaciją ir priežastis dėl ko rezervuoti nepavyko \\ \hline
+
+\end{tabularx}
+
+	
+\end{table}
+
+
 
 \subsection{Slidininko sekimas realiu laiku}
 
