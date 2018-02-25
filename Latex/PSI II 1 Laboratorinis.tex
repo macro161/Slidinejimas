@@ -12,7 +12,8 @@
 \usepackage{graphicx}
 \usepackage{listings}
 \usepackage{subfig}
-\usepackage{tabularx}
+\usepackage{ltablex}
+\usepackage{longtable}
 \usepackage{wrapfig}
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 \usepackage[%  
@@ -54,10 +55,10 @@ Mūsų komanda gavo kitos komandos pirmame semestre(PSI I) paruoštą slidinėji
 	\end{itemize}
 
 
-\begin{table}[htbp]
+%\begin{table}[htbp]
 
 
-\begin{tabularx}{1\textwidth}{  |P{1cm}|X|P{1.5cm}|p{3.5cm}|X| }  \hline
+\begin{longtable}{ | p{0.04\textwidth}|p{0.43\textwidth}|p{0.09\textwidth}|p{0.15\textwidth}|p{0.21\textwidth}| }  \hline
 	Nr. & Pradiniai reikalavimas&  Pakeitimo tipas & Klaidos aprašas  & Naujas reikalavimas \\ \hline
 	FR & ,,Žetonas" seka vartotojo laiką praleistą trasoje & M & Pakeistas neaiškus daiktavardis & Sekimo prietaisas seka vartotojo laiką praleista trasoje \\ \hline	
 	FR & Vartotojo prieeigos prie pramogų prieinamumas nustatomas naudojant pirštų antspaudą & M & Sukonkretintas abstraktus reikalavimas & Vartotojui norint pasinaudoti kavinės paslaugomis naudojamas piršto antspaudas \\ \hline
@@ -76,7 +77,7 @@ FR 29. Reikalavimai
 FR 29.1. Vartotojas turi būti prisijungęs;
 FR 30. Rezultatai
 FR 30.1. Vartotojas atsijungia ir jam parodomas pirminis langas & M & Apibendrinamas reikalavimas & Vartotojas turi galėti atsijungti nuo sistemos\\ \hline
-	FR & 3.1.7. Atnaujinti slaptažodį
+FR & 3.1.7. Atnaujinti slaptažodį
 FR 31. Pradiniai duomenys
 FR 31.1. E-paštas
 FR 32. Veiksmai
@@ -119,6 +120,7 @@ FR 43.3. Temos ilgis neturi viršyti 50 simbolių;
 FR 43.4. Turinio ilgis neturi viršyti 500 simbolių;
 FR 44. Rezultatai
 FR 44.1. Vartotojui pranešama, jog laiškas sėkmingai išsiųstas; & M & Apibendrinamas reikalavimas & Vartotojas turi galėti parašyti laišką \\ \hline
+
 	FR & 3.3.1. Parašyti ataskaitą
 FR 45. Pradiniai duomenys
 FR 45.1. Ataskaitos pavadinimas;
@@ -140,10 +142,10 @@ FR 49.1. Darbuotojui pranešama, jog ataskaita sėkmingai išsiųstas. & M & try
 	
 
 
-\end{tabularx}
+\end{longtable}
 
 	
-\end{table}
+%\end{table}
 
 \subsection{Slidininko sekimas realiu laiku}
 
