@@ -63,6 +63,98 @@ Mūsų komanda gavo kitos komandos pirmame semestre(PSI I) paruoštą slidinėji
 	FR & ,,Žetonas" skaičiuoja greičiausią laiką, per kurį vartotojas įveikia trasą & M & Pakeistas neaiškus daiktavardis & Sekimo prietaisas fiksuoją greičiausią laiką, per kurį vartotojas įveikė trasą \\ \hline
 	FR & Vartotojo trasų laikai rodomi internetinėje aplikacijoje & N & NaN & NaN \\ \hline
 	FR & Sistema seka vartotojų poziciją specialaus žetono pagalba, kurį gauna kiekvienas vartotojas apsilankęs kurorte(Vieta sekama tik gavos vartotojo sutikimą) & M & Reikalavimas skliausteliuose turėtų būti perkeltas į nefunkcinius (pvz. saugumo) raiklavimus & Sistema seka vartotojo poziciją specialaus sekimo prietaiso pagalba, kurį gauna kiekevienas apsilankęs kurorte \\ \hline
+	FR & 3.1.1. Sukurti raktą naujos esybės registracijai
+FR 1. Pradiniai duomenys:
+FR 1.1. Nėra.
+FR 2. Veiksmai:
+FR 2.1. Atidaryti formą;
+FR 2.2. Įvesti slaptažodį;
+FR 2.3. Spausti mygtuką „Generuoti raktą“.
+FR 3. Alternatyvūs scenarijai:
+FR 3.1. Esybė įveda neteisingą slaptažodį, tada išvedamas pranešimas apie nesėkmingą užklausą.
+FR 4. Reikalavimai:
+FR 4.1. Esybė gali generuoti raktą tik vienodą vaidmenį turinčiai esybei.
+FR 5. Rezultatas:
+FR 5.1. Sugeneruotas slaptažodis (raktas) išvedamas tekstiniame lauke. & X & Reikalavimai išmetami, nes neprideda jokios naudos dokumentacijos skaitytojui ir yra nefunkciniai. & - \\ \hline
+    FR & 3.1.2. Sukurti naujos esybės paskyrą
+FR 6. Pradiniai duomenys:
+FR 6.1. Vardas (1-64 simboliai);
+FR 6.2. Pavardė (1-64 simboliai);
+FR 6.3. El. paštas (iki 64 simbolių);
+FR 6.4. Slaptažodis (nuo 10 simbolių iki 64 simbolių, turi būti panaudota bent po vieną didžiąją, mažąją raidę, skaitmenį ir specialų simbolį (*,\#,- ir tt).
+FR 6.5. Raktas.
+FR 7. Veiksmai:
+FR 7.1. Meniu juostoje spaudžiama nuoroda „Registration”;
+FR 7.2. Išskleistame meniu pasirenkamas esybės tipas;
+FR 7.3. Atsidariusioje formoje įrašomas raktas;
+FR 7.4. Atsidariusioje registracijos formoje visi laukeliai užpildomi duomenimis;
+FR 7.5. Spaudžiamas mygtukas „Sign up“.
+FR 8. Alternatyvūs scenarijai:
+FR 8.1. Įvedus neteisingą raktą, išvedamas pranešimas apie tai;
+FR 8.2. Įvedus negaliojantį raktą, išvedamas pranešimas apie tai.
+FR 9. Reikalavimai:
+FR 9.1. Raktas turi būti nesenesnis negu 15 minučių;
+FR 9.2. Sistema turi patikrinti rakto validumą;
+FR 9.3. Visi registracijos laukai turi būti užpildyti;
+FR 9.4. Įvedamas slaptažodis negali būti matomas;
+FR 9.5. Negalima užsiregistruoti su jau naudojamu el. paštu.
+FR 10. Rezultatai:
+FR 10.1. Sukuriama esybės paskyra;
+FR 10.2. Atidaroma prisijungimo forma. & X & Šie reikalavimai yra nefinkciniai, todėl pašalinami. & - \\ \hline
+     FR & 3.1.3. Rezervuoti slidinėjimo objektą
+FR 11. Pradiniai duomenys
+FR 11.1. Nuomojami objektai
+FR 11.2. Telefono numeris
+FR 11.3. Slidinėtojų skaičius
+FR 11.4. Rezervacijos laikotarpis;
+FR 11.5. Asmeniniai pageidavimai
+FR 12. Veiksmai
+FR 12.1. Vartotojas meniu juostoje paspaudžia ant mygtuko “Reservation”;
+FR 12.2. Vartotojas pasirenka pradinę bei galutinę rezervacijos datą;
+FR 12.3. Vartotojas pasirenka objektų kategorijas iš pateikiamo sąrašo;
+FR 12.4. Vartotojas pasirenka konkrečius objektus iš pateiktų objektų lentelių
+FR 13. Alternatyvūs scenarijai
+FR 13.1. Jei vartotojas neprisijungęs, išmetamas prisijungimo puslapis;
+FR 13.2. Jei slidinėjimo objektų sąrašas tuščias, apie tai išmetamas pranešimas;
+FR 13.3. Jei administratorius nepatvirtina rezervacijos, apie tai informuojamas vartotojas;
+FR 14. Reikalavimai
+FR 14.1. Vartotojas turi būti prisijungęs;
+FR 14.2. Galutinė data turi būti ne mažesnė nei pradinė data;
+FR 14.3. Turi būti netuščias slidinėjimo objektų sąrašas;
+FR 15. Rezultatai
+FR 15.1. Vartotojas išsiunčia užklausą.
+FR 15.2. Vartotojas gauna patvirtinimą, kad rezervacija sėkmingai patvirtinta; & M & Per daug detalūs, reikia apibendrint ir performuluotii. & Vartotojas turi galimybę užrezervuoti slidinėjimo takelį nurodant: nuomojamus objektus, telefono numerį, slidinėtojų skaičių, rezervacijos laikotarpį ir asmeninius pageidavimus. \\ \hline
+    FR & 3.1.4. Pasižiūrėti informaciją apie slidinėjimo objektą
+FR 16. Pradiniai duomenys
+FR 16.1. Slidinėjimo objektas
+FR 17. Veiksmai
+FR 17.1. Vartotojas meniu juostoje paspaudžia ant mygtuko “Objects Information“;
+FR 17.2. Parodomas sąrašas;
+19
+FR 17.3. Vartotojas pasirenką objektą iš pateikiamo sąrašo ;
+FR 18. Alternatyvūs scenarijai
+FR 18.1. Jei vartotojas neprisijungęs, išmetamas prisijungimo puslapis;
+FR 18.2. Jei slidinėjimo objektų sąrašas tuščias, parodomas pranešimas;
+FR 19. Reikalavimai
+FR 19.1. Vartotojas turi būti prisijungęs;
+FR 19.2. Turi būti netuščias slidinėjimo objektų sąrašas;
+FR 20. Rezultatai
+FR 20.1. Vartotojas gauna informaciją apie slidinėjimo objektą (rūšis, prieinamą kiekį, nuomos kainą). & M & Reikia sutrumpinti ir performuluoti reikalavimus. & Vartotojas gali matyti informaciją apie slidinėjimo objektą: rūšis, prieinamas kiekis, nuomos kaina, užimtumas nurodytu laiko tarpu.\\ \hline
+    FR & 3.1.5. Pasižiūrėti slidinėjimo objekto užimtumą
+FR 21. Pradiniai duomenys
+FR 21.1. Laikotarpis;
+FR 21.2. Slidinėjimo objektas
+FR 22. Veiksmai
+FR 22.1. Vartotojas meniu juostoje paspaudžia ant mygtuko “Objects usage“;
+FR 22.2. Pasirenka laikotarpį;
+FR 22.3. Vartotojas pasirenką objektą iš pateikiamo sąrašo ;
+FR 23. Alternatyvūs scenarijai
+FR 23.1. Jei vartotojas neprisijungęs, išmetamas prisijungimo puslapis;
+FR 24. Reikalavimai
+FR 24.1. Turi būti netuščias slidinėjimo objektų sąrašas;
+FR 24.2. Vartotojas turi būti prisijungęs;
+FR 25. Rezultatai
+FR 25.1. Vartotojas gauna informaciją apie slidinėjimo objektą (rūšis, likutį, nuomos kainą). & X &  Galima sujungti šį reikalavimą su prieš tai buvusiu, kur nurodoma informacija apie slidinėjimo objektą. & - \\ \hline
 	FR & 3.1.6. Atsijungimas
 FR 26. Pradiniai duomenys
 FR 26.1. Nėra
