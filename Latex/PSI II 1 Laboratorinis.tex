@@ -186,6 +186,110 @@ FR 66.4. Kol nepasirinkta nė viena paslauga, mygtukas yra išjungtas;
 FR 67. Rezultatas:
 FR 67.1. Pavaizduojamas sąrašas pasirinktų paslaugų tiekėjų. & M &  Reikalavimai parašyti nekorektiškai, reikalinga sukonkretinti ir suabstraktinti reikalavimus į vieną reikalavimą & vartotojas turi galėti peržiūrėti paslaugų ir įrangos tiekėjų sąrašus \\ \hline
 
+
+FR &  FR 68. Pradiniai duomenys:
+FR 68.1. Sutarties pavadinimas;
+FR 69. Veiksmai:
+FR 69.1. Pasirinkti norimą sutartį;
+FR 69.2. Spausti mygtuką „Read the agreement”;
+FR 69.3. Alternatyvūs scenarijai:
+FR 69.4. Pasirinkta sutartis prieš akimirką buvo nutraukta, ir kitas savininkas pažymi apie tai, tada išvedamas pranešimas apie tai;
+FR 70. Reikalavimai:
+FR 70.1. Savininkas privalo būti prisijungęs prie savo paskyros;
+FR 70.2. Sutartys privalo būti pavaizduotos drop-down sąraše;
+FR 70.3. Kol nepasirinkta sutartis, mygtukas yra išjungtas;
+FR 70.4. Galima pasirinkti tik vieną sutartį. & M & Bandyta dalinti iš nulio su šitais reikalavimai & Vartotojas turi galėti peržiūrėti sutartis. \\ \hline
+
+FR & FR 71. Pradiniai duomenys:
+FR 71.1. Vartotojo tipas (klientas, darbuotojas, administratorius, savininkas);
+FR 71.2. Administratoriaus el. paštas;
+FR 71.3. Slaptažodis.
+FR 72. Veiksmai:
+FR 72.1. Pasirenkamas prisijungimo tipas;
+FR 72.2. Įvedami prisijungimo duomenys;
+FR 72.3. Spaudžiamas mygtukas „Log in”.
+FR 73. Alternatyvūs scenarijai:
+FR 73.1. Įvedus neteisingus duomenis, ar palikus bent vieną tuščią laukelį, langeliai pažymimi raudonai ir išvedamas pranešimas dėl neteisingo duomenų įvedimo.
+FR 74. Reikalavimai:
+FR 74.1. Administratoriaus el. paštas ir slaptažodis turi sutapti su duomenimis esančiais duomenų bazėje;
+FR 74.2. Įvedamas slaptažodis negali būti matomas.
+FR 75. Rezultatas:
+FR 75.1. Administratorius prisijungia prie savo paskyros;
+FR 75.2. Atidaromas pagrindinis puslapis. & M & Kam kilo idėja taip padaryt tokį reikalavimą? & Administratorius turi galėti prisijungti prie savo paskyros. \\ \hline
+
+FR & FR 76. Veiksmai:
+FR 76.1. Meniu juostoje paspaudžiama ant mygtuko „Employees”;
+FR 77. Alternatyvūs scenarijai:
+FR 77.1. Įmonėje niekas nedirba, tada išvedamas pranešimas apie tai.
+FR 78. Reikalavimai:
+FR 78.1. Darbuotojų sąrašas surikiuotas pareigų svarbos mažėjimo tvarka.
+FR 79. Rezultatas:
+FR 79.1. Išvedamas darbuotojų sąrašas. & M & Performuluoti ir sutraukti funkciniai reikalavimai & Vartotojas gali peržiūrėti darbuotojų sąrašą. \\ \hline
+
+FR & FR 80. Pradiniai duomenys:
+FR 80.1. Darbuotojo ID.
+FR 81. Veiksmai:
+FR 81.1. Meniu juostoje paspaudžiama ant mygtuko „Modify the list of employees”;
+FR 81.2. Paspaudžiamas mygtukas „Add new” ;
+FR 81.3. Tekstiniame lauke įrašomas darbuotojo ID;
+FR 81.4. Paspaudžiamas mygtukas pridėti.
+FR 82. Alternatyvūs scenarijai:
+FR 82.1. Darbuotojo ID nėra duomenų bazėje, tada išvedamas pranešimas apie tai ir tekstinis laukas pažymimas raudonai.
+FR 83. Reikalavimai:
+FR 83.1. Darbuotojo ID turi būti duomenų bazėje;
+FR 83.2. Darbuotojų sąrašas turi būti surikiuotas pareigų svarbos mažėjimo tvarka;
+FR 83.3. Pridėjus darbuotoją sąrašas iš karto atsinaujina. & M & Performuluoti ir sutraukti funkciniai reikalavimai & Vartotojas turi galimybę pridėti darbuotoją į sistemą. \\ \hline
+
+FR & FR 84. Pradiniai duomenys:
+FR 84.1. Darbo sutarties nutraukimo sutartis.
+FR 85. Veiksmai:
+FR 85.1. Meniu juostoje paspaudžiama ant mygtuko „Modify the list of employees”;
+FR 85.2. Paspaudžiamas mygtukas „-”;
+FR 85.3. Sąraše pažymimas darbuotoją (galima tik vieną);
+FR 85.4. Virš sąrašo pasirodo mygtukas „Remove”;
+FR 85.5. Paspaudžiamas virš sąrašo esantis mygtukas „Remove”;
+FR 85.6. Po mygtuku „Remove” pasirodo dialogo langas su klausimu „Are you sure?”;
+FR 85.7. Spaudžiame mygtuką „Yes”.
+FR 85.8. Alternatyvūs scenarijai:
+FR 85.9. Dialogo lange paspaudus „No” forma atsinaujina, nė vienas darbuotojas nėra pasirinktas pašalinimui.
+FR 86. Reikalavimai:
+FR 86.1. Darbuotojų sąrašas turi būti surikiuotas pareigų svarbos mažėjimo tvarka;
+FR 86.2. Turi būti papildomas tekstinis laukas, kuris palengvina darbuotojo paiešką (t.y. paieškos laukas);
+FR 86.3. Pašalinus darbuotoją iš karto sąrašas atsinaujina.
+FR 87. Rezultatas:
+FR 87.1. Pasirinktas darbuotojas pašalinamas iš darbuotojų sąrašo. & M & Performuluoti ir sutraukti funkciniai reikalavimai & Vartotojas gali atleisti darbuotojus \\ \hline
+
+FR & FR 88. Pradiniai duomenys:
+FR 88.1. Objekto kategorija(-os).
+FR 89. Veiksmai:
+FR 89.1. Meniu juostoje paspaudžiama ant mygtuko „Check the object state”;
+FR 89.2. Iš objektų kategorijų sąrašo (kambarys, slidinėjimo trasa, slidinėjimo įranga) pasirinkti ne mažiau nei vieną kategoriją;
+FR 89.3. Pasirinkti datą;
+FR 89.4. Paspausti mygtuką „Show states”.
+FR 90. Alternatyvūs scenarijai:
+FR 90.1. Bent vienoje kategorijoje nėra nė vieno objekto, tada išvedamas pranešimas apie trūkstamus objektus.
+FR 91. Reikalavimai:
+FR 91.1. Administratorius privalo būti prisijungęs prie paskyros.
+FR 92. Rezultatas:
+FR 92.1. Lentelėje(-ėse) pavaizduojamos pasirinktų objektų būsenos. & M & I swear to God, whoever came up with these..... & Vartotojas gali peržiūrėti nuomojamų objektų būseną. \\ \hline
+
+FR & FR 93. Pradiniai duomenys:
+FR 93.1. Objekto kategorija(-os).
+FR 94. Veiksmai:
+FR 94.1. Meniu juostoje paspaudžiama ant mygtuko „Set the object state”;
+FR 94.2. Iš objektų kategorijų sąrašo (kambarys, slidinėjimo trasa, slidinėjimo įranga) pasirenkama viena kategorija;
+FR 94.3. Parodomas sąrašas objektų, priklausančių tai kategorijai;
+FR 94.4. Pasirenkamas vienas objektas;
+FR 94.5. Pasirenkama data;
+FR 94.6. Pažymima būsena, paspaudžiant ant mygtuko „Set the state”.
+FR 95. Alternatyvūs scenarijai:
+FR 95.1. Nutrūko ryšys su duomenų baze.
+FR 96. Reikalavimai:
+FR 96.1. Administratorius turi būti prisijungęs.
+FR 97. Rezultatai:
+FR 97.1. Duomenų bazėje pažymima objekto būseną. & M & Honestly, I'm out of ideas what to put here & Vartotojas gali pakeisti objektų būsenas duomenų bazėje. \\ \hline
+
+
 FR & 
 FR 98. Pradiniai duomenys: 
 FR 98.1. Ataskaitos data. 
@@ -263,6 +367,21 @@ FR 70.4. Galima pasirinkti tik vieną sutartį. & M & Reikalavimų apibendrinima
 \begin{longtable}{ | p{0.04\textwidth}|p{0.43\textwidth}|p{0.09\textwidth}|p{0.15\textwidth}|p{0.21\textwidth}| }  \hline
 
 Nr. & Pradiniai reikalavimas&  Pakeitimo tipas & Klaidos aprašas  & Naujas reikalavimas \\ \hline
+NFR & NFR 14. Slidinėjimo trasų, įrangos bei kambarių pavadinimams maksimaliai skiriama 64 simboliai. & N & NaN & NaN \\ \hline
+NFR & NFR 15. Slidinėjimo trasos ilgis vaizduojamas trijų skaičių po kablelio tikslumu. Ilgio matavimo vienetas - kilometrai.  & N & NaN & NaN \\ \hline
+NFR & NFR 16. Slidinėjimo trasos statumas vaizduojamas dviejų skaičių po kablelio tikslumu. Statumo matavimo vienetas - procentai. & N & NaN & NaN \\ \hline
+NFR & NFR 17. Slidinėjimo trasų, įrangos bei apgyvendinimo įstaigos laisvų vietų kiekis rodomas vienetų tikslumų. & N & NaN & NaN \\ \hline
+NFR & NFR 18. Slidinėjimo trasų, įrangos bei apgyvendinimo įstaigos nuomos kainos pateikiamos euro centų tikslumu. & N & NaN & NaN \\ \hline
+NFR & NFR 19. Data turi būti vaizduojama formatu YYYY-MM-DD, kur YYYY - metai, MM - mėnuo, DD - diena. & N & NaN & NaN \\ \hline
+NFR & NFR 20. Laikas turi būti vaizduojamas formatu: hh:mm, kur hh - valandos, mm - minutės. & N & NaN & NaN \\ \hline
+NFR & NFR 21. Esybės vardui, pavardei, elektroniniam paštui, slaptažodžiui registracijos formoje maksimaliai skiriama 64 simboliai. Taip pat registracijos formoje 
+esybėms (išskyrus klientus) reikia įvesti raktą, kuriam maksimaliai skiriama 32 simbolių. & N & NaN & NaN \\ \hline
+NFR & NFR 22. Esybės raktas sugeneruojas pagal GUID. & N & NaN & NaN \\ \hline
+NFR & NFR 23. Esybės elektroniniam paštui ir slaptažodžiui prisijungimo formoje įvesti maksimaliai skiriama 64 simboliai. & N & NaN & NaN \\ \hline
+NFR & NFR 24. Vartotojo slaptažodis turi būti nuo 10 iki 64 simbolių. Jame turi būti panaudota bent po vieną didžiąją, mažąją raidę, skaitmenį ir/ar kitą simbolį. & N & NaN & NaN \\ \hline
+NFR & NFR 25. Vardui, pavardei, elektroniniam paštui rezervacijos formoje įvesti maksimaliai skiriami 64 simboliai. & N & NaN & NaN \\ \hline
+NFR & NFR 26. Telefono numeriui rezervacijos formoje įvesti maksimaliai skiriama 15 simbolių. & N & NaN & NaN \\ \hline
+NFR & NFR 27. Svečių skaičiui rezervacijos formoje įvesti maksimaliai skiriami 3 simboliai. & N & NaN & NaN \\ \hline
 NFR & NFR 28. Orų temperatūra rodoma temperatūros matavimo vienetu – celsijumi.  & N & NaN & NaN \\ \hline
 NFR & NFR 29. Rezervacijos/užsakymo/sutarties numeris pateikiamas vienetu tikslumu. & N & NaN & NaN \\ \hline
 NFR & NFR 30. Įrangos dydžiai - europietiški. Vaizduojami vienetų tikslumu.  & M & Patikslinama savoka ,,europietiški" į ,,metrinė sistema" &  Įrangos dydžiai užrašomi metrine sistema. Vaizduojami vienetų tikslumu. \\ \hline
