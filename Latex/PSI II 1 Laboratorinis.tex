@@ -335,7 +335,6 @@ FR 68. Pradiniai duomenys:
 FR 68.1. Sutarties pavadinimas;
 FR 69. Veiksmai:
 FR 69.1. Pasirinkti norimą sutartį;
-26
 FR 69.2. Spausti mygtuką „Read the agreement”;
 FR 69.3. Alternatyvūs scenarijai:
 FR 69.4. Pasirinkta sutartis prieš akimirką buvo nutraukta, ir kitas savininkas pažymi apie tai, tada išvedamas pranešimas apie tai;
@@ -344,6 +343,7 @@ FR 70.1. Savininkas privalo būti prisijungęs prie savo paskyros;
 FR 70.2. Sutartys privalo būti pavaizduotos drop-down sąraše;
 FR 70.3. Kol nepasirinkta sutartis, mygtukas yra išjungtas;
 FR 70.4. Galima pasirinkti tik vieną sutartį. & M & Reikalavimų apibendrinimas & vartotojas turi galėti peržiūrėti sutartis \\ \hline
+
 
 
 \end{longtable}
@@ -359,6 +359,7 @@ FR 70.4. Galima pasirinkti tik vieną sutartį. & M & Reikalavimų apibendrinima
 \end{longtable}
 	
 %\end{table}
+
 
  
 \section{Nefunkciniai}
@@ -404,7 +405,39 @@ NFR & NFR 38. Bandant pildyti laukus ne pagal pateiktus reikalavimus, užklausa 
 NFR & NFR 39. Sistemoje turi būti įdiegtos apsaugos priemonės nuo duomenų sugadinimo, praradimo, klaidingų duomenų įvedimo į duomenų bazę. & N & NaN & NaN \\ \hline
 NFR & NFR 40. Po kiekvienos sėkmingos operacijos pakeitimai turi būti išsaugomi duomenų bazėje. & N & NaN & NaN \\ \hline
 NFR & NFR 41. Nepavykus prisijungti arba negavus duomenų iš duomenų bazės, sistema turi informuoti esybę parodydama klaidos pranešimą. & M & Pakeičiam ,,esybės" į ,,vartotojas" dėl aiškumo &  Nepavykus prisijungti arba negavus duomenų iš duomenų bazės, sistema turi informuoti vartotoją parodydama klaidos pranešimą. \\ \hline
-
+	NFR & 4.2.5. Našumo reikalavimai
+NFR 42. Didžiausia leistina tinklalapio sistemos apkrova yra 1000 esybių, prisijungusių vienu metu.
+ sekundės. & M & Pakeistas neaiškus daiktavardis & Didžiausia leistina sistemos apkrova yra 1000 vartotojų, prisijungusių vienu metu.\\ \hline
+	NFR & 
+NFR 43. Tinklalapio didžiausias leistinas reakcijos laikas, neįvertinant interneto greičio, turi būti ne didesnis kaip 2 sekundė. & M & Supaprastintas reikalavimo formulavimas & Sistemos reakcijos laikas turi neviršinti 2 sekundžių\\ \hline
+	NFR & 
+NFR 44. Užklausos vykdymo laikas turi būti ne didesnis nei 3 sekundės. & M & Nekonkretus reikalavimas & Užklausa turi būti įvygdyta per ne daugiau nei 3 sekundes nuo užklausos gavimo\\ \hline
+	NFR & 
+NFR 45. Konkrečios slidinėjimo trasos, įrangos, kambario, jų užimtumo paieškai duomenų bazėje turi būti sugaišta ne ilgiau nei 3 & X & Duplikuoja NFR 44 & \\ \hline
+	NFR & 4.3. Diegimo reikalavimai
+4.3.1. Ruošinio reikalavimai
+NFR 46. Tinklalapis pasiekiamas prisijungiant iš bet kurio IP adreso. & M & Patikslintas neaiškus reikalavimas & Sistema neblokuoja jokių IP adresų\\ \hline
+	NFR & 
+4.3.3. Pradinio DB kaupimo reikalavimai
+NFR 47. Pradinėje sistemoje turi būti administratoriaus prisijungimo duomenys. & N & - & -\\ \hline
+	NFR & 
+NFR 48. Pasirinkimų lentelė turi turėti bent 5 pradines užpildytas eilutes su informacija apie slidinėjimo trasas, įrangą, kambarius. Šią informaciją įveda įgaliotas įmonės administratorius naudodamasis administratoriaus interfeisu. & N & - & -\\ \hline
+	NFR & 4.3.4. Sistemos įsisavinamumo reikalavimai
+NFR 49. Sistema turi funkcionuoti lietuvių ar anglų kalbomis. & N & - & -\\ \hline
+	NFR & 
+NFR 50. Įmonės darbuotojai turi būti apmokinami naudotis sistema.& N & - & -\\ \hline
+	NFR & 
+NFR 51. Stengiamasi išlaikyti tinklalapį suprantamą be vartojimo instrukcijų, t.y. negali būti klaidinančių nuorodų, negali būti vartojami įmantrūs žodžiai, kad nekiltų nesusipratimų. & N & - & -\\ \hline
+	NFR & 4.4. Aptarnavimo reikalavimai
+NFR 52. Pakeitimai turi būti įvykdyti ne vėliau nei per 7 darbo dienas po sėkmingo testavimo. & N & - & -\\ \hline
+	NFR & 
+NFR 53. Visi esybės atliekami veiksmai tinklalapyje turi būti sekami ir saugomi laikinoje duomenų bazėje tam, kad jei esybė prisijungimo sesijos metu atrastų tinklalapio spragą, tai visi jo atlikti veiksmai, kurie galėjo tai sukelti, būtų išsiųsti kaip klaidos pranešimas ir darbuotojai, atsakingi už tinklalapio sklandų veikimą, galėtų išanalizuoti spragą ir ją panaikinti. & M & Pakeistas neaiškus daiktavardis ir sutrumpinta sakinio formuluotė & Visi vartotojo atliekami veiksmai sistemoje turi būti sekami ir saugomi laikinoje duomenų bazėje tam, kad jei vartotojas sesijos metu atrastų sistemos spragą, visi jo atlikti veiksmai būtų išsiųsti kaip klaidos pranešimas\\ \hline
+	NFR & 
+NFR 54. Pastebėtos ar esybių praneštos klaidos turi būti ištaisytos per 5 darbo dienas. & M & Pakeistas neaiškus daiktavardis & Pastebėtos ar vartotojų praneštos klaidos turi būti ištaisytos per 5 darbo dienas\\ \hline
+	NFR & 
+NFR 55. Į esybės atsiųstus laiškus su pastebėjimais ir skundais reikia atsakyti per 3 darbo dienas. & M & Pakeistas neaiškus daiktavardis & Į vartotojo atsiųstus laiškus su pastebėjimais ir skundais reikia atsakyti per 3 darbo dienas\\ \hline
+	NFR & 
+NFR 56. Esybės neturi patirti diskomforto susijusio su sistemos atnaujinimu. Jei dėl planuojamo atnaujinimo ar sistemos taisymo reikės trumpam sustabdyti sistemos veiklą, esybės turi būti iš anksto įspėtos ne mažiau nei prieš 1 dieną. & M & Pakeistas neaiškus daiktavardis & Vartotojai neturi patirti nepatogumo susijusio su sistemos atnaujinimu. Jei dėl planuojamo atnaujinimo ar sistemos taisymo reikės trumpam sustabdyti sistemos veiklą, vartotojai turi būti iš anksto įspėti ne mažiau nei prieš 1 dieną\\ \hline
 
 
  
