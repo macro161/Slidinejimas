@@ -564,7 +564,7 @@ NFR 65. & Esybių asmeniniai duomenys turi būti įslaptinti, t.y. tinklalapyje 
 \hbox to 150mm{\hbox to 149.99mm{}}
 
 \subsection{Dalykinė sritis}
-	
+
 	
 \section{Užduotys}
 \subsection{Vartotojas peržiūri statistika}
@@ -584,6 +584,21 @@ Alternatyvūs scenarijai:\\ \\
 1. Sistema negali pateikti paslaugų sąrašo. Vartotojui parodomas infoirmacinis pranešimas, kad vyksta techniniai darbai ir pasiūloma sugrįšti vėliau. Vartotojui suteikiama galimybė grįšti į pagrindinį aplikacijos langą.\\
 2. Nėra detalesnės informacijos apie paslaugą arba įrangą. Vartotojui parašoma, kad papildomos informacijos nėra ir pasiųloma susisiekti su klientų aptarnavimo skyriumi dėl detalesnės informacijos. Vartotojui parodomas aptarnavimo skyriaus elektroninis paštas ir suteikiama galimybė grįšti į pagrindinį aplikacijos langą.
 
+\subsection{Administratorius peržiūri sutarčių ataskaita}
+	Triggeris: Administratorius aplikacijos suteiktoje darbo aplinkoje paspaudžia mygtuką ,,Sutarčių ataskaitos"\\ \\
+	Aktoriai: administratorius \\ \\
+	Pagrindinis scenarijus: Administratorius darbo aplinkoje pasirenka peržiūrėti sutarčių ataskaitas. Sistema iš duombazės gauna ir pateikia sutarčių sąrašą. Kiekvienas sarašo elementas turi pavadinimą, sutarties numerį ir pasirašymo datą. Administratoriui suteikiama galimybė paspaudus ant individualaus sąrašo elemento matyti detalią konkrečios sutarties ataskaitą. Taip pat suteikiama galimybė ieškoti sutarties pagal jos numerį bei rušiuoti sutartis pagal datą \\ \\
+	Alternatyvūs scenarijai: \\ \\
+1. Administratoriui pasirinkus sutarčių peržiūrą sistemai nepavyksta susisiekti su duomenų baze. Administratoriui pateikiamas klaidfos kodas, serverių statusas, nurodymai kas padėtų išspręsti problemą ir suteikiami techninės pagalbos kontaktai. \\
+2. Administratorius į paieškos lauką įveda sutarties numerį tačiau tokia sutartis sistemoje neegzistuoja. Prodomas informacinis pranešimas, kad tokia sutartis neegzistuoja \\ \\
+
+\subsection{Vartotojas užsako paslaugas}
+	Triggeris: Vartotojas aplikacijoje paspaudžia mygtuką ,,užsakyti paslaugas" \\ \\
+	Aktoriai: vartotojas \\ \\
+	Pagrindinis scenarijus: Vartotojas internetinėje aplikacijoje paspaudžia mygtuką ,,Užsisakyti paslaugas". Vartotojui pateikiamas paslaugų sąraša ir kiekvienos paslaugos kaina vienam žmogui. Vartotojas turi galimybę pasirinkti paslaugą užsakyti ją iki 10 žmonių ir pasirinkti paslaugos laiką. Varotojui parašius žmonių skaičių ir patvirtinus užsakymą jis atsiranda prekių krepšelyje ir paslaugos kaina pridedama prie bendros krepšelio kainos. \\ \\
+	Alternatyvūs scenarijai:  \\ \\
+1. Vartotojui pasirinkus užsakyti konkrečia paslaugą ir jos laiką ši paslauga tuo laiku negalima. Vartotojui parodomas pranešimas, kad paslauga tuo metu negalima. Vartotojui pateikiamas artimiausias laisvas laikas. \\ \\
+2. Vartotojui pasirinkus užsakyti paslaugą sistema negali nusiųsti paslaugos užsakymo užklausos. Vartotojui parodomas informacinis pranešimas kad vyksta techniniai darbai ir paslaugų užsakyti negalima. Vartotojui paskiūloma paslaugą užsisakyti telefonu paskambinus į kurortą, užsakymą parašyti elektroniniu paštu arba sugrįšti vėliau.\\ \\
 
 
 
