@@ -567,6 +567,21 @@ NFR 65. & Esybių asmeniniai duomenys turi būti įslaptinti, t.y. tinklalapyje 
 
 	
 \section{Užduotys}
+\subsection{Vartotojas įsideda pinigų į virtualią piniginę}
+Trigeris: Vartotojas aplikacijoje paspaudžia ant pinigų likučio ir atsidariusiame lange paspaudžia "Papildyti piniginę". \\ \\ 
+Aktoriai: Vartotojas, administratorius. \\ \\
+Pagrindinis scenarijus: Vartotojui pasirinkus "Papildyti sąskaitą" atsidaro langas "Mokėjimo pasirinkimas", kuriame vartotojas gali pasirinkti, kokiu būdu nori papildyti sąskaitą, bei norimą sumą(min 3€). Mokant top-up apmokėjimo būdu vartotojas nukreipiamas į šios paslaugos teikėjo puslapį, o pasirinkus pervedimą vartotojui tame pačiame lange parodoma mokėjimo informacija, naudojantis šiuo būdu pervesti pinigai virtualioje piniginėje atsiranda administratoriui patvirtinus banko pavedimą. Viską atlikęs vartotojas gali pasinaudoti lango apačioje esančiu mygtuku "Grįžti" ir patekti atgal į pagrindinį meniu. \\ \\
+Alternatyvūs scenarijai: \\ \\ 
+1. Vartotojas atlieka visus nurodytus žingsnius, papildymą atlikdamas bankinio pervedimo būdu, tačiau po 3 darbo dienų jo virtuali piniginė dar nepasipildė, tuo atveju   vartotojas spaudžia klaustuka aplikacijos pagrindiniame lange, jį paspaudus atsidaro langas "Pagalba", kuriame jis nusiunčia atitinkamą pranešimą, prisegdamas pavedimo išrašo kopiją, jam kuo skubiau atrašo administratorius. \\ \\
+2. Vartotojas atlieka visus nurodytus žingsnius, papildymą atlikdamas top-up būdu, tačiau mokėjimo metu dingsta prieeiga prie interneto, tuo atveju tas papildymo procesas atšaukiamas ir vartotojui kitą kartą prisijungus tenka visą procesą pradėti nuo pradžių. \\ \\
+\subsection{Vartotojas peržiūri vidutinį greitį pasirinktoje trasoje}
+Trigeris: Vartotojas aplikacijoje paspaudžia mygtuką "Statiska" atsidaro langas "Vartotojo statistika" jame vartotojas pasirenka "Vidutinis greitis" mygtuką. \\ \\
+Aktoriai: Vartotojas. \\ \\ 
+Pagrindinis scenarijus: Vartotojui pasirinkus, mygtuką "Vidutinis greitis" atsidaro langas "Vidutiniai greičiai", kuriame vartotojas įveda norimos trasos pavadinimą(įvedus 3 pirmas raides sistema pasiūlo galimai tinkamus variantus), bei laikotarpį, kurio vidutinį greitį nori peržiūrėti, bei spaudžia mygtuką "Peržiūrėti". Vartotojui parodoma lentelė, kurioje surašyti kitų vartotojų vid. laikai toje trasoje, bei paryškintai rodomas vartotojo vidutinis laikas, bei šalia šios lentelės parodomas paprastas pasirinktos trasos eskizas. Lango apačioje, dešiniajame kampe vartotojas gali paspausti mygtuką "Grįžti" norėdamas patekti atgal į pagrindinį meniu. \\ \\
+Alternatyvūs scenarijai \\ \\
+1. Vartotojas veda trasos pavadinimą, tačiau tokia trasa kurorte neegzistuoja, tuo atvėju vartotojui pranešame, kad tokios trasos rasti nepavyko, bei pasiūloma pasitikslinti trąsos pavadinimą, bei bandyti dar kartą. \\ \\
+2. Vartotojas suveda trasos pavadinima, bei norimą laikotarpį, tačiau patikrinus aptinkama, kad šiuo laikotarpiu vartotojas joje nebuvo. Tuo atvėju jam parodomas atitinkamas pranešimas ir į ekraną išvedama lentelė, kurioje yra surašyti kitų vartotojų vidutiniai laikai. Vartotojas gali grįžti į pagrindinį meniu paspaudęs mygtuką "Grįžti" esantį lango apačioje, dešinėje pusėje. \\ \\
+
 \subsection{Vartotojas peržiūri statistika}
 	
 	Triggeris: Vartotojas aplikacijoje paspaudžia mygtuką ,,Peržiūrėti statistika" \\ \\
