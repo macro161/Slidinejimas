@@ -564,11 +564,32 @@ NFR 65. & Esybių asmeniniai duomenys turi būti įslaptinti, t.y. tinklalapyje 
 \hbox to 150mm{\hbox to 149.99mm{}}
 
 \subsection{Dalykinė sritis}
-	\subsubsection{Mato dalis}
+	
+	
+\section{Užduotys}
+\subsection{Vartotojas peržiūri statistika}
+	
+	Triggeris: Vartotojas aplikacijoje paspaudžia mygtuką ,,Peržiūrėti statistika" \\ \\
+	Aktoriai: vartotojas, administratorius \\ \\
+	Pagrindinis scenarijus: Vartotojas internetinėje aplikacijoje paspaudžia mygtuką peržiūrėti statistika. Sistema iš duombazės paima sąrašą administracijos patvirtintų statistinių duomenų ir pateikia juos vartotojui. Vartotojas gali paspausti ant atskirų statistinių duomenų ir gauti detalesnį jų apreašymą arba grįšti į pagrindinį aplikacijos langą. \\ \\
+	Alternatyvūs scenarijai: \\ \\
+1. Vartotojas bando peržiūrėti statistiką, tačiau nėra jokios statistikos patvirtintos administracijos. Vartotojui parodomas pranešimas, kad statistika šiuo metu nėra pasiekiama ir jam suteikiamas pasirinkimas grįšti į pagrindinį aplikacijos langą. \\
+2. Vartotojas bando pežiūrėti statistiką, tačiau sistema negauna atsakymo iš duomenų bazės. Vartotojui pateikiamas pranešimas, kad vyksta techniniai tvarkymai ir pasiūloma sugįšti vėliau. vartotojui suteikiama galimybė grįšti į pagrindinį aplikacijos langą
+
+\subsection{Paslaugų peržiūra}
+	Triggeris: Vartotojas aplikacijoje paspaudžia mygtuką ,,Paslaugos"\\ \\
+	Aktoriai: vartotojas\\ \\
+	Pagrindinis scenarijus: Vartotojas internetinėje aplikacijoje pasirenka peržiūrėti paslaugas. Sistema vartotoja nukelią į kitą aplikacijos langą kuriame vartotojui suteikiamas pasirinkimas peržiūrėti paslaugas arba kurorte naudojama techniką. Tiek paslaugos tiek technika pateikiama sąrašu, prie kiekvieno sąrašo elemento yra paveiksliukas atitinkanti konkrečia paslaugą ir paslaugos ar įrangos pavadinimas. Vartotojas gali paspausti ant kiekvieno sąrašo elemento sužinoti detalesnią informaciją\\ \\
+Alternatyvūs scenarijai:\\ \\
+1. Sistema negali pateikti paslaugų sąrašo. Vartotojui parodomas infoirmacinis pranešimas, kad vyksta techniniai darbai ir pasiūloma sugrįšti vėliau. Vartotojui suteikiama galimybė grįšti į pagrindinį aplikacijos langą.\\
+2. Nėra detalesnės informacijos apie paslaugą arba įrangą. Vartotojui parašoma, kad papildomos informacijos nėra ir pasiųloma susisiekti su klientų aptarnavimo skyriumi dėl detalesnės informacijos. Vartotojui parodomas aptarnavimo skyriaus elektroninis paštas ir suteikiama galimybė grįšti į pagrindinį aplikacijos langą.
+
+
+
+
+
 	
 
-
-\section{Užduotys}
 
 \section{Reikalavimų specifikacijos, dalykinės srities modelio ir užduočių diagramos peržiūros rezultatai}
 
