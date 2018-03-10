@@ -287,7 +287,7 @@ FR 70. Reikalavimai:
 FR 70.1. Savininkas privalo būti prisijungęs prie savo paskyros;
 FR 70.2. Sutartys privalo būti pavaizduotos drop-down sąraše;
 FR 70.3. Kol nepasirinkta sutartis, mygtukas yra išjungtas;
-FR 70.4. Galima pasirinkti tik vieną sutartį. & M & Bandyta dalinti iš nulio su šitais reikalavimai & Vartotojas turi galėti peržiūrėti sutartis. \\ \hline
+FR 70.4. Galima pasirinkti tik vieną sutartį. & M & Reikalavimai padalinti iš nulio & Vartotojas turi galėti peržiūrėti sutartis. \\ \hline
 
 FR & FR 71. Pradiniai duomenys:
 FR 71.1. Vartotojo tipas (klientas, darbuotojas, administratorius, savininkas);
@@ -604,7 +604,7 @@ Alternatyvūs scenarijai:\\ \\
 	Aktoriai: administratorius \\ \\
 	Pagrindinis scenarijus: Administratorius darbo aplinkoje pasirenka peržiūrėti sutarčių ataskaitas. Sistema iš duombazės gauna ir pateikia sutarčių sąrašą. Kiekvienas sarašo elementas turi pavadinimą, sutarties numerį ir pasirašymo datą. Administratoriui suteikiama galimybė paspaudus ant individualaus sąrašo elemento matyti detalią konkrečios sutarties ataskaitą. Taip pat suteikiama galimybė ieškoti sutarties pagal jos numerį bei rušiuoti sutartis pagal datą \\ \\
 	Alternatyvūs scenarijai: \\ \\
-1. Administratoriui pasirinkus sutarčių peržiūrą sistemai nepavyksta susisiekti su duomenų baze. Administratoriui pateikiamas klaidfos kodas, serverių statusas, nurodymai kas padėtų išspręsti problemą ir suteikiami techninės pagalbos kontaktai. \\
+1. Administratoriui pasirinkus sutarčių peržiūrą sistemai nepavyksta susisiekti su duomenų baze. Administratoriui pateikiamas klaidfos kodas, serverių statusas, nurodymai kas padėtų išspręsti problemą ir suteikiami techninės pagalbos kontaktai. \\ 
 2. Administratorius į paieškos lauką įveda sutarties numerį tačiau tokia sutartis sistemoje neegzistuoja. Prodomas informacinis pranešimas, kad tokia sutartis neegzistuoja \\ \\
 
 \subsection{Vartotojas užsako paslaugas}
@@ -612,7 +612,7 @@ Alternatyvūs scenarijai:\\ \\
 	Aktoriai: vartotojas \\ \\
 	Pagrindinis scenarijus: Vartotojas internetinėje aplikacijoje paspaudžia mygtuką ,,Užsisakyti paslaugas". Vartotojui pateikiamas paslaugų sąraša ir kiekvienos paslaugos kaina vienam žmogui. Vartotojas turi galimybę pasirinkti paslaugą užsakyti ją iki 10 žmonių ir pasirinkti paslaugos laiką. Varotojui parašius žmonių skaičių ir patvirtinus užsakymą jis atsiranda prekių krepšelyje ir paslaugos kaina pridedama prie bendros krepšelio kainos. \\ \\
 	Alternatyvūs scenarijai:  \\ \\
-1. Vartotojui pasirinkus užsakyti konkrečia paslaugą ir jos laiką ši paslauga tuo laiku negalima. Vartotojui parodomas pranešimas, kad paslauga tuo metu negalima. Vartotojui pateikiamas artimiausias laisvas laikas. \\ \\
+1. Vartotojui pasirinkus užsakyti konkrečia paslaugą ir jos laiką ši paslauga tuo laiku negalima. Vartotojui parodomas pranešimas, kad paslauga tuo metu negalima. Vartotojui pateikiamas artimiausias laisvas laikas. \\ 
 2. Vartotojui pasirinkus užsakyti paslaugą sistema negali nusiųsti paslaugos užsakymo užklausos. Vartotojui parodomas informacinis pranešimas kad vyksta techniniai darbai ir paslaugų užsakyti negalima. Vartotojui paskiūloma paslaugą užsisakyti telefonu paskambinus į kurortą, užsakymą parašyti elektroniniu paštu arba sugrįšti vėliau.\\ \\
 
 \subsection{Vartotojas peržiūri užsakytas paslaugas}
@@ -640,6 +640,34 @@ Alternatyvūs scenarijai:\\ \\
 1. Vartotojui paspaudus ant sąrašo elemento trūksta informacijos apie trasą. Vartotojui pasiūloma pasiteirauti telefonu ar elektroniniu paštu.\\ \\
 2. Vartotojui paspaudus mygtuką ,,Trasos" sistema negali susisiekti su duomenų baze. Vartotojui parodomas pranešimas, kad vyksta techniniai darbai ir pasiūloma sugrįšti vėliau. Vartotojui pateikiama nuoroda grįšti į pagrindinį puslapį.\\ \\
 	
+\subsection{Vartotojas peržiūri orus}
+	Triggeris: Vartotojas aplikacijoje paspaudžia mygtuką "Orai", atsidaro naujas langas "Orų peržiūra" \\ \\
+	Aktoriai: Vartotojas \\ \\
+	Pagrindiniai scenarijai: \\ \\
+1. Vartotojas aplikacijoje paspaudžia mygtuką "Orai". Atidaromas naujas langas "Orų peržiūra", kuriame yra du mygtukai: "Dabartiniai orai" ir "Orų prognozė". 		Vartotojas paspaudžia mygtuką "Dabartiniai orai" ir aplikacijoje atsidaro langas kuriame rodoma dabartinė temperatūra, drėgmė, krituliai bei vėjo greitis. Peržiūrėjęs orus vartotojas uždaro langą paspausdamas mygtuką "Grįžti į pagrindinį meniu". \\
+2. Vartotojas aplikacijoje paspaudžia mygtuką "Orai". Atidaromas naujas langas "Orų peržiūra", kuriame yra du mygtukai: "Dabartiniai orai" ir "Orų prognozė". 		Vartotojas paspaudžia mygtuką "Orų prognozė" ir aplikacijoje atsidaro langas kuriame rodoma temperatūros, drėgmės, kritulių bei vėjo greičio prognozės. Peržiūrėjęs orų prognozę vartotojas uždaro langą paspausdamas mygtuką "Grįžti į pagrindinį meniu". \\ \\
+	Alternatyvus scenarijus: Vartotojas paspaudžia mygtuka "Orai". Atidaromas naujas langas "Orų peržiūra", tačiau nepavyksta prisijungti prie orų sekimo įrenginio. Vartotojui parodomas pranešimas, jog nepavyko prisijungti prie orų sekiklio ir prašoma pabandyti vėliau. Vartotojas gražinamas į pagrindinį meniu. \\ \\
+
+\subsection{Vartotojas rašo žinutę}
+	Triggeris: Vartotojas aplikacijoje paspaudžia mygtuką "Rašyti naują žinutę", jam iššoka langas "Nauja žinutė" \\ \\
+	Aktoriai: Vartotojas \\ \\
+	Pagrindinis scenarijus: Vartotojas aplikacijoje paspaudžia mygtuką "Rašyti naują žinutę", jam iššoka langas "Nauja žinutė". Vartotojas pasirenka gavėją (kitas vartotojas, administratorius ar maisto į kamabarį tarnyba), nurodo gavėjo vardą (jei to reikia), nurodo žinutės temą, parašo žinutę ir ją išsiunčia paspausdamas mygtuką "Siųsti žinutę". Išsiuntus žinutę vartotojui atidaromas naujas langas "Nauja žinutė", kurį jis uždaro paspausdamas mygtuką "Atgal". \\ \\
+	Alternatyvus scenarijus: Vartotojas aplikacijoje paspaudžia mygtuką "Rašyti naują žinutę", jam iššoka langas "Nauja žinutė". Vartotojas pasirenka gavėją (kitas vartotojas, administratorius ar maisto į kamabarį tarnyba), nurodo gavėjo vardą (jei to reikia), nurodo žinutės temą, parašo žinutę ir ją išsiunčia paspausdamas mygtuką "Siųsti žinutę", tačiau neteisingai nurodo gavėjo vardą ir žinutė neišsiunčiama. Sistema vartotojui išmeta klaidos pranešimą ir leidžia jam atlikti norimus pakeitimus. \\ \\
+
+\subsection{Vartotojas parašo atsiliepimą}
+	Triggeris: Vartotojas aplikacijoje paspaudžia mygtuką "Rašyti atsiliepimą", atsidaro naujas langas "Atsiliepimai" \\ \\
+	Aktoriai: Vartotojas \\ \\
+	Pagrindinis scenarijus: Vartotojas paspaudžia mygtuką "Rašyti atsiliepimą". Aplikacijoje atsidaro naujas langas "Atsiliepimai", kuriame vartotojas gali sukurti naują atsiliepimą. Vartotojas įvertina savo viešnagę 1-5 žvaigždutėm, bei atskirame laukelyje parašo savo komentarus. Baigęs rašyti savo atsiliepimą vartotojas paspaudžia mygtuką "Siųsti" ir atsiliepimas išsiunčiamas. Vartotojas paspaudžia mygtuką atgal ir grįžta į pagrindinį meniu. \\ \\
+	Alternatyvus scenarijus: Vartotojas paspaudžia mygtuką "Rašyti atsiliepimą". Aplikacijoje atsidaro naujas langas "Atsiliepimai", kuriame vartotojas gali sukurti naują atsiliepimą. Vartotojas laukelyje parašo komentarus apie savo viešnagę. Baigęs rašyti savo atsiliepimą vartotojas paspaudžia mygtuką "Siųsti", tačiau vartotojas neįvertino savo viešnagės. Vartotojo paprašoma pateikti 1-5 žvaigždučių įvertinimą. Vartotojas baigęs grįžta į pagrindinį meniu paspaudęs mygtuką "Atgal". \\ \\
+
+\subsection{Administratorius peržiūri duomenų bazę}
+	Triggeris: Administratorius aplikacijoje paspaudžia mygtuką "Peržiūrėti duomenų bazę", jam atidaromas duombazės peržiūros langas "Duomenų bazės peržiūra"
+	Aktoriai: Administratorius
+	Pagrindinis scenarijus: Administratorius paspaudžia mygtuką "Peržiūrėti duomenų bazę", jam prisijungiama prie duomanų bazės ir atidaromas duombazės peržiūros langas "Duomenų bazės peržiūra". Administratorius stebi duomenų bazėje esančių objektų būseną. Administratorius pasirenka objektą ir pakeičia jo duomenis. Padaręs pakeitimus, administratorius juo išsaugo paspaudęs mygtuką "Saugoti" ir baigęs darbą su duombaze, nuo jos atsijungia paspausdamas mygtuką "Atgal". \\ \\
+	Alternatyvūs scenarijai:  \\ \\ 
+1. Administratorius paspaudžia mygtuką "Peržiūrėti duomenų bazę", tačiau sistemai nepavyksta prisijungti prie duomenų bazės. Administratoriui išmetamas pranešimas, jog nepavyko prisijungti prie duomenų bazės ir paprašoma jo bandyti vėliau. Administratorius grąžinamas į pagrindinį meniu. \\
+2. Administratorius paspaudžia mygtuką "Peržiūrėti duomenų bazę", jam prisijungiama prie duomanų bazės ir atidaromas duombazės peržiūros langas "Duomenų bazės peržiūra". Administratorius stebi duomenų bazėje esančių objektų būseną. Administratorius pasirenka objektą ir pakeičia jo duomenis. Padaręs pakeitimus administratorius bando atsijungti nuo duomenų bazės spausdamas mygtuką "Atgal". Sistema išmeta pranšimą, jog jo padaryti pakeitimai nėra išsaugoti ir paklausia ar jis nori išsaugoti pakeitimus. Administratorius paspaudžia mygtuką "Taip", tada paspaudžia mygtuką "Saugoti" ir atsijungia nuo duomenų bazės paspausdamas mygtuką "Atgal", kuris grąžina jį į pagrindinį meniu. \\ \\
+
 
 
 \section{Reikalavimų specifikacijos, dalykinės srities modelio ir užduočių diagramos peržiūros rezultatai}
