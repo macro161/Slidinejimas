@@ -675,7 +675,19 @@ Alternatyvūs scenarijai:\\ \\
 1. Administratorius paspaudžia mygtuką "Peržiūrėti duomenų bazę", tačiau sistemai nepavyksta prisijungti prie duomenų bazės. Administratoriui išmetamas pranešimas, jog nepavyko prisijungti prie duomenų bazės ir paprašoma jo bandyti vėliau. Administratorius grąžinamas į pagrindinį meniu. \\
 2. Administratorius paspaudžia mygtuką "Peržiūrėti duomenų bazę", jam prisijungiama prie duomanų bazės ir atidaromas duombazės peržiūros langas "Duomenų bazės peržiūra". Administratorius stebi duomenų bazėje esančių objektų būseną. Administratorius pasirenka objektą ir pakeičia jo duomenis. Padaręs pakeitimus administratorius bando atsijungti nuo duomenų bazės spausdamas mygtuką "Atgal". Sistema išmeta pranšimą, jog jo padaryti pakeitimai nėra išsaugoti ir paklausia ar jis nori išsaugoti pakeitimus. Administratorius paspaudžia mygtuką "Taip", tada paspaudžia mygtuką "Saugoti" ir atsijungia nuo duomenų bazės paspausdamas mygtuką "Atgal", kuris grąžina jį į pagrindinį meniu. \\ \\
 
+\subsection{Vartotojas pepržiūri savo poziciją ir laiką praleistą trasoje}
+Triggeris: Vartotojas paspaudžia mygtuką ''Žemėlapis''.\\ \\
+Aktoriai: vartotojas.\\ \\
+Pagrindinis scenarijus: Vartotojas paspaudžia mygtuką ''Žemėlapis'', atsiveria langas su trasų žemėlapiu. Raudonu tašku pažymėta vartotojo dabartinė vieta. Apačioje rodomas trasos pavadinimas, praleistas ir likęs vartotojo laikas joje. Paspaudus ant trasų pavadinimo žemėlapyje atveriamas langas su detalesne informacija apie ją.\\ \\
+Alternatyvūs scenarijai:  \\ \\
+1. Vartotojas paspaudžia mygtuką ''Žemėlapis'', atveriamas langas su trasų žemėlapiu, bet nerandama vartotojo dabartinė vieta. Vartotojui parodomas langas, kuriame siūloma įsijungti GPS, o alternatyviai - pagalbos telefonas.\\
+2. Vartotojas paspaudžia mygtuką ''Žemėlapis'', atveriamas langas su trasų žemėlapiu. Paspaudus ant trasos pavadinimo, atveriamas naujas langas, bet trūksta informacijos jame.  Vartotojui pasiūloma pasiteirauti telefonu ar elektroniniu paštu. \\ \\ 
 
+\subsection{Vartotojas nori pasikeisti asmeninis duomenis}
+Triggeris: Vartotojas paspaudžia mygtuką ''Profilis''. \\ \\
+Aktoriai: Vartotojas.\\ \\
+Pagrindinis scenarijus: Vartotojas paspaudžia mygtuką ''Profilis'', jam atveriamas langas su laukais: Vardas, Pavardė, El. paštas, Keisti slaptažodį. Galima redaguoti visus laukus. Paspaudus 'Keisti slaptažodį'' sugeneruojamas naujas raktas ir jis išsiunčiamas į jo el. paštą. Apačioje yra mygtukas ''Atsijungti''. Jį paspaudus vartotojas atjungiamas nuo sistemos ir jam atveriamas prisijungimo langas. \\ \\
+Alternatyvus scenarijus: Vartotojas paspaudžia mygtuką ''Profilis'', jam atveriamas langas su laukais: Vardas, Pavardė, El. paštas, Keisti slaptažodį.  Paspaudus ''Keisti slaptažodį'' sugeneruojamas naujas raktas ir pranešama, kad slaptažodis išsiųstas į nurodytą el. paštą. Vartotojui jo negavus, spaudžiamas mygtukas ''Siųsti iš naujo''. Išvedamas pranešimas, kad slaptažodis išsiųstas ir pasiūloma pasitikrinti  ''Spam'' folderį. \\ \\ 
 
 \section{Reikalavimų specifikacijos, dalykinės srities modelio ir užduočių diagramos peržiūros rezultatai}
 
