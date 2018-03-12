@@ -16,6 +16,11 @@
 \usepackage{longtable}
 \usepackage{wrapfig}
 \usepackage{subfig}
+\usepackage{pbox}
+\renewcommand{\labelenumii}{\theenumii}
+\renewcommand{\theenumii}{\theenumi.\arabic{enumii}.}
+\renewcommand{\labelenumiii}{\theenumiii}
+\renewcommand{\theenumiii}{\theenumii\arabic{enumiii}.}
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 \usepackage[%  
     colorlinks=true,
@@ -714,6 +719,110 @@ Pagrindinis scenarijus: Vartotojas paspaudžia mygtuką ''Profilis'', jam atveri
 Alternatyvus scenarijus: Vartotojas paspaudžia mygtuką ''Profilis'', jam atveriamas langas su laukais: Vardas, Pavardė, El. paštas, Keisti slaptažodį.  Paspaudus ''Keisti slaptažodį'' sugeneruojamas naujas raktas ir pranešama, kad slaptažodis išsiųstas į nurodytą el. paštą. Vartotojui jo negavus, spaudžiamas mygtukas ''Siųsti iš naujo''. Išvedamas pranešimas, kad slaptažodis išsiųstas ir pasiūloma pasitikrinti  ''Spam'' folderį. \\ \\ 
 
 \section{Reikalavimų specifikacijos, dalykinės srities modelio ir užduočių diagramos peržiūros rezultatai}
+\subsection{Reikalavimų specifikacijos peržiūra}
+\subsubsection{Funkcinių reikalavimų specifikacijos pokyčių lentelė}
+\begin{longtable}{ | p{0.1\textwidth}|p{0.20\textwidth}|p{0.09\textwidth}|p{0.15\textwidth}|p{0.40\textwidth}| }  \hline
+	Pataisymo nr. & Pradiniai reikalavimas &  Pakeitimo tipas & Klaidos aprašas  & Naujas reikalavimas \\ \hline
+	0. & FR 2: Sistema suteikia vartotojui įsidėti pinigų į virtualią piniginę. Atsiskaitinėjant vartotojas gali būti intentifikuojamas piršto antspaudu & M & 2 reikalavimai sudėti į vieną 
+	& FR 2. Sistema suteikia vartotojui įsidėti pinigų į virtualią piniginę. \newline
+	2.1 Top-up metodu. \newline
+	2.2 Pervedimo būdu. \newline \newline
+	FR 3. Atsiskaitinėjant vartotojas gali identifikuotis piršto antspaudu. \\ \hline
+
+	1. & FR 7: Sistema suteikia vartotojui galimybę pakeisti savo asmeninius duomenis ir atsijunti nuo paskyros \newline
+		 FR 8: Sistema suteikia vartotojui galimybę atnaujinti savo paskyros slaptažodį & M & Susiję reikalavimai užrašyti atskirai 	 
+	& FR 7. Sistema vartotojui suteikia galimybę tvarkyti savo paskyrą \newline
+	7.1 Prisijungti \newline
+	7.2 Atsijungti \newline
+	7.3 Keisti asmeninius duomenis \newline
+	7.4 Keisti paskyros slaptažodį \\ \hline
+
+	2. & FR 12: Internetinė aplikacija administratoriui suteikia galimybę stebėti duombazės objektų būseną ir ją keisti & M & Reikalavimas abstraktus, nepakankamai aiškus 
+	& FR 13. Internetinė aplikacija administratoriui suteikia galimybę tvarkyti duomenis esančius duomenų bazėje \newline
+	13.1    Tvarkyti trasų duomenis. \newline
+	13.2    Tvarkyti kurorto statistinius duomenis. \newline
+	13.3    Tvarkyti atsiliepimus. \\ \hline
+
+	3. & FR 13: Internetinė aplikacija, duombazės pagalba, suteikia vartotojui galimybę peržiūrėti kurorto ir vartotojo statistiką. Rodomi statistiniai duomenys turi būti patvirtinti administracijos ir kurorto vadovo. & M & Reikalavimas netikslus
+	& FR 14. Internetinė aplikacija suteikia vartotojui galimybę statistiką.  \newline
+	14.1    Vartotojas turi galėti peržiūrėti savo statistiką \newline
+	14.2    Vartotojas turi galėti peržiūrėti kurorto statistiką, jeigu ji patvirtinta administratoriaus \newline
+	14.2.1		Administratorius turi galėti patvirtinti arba atmesti naują statistiką apie kurortą \\ \hline
+	4. & FR 16: Sistema per aplikacija vartotojui suteikia galimybę užsisakyti paslaugas & M & Per daug abstraktus reikalavimas 
+	& FR 17. Sistema per aplikacija vartotojui suteikia galimybę užsisakyti paslaugas \newline
+	17.1	Užsisakyti maisto į viešbučio kambarį \newline
+	17.2	Rezervuoti slidinėjimo įrangą \\ \hline
+
+
+
+
+\end{longtable}
+
+\subsubsection{Pataisyta funkcinių reikalavimų specifikacija}
+\begin{enumerate}
+	\item Sistema seka vartotojų laiką praleista trasoje pasinaudodama sekimo prietaisu.
+	\item Sistema suteikia vartotojui įsidėti pinigų į virtualią piniginę.
+	\begin{enumerate}
+		\item Top-up metodu.
+		\item Pervedimo būdu.
+	\end{enumerate}
+	\item Atsiskaitinėjant vartotojas gali identifikuotis piršto antspaudu.
+	\item Sistema leidžia vartotojui už paslaugas atsiskaityti e-bankininkyste.
+	\item Sekimo prietaisas fiksuoją greičiausią laiką, per kurį vartotojas įveikė trasą.
+	\begin{enumerate}
+		\item sistema saugo greičiausią laiką, per kurį vartotojas įveikė trasą.
+	\end{enumerate}
+	\item Vartotojo trasų laikai rodomi internetinėje aplikacijoje.
+	\item Sistema seka kiekvieno vartojo laiką praleistą trasoje ir poziciją jam esant kurorte.
+	\item Sistema suteikia vartotojui galimybę tvarkyti savo paskyrą.
+	\begin{enumerate}
+		\item Prisijungti.
+		\item Atsijungti.
+		\item Keisti asmeninius duomenis.
+		\item Keisti paskyros slaptažodį.
+	\end{enumerate}
+	\item Sistema internetinės aplikacijos pagalba vartotojui suteikia galimybę peržiūrėti orus.
+	\begin{enumerate}
+		\item Sistema turi pateikti dabartines oro sąlygas.
+		\item Sistema turi pateikti ateinančių dienų oru prognozę.
+		\begin{enumerate}
+			\item temperaturą.
+			\item drėgmę.
+			\item kritulius.
+			\item Vėjo greitį.
+		\end{enumerate}
+	\end{enumerate}
+	\item Internetinėje aplikacijoje vartotojas gali rašyti žinutes kitiems kurorto svečiams, adminisntracijai ir maisto į kambarį tarnybai.
+	\item Sistema vartotojui suteikia galimybę rašyti atsiliepimą apie jo viešnagę kurorte ir skirti viešą vertinimą kurortui.
+	\begin{enumerate}
+		\item Sistema suteikia galimybę keisti vertinimą.
+		\item Sistema neleidžia vertinti kurorto kelis kartus tam pačiam asmeniui dažniau, nei kartą per 2 mėnesius.
+	\end{enumerate}
+	\item Internetinė aplikacija administratoriui suteikia galimybę tvarkyti duomenis esančius duomenų bazėje.
+	\begin{enumerate}
+		\item Tvarkyti trasų duomenis.
+		\item Tvarkyti kurorto statistinius duomenis.
+		\item Tvarkyti atsiliepimus.
+	\end{enumerate}
+	\item Internetinė aplikacija suteikia vartotojui galimybę statistiką.
+	\begin{enumerate}
+		\item Vartotojas turi galėti peržiūrėti savo statistiką.
+		\item Vartotojas turi galėti peržiūrėti kurorto statistiką, jeigu ji patvirtinta administratoriaus.
+		\begin{enumerate}
+			\item Administratorius turi galėti patvirtinti arba atmesti naują statistiką apie kurortą.
+		\end{enumerate}
+	\end{enumerate}
+	\item Sistemoja per internetinę aplikaciją vartotojui suteikia galimybę peržiūrėti paslaugų kainas, tiekėjų sąrašą ir kiekvienos įrangos technines charakteristikas.
+	\item Sistema administratoriui suteikia galimybę skaityti sutarčių ataskaitas.
+	\item Sistema per aplikacija vartotojui suteikia galimybę užsisakyti paslaugas.
+	\begin{enumerate}
+		\item Užsisakyti maisto į viešbučio kambarį.
+		\item Rezervuoti slidinėjimo įranga.
+	\end{enumerate}
+	\item Sistema internetinės aplikacijos pagalba leidžia vartotojui peržiūrėti visas jo pasirašytas sutartis.
+	\item Vartotojas turi galimybę užrezervuoti slidinėjimo trasą nurodant: trasos pavadinimą, telefono numerį, slidinėtojų skaičių ir rezervacijos laikotarpį per internetinę aplikaciją.
+	\item Vartotojas gali matyti informaciją apie slidinėjimo trasą:pavadinimą,sunkumą, rūšį, nuomos kainą, užimtumą.
+\end{enumerate}
 
 \section{Išvada}
 
