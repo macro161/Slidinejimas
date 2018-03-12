@@ -45,7 +45,7 @@
 \maketitle
 \tableofcontents
 
-\section{Autoriai}
+\section{Anotacija}
 	\begin{itemize}
 		\item Matas Savickis
 		\item Greta Pyrantaitė
@@ -473,7 +473,7 @@ FR 70.4. Galima pasirinkti tik vieną sutartį. & M & Apibendrinamas reikalavima
 	\end{longtable}
 
  
-\section{Nefunkciniai}
+\section{Nefunkciniai reikalavimai}
 
 
 \begin{longtable}{ | p{0.04\textwidth}|p{0.43\textwidth}|p{0.09\textwidth}|p{0.15\textwidth}|p{0.21\textwidth}| }  \hline
@@ -616,7 +616,7 @@ NFR 65. & Esybių asmeniniai duomenys turi būti įslaptinti, t.y. tinklalapyje 
     \label{fig:r/e_matrica}
 \end{figure}
 \section{Užduotys}
-\subsection{Use case diagramos}
+\Large{Use case diagramos}
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.75\textwidth]{useCaseVartotojas.png}
@@ -766,10 +766,9 @@ Alternatyvūs scenarijai:\\ \\
 \subsection{Vartotojas peržiūri orus}
 	Trigeris: Vartotojas aplikacijoje paspaudžia mygtuką "Orai", atsidaro naujas langas "Orų peržiūra" \\ \\
 	Aktoriai: Vartotojas \\ \\
-	Pagrindiniai scenarijai: \\ \\
-1. Vartotojas aplikacijoje paspaudžia mygtuką "Orai". Atidaromas naujas langas "Orų peržiūra", kuriame yra du mygtukai: "Dabartiniai orai" ir "Orų prognozė". 		Vartotojas paspaudžia mygtuką "Dabartiniai orai" ir aplikacijoje atsidaro langas, kuriame rodoma dabartinė temperatūra, drėgmė, krituliai bei vėjo greitis. Peržiūrėjęs orus vartotojas uždaro langą paspausdamas mygtuką "Grįžti į pagrindinį meniu". \\
-2. Vartotojas aplikacijoje paspaudžia mygtuką "Orai". Atidaromas naujas langas "Orų peržiūra", kuriame yra du mygtukai: "Dabartiniai orai" ir "Orų prognozė". 		Vartotojas paspaudžia mygtuką "Orų prognozė" ir aplikacijoje atsidaro langas, kuriame rodoma temperatūros, drėgmės, kritulių bei vėjo greičio prognozės. Peržiūrėjęs orų prognozę vartotojas uždaro langą paspausdamas mygtuką "Grįžti į pagrindinį meniu". \\ \\
-	Alternatyvus scenarijus: Vartotojas paspaudžia mygtuka "Orai". Atidaromas naujas langas "Orų peržiūra", tačiau nepavyksta prisijungti prie orų sekimo įrenginio. Vartotojui parodomas pranešimas, jog nepavyko prisijungti prie orų sekiklio ir prašoma pabandyti vėliau. Vartotojas grąžinamas į pagrindinį meniu. \\ \\
+Pagrindinis scenarijus: Vartotojas aplikacijoje paspaudžia mygtuką "Orai". Atidaromas naujas langas "Orų peržiūra", kuriame yra du mygtukai: "Dabartiniai orai" ir "Orų prognozė". Vartotojas paspaudžia mygtuką "Dabartiniai orai" ir aplikacijoje atsidaro langas, kuriame rodoma dabartinė temperatūra, drėgmė, krituliai bei vėjo greitis. Peržiūrėjęs orus vartotojas uždaro langą, paspausdamas mygtuką "Grįžti į pagrindinį meniu". \\
+	Alternatyvus scenarijus: Vartotojas paspaudžia mygtuką "Orai". Atidaromas naujas langas "Orų peržiūra", tačiau nepavyksta prisijungti prie orų sekimo įrenginio. Vartotojui parodomas pranešimas, jog nepavyko prisijungti prie orų sekiklio, ir prašoma pabandyti vėliau. Vartotojas grąžinamas į pagrindinį meniu. \\ \\
+
 
 \begin{figure}[h]
     \centering
@@ -832,9 +831,10 @@ Alternatyvus scenarijus: Vartotojas paspaudžia mygtuką ''Profilis'', jam atver
 \section{Reikalavimų specifikacijos, dalykinės srities modelio ir užduočių diagramos peržiūros rezultatai}
 \subsection{Reikalavimų specifikacijos peržiūra}
 \subsubsection{Funkcinių reikalavimų specifikacijos pokyčių lentelė}
-\begin{longtable}{ | p{0.1\textwidth}|p{0.20\textwidth}|p{0.09\textwidth}|p{0.15\textwidth}|p{0.40\textwidth}| }  \hline
+
+\begin{longtable}{ | p{0.13\textwidth}|p{0.2\textwidth}|p{0.13\textwidth}|p{0.13\textwidth}|p{0.35\textwidth}| }  \hline
 	Pataisymo nr. & Pradinis reikalavimas &  Pakeitimo tipas & Klaidos aprašas  & Naujas reikalavimas \\ \hline
-	0. & FR 2: Sistema suteikia vartotojui įsidėti pinigų į virtualią piniginę. Atsiskaitinėjant vartotojas gali būti identifikuojamas piršto antspaudu & M & 2 reikalavimai sudėti į vieną 
+	0. & FR 2: Sistema suteikia galimybę vartotojui įsidėti pinigų į virtualią piniginę. Atsiskaitinėjant vartotojas gali būti intentifikuojamas piršto antspaudu & M & 2 reikalavimai sudėti į vieną 
 	& FR 2. Sistema suteikia galimybę vartotojui įsidėti pinigų į virtualią piniginę. \newline
 	2.1 Top-up metodu. \newline
 	2.2 Pervedimo būdu. \newline \newline
@@ -939,7 +939,7 @@ Alternatyvus scenarijus: Vartotojas paspaudžia mygtuką ''Profilis'', jam atver
 	\item \textit{Sistema administratoriui suteikia galimybę pamatyti trasas rezervavusių žmonių sąrašą}
 \end{enumerate}
 
-\subsection{Pataisyta nefunkcinių reikalavimų specifikacija}
+\subsubsection{Pataisyta nefunkcinių reikalavimų specifikacija}
 \begin{enumerate}
 	\item Slidinėjimo trasų įrangos bei kambarių pavadinimams maksimaliai skiriama 64 simboliai
 	\item Slidinėjimo trasos ilgis vaiduojamas vieno skaičiaus po kablelio tikslumu
@@ -1009,8 +1009,61 @@ Alternatyvus scenarijus: Vartotojas paspaudžia mygtuką ''Profilis'', jam atver
 	\item Duomenų perdavimas ir saugojimas neturi pažeisti LR asmens duomenų teisinės apsaugos įstatymo.
 	\item Esybių asmeniniai duomenys turi būti įslaptinti t.y. tinklapyje negali būti saugomi nekoduoti duomenys
 
-
 \end{enumerate}
+
+
+\pagebreak
+
+Mėlyna spalva pažymėtos diagramos dalys buvo pataisytos dėl nekorektiškai nubrėžtų diagramų ir logikos klaidų.
+
+\subsection{Pataisytas dalykinės srities diagrama}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.80\textwidth]{DomainModelFixed.png}
+    \caption{Pataisyta dalykines srities diagrama}
+    \label{fig:Pataisyta dalykinės srities diagrama}
+\end{figure}
+\subsection{Use case peržiūra}
+\subsubsection{Use case pokyčių lentelė}
+\begin{longtable}{ | p{0.2\textwidth}|p{0.2\textwidth}|p{0.5\textwidth}| }  \hline
+	Pataisymo nr. & Use case numeris & Klaidos aprašas \\ \hline
+	0 & 5 & Use case aprašyme nėra paminėti visi naudojami GUI komponentai \\ \hline
+	1 & 6 & Use case aprašyme nėra paminėti visi naudojami GUI komponentai \\ \hline
+	2 & 7 & Use case aprašyme nėra paminėti visi naudojami GUI komponentai \\ \hline
+	3 & 8 & Use case aprašyme nėra paminėti visi naudojami GUI komponentai \\ \hline
+	4 & 9 & Use case aprašyme nėra paminėti visi naudojami GUI komponentai \\ \hline
+	5 & 10 & Use case aprašyme nėra paminėti visi naudojami GUI komponentai \\ \hline
+	6 & 15 & Use case aprašyme nėra paminėti visi naudojami GUI komponentai \\ \hline
+	7 & 16 & Use case aprašyme nėra paminėti visi naudojami GUI komponentai \\ \hline
+\end{longtable}
+
+\subsubsection{Pataisyti use case}
+
+\subsubsubsection{}
+	Trigeris: Vartotojas aplikacijoje paspaudžia mygtuką "Paslaugos" ir jam atidaromas langas "Paslaugų peržiūra"
+	Pagrindis scenarijus: Vartotojas internetinėje aplikacijoje pasirenka peržiūrėti paslaugas. Sistema vartotoją nukelią į kitą aplikacijos langą "Paslaugų peržiūra", kuriame vartotojui suteikiamas pasirinkimas peržiūrėti paslaugas arba kurorte naudojamą techniką. Tiek paslaugos, tiek technika pateikiama sąrašu, prie kiekvieno sąrašo elemento yra paveiksliukas, atitinkantis konkrečią paslaugą, ir paslaugos ar įrangos pavadinimas. Vartotojas gali paspausti ant kiekvieno sąrašo elemento, norėdamas sužinoti detalesnę informaciją
+\subsubsubsection{}
+	Trigeris: Administratorius aplikacijos suteiktoje darbo aplinkoje paspaudžia mygtuką "Sutarčių ataskaitos" ir jam atidaromas langas "Ataskaitos"
+	Pagrindinis scenarijus: Administratorius darbo aplinkoje pasirenka peržiūrėti sutarčių ataskaitas. Sistema iš duombazės gauna ir atvaizduoja sutarčių sąrašą lange "Ataskaitos". Kiekvienas sarašo elementas turi pavadinimą, sutarties numerį ir pasirašymo datą. Administratoriui suteikiama galimybė paspaudus ant individualaus sąrašo elemento matyti detalią konkrečios sutarties ataskaitą. Taip pat suteikiama galimybė ieškoti sutarties pagal jos numerį bei rušiuoti sutartis pagal datą
+\subsubsubsection{}
+	Trigeris: Vartotojas aplikacijoje paspaudžia mygtuką "užsakyti paslaugas", atidaromas langas "Paslaugos užsakymas"
+	Pagrindinis scenarijus: Vartotojas internetinėje aplikacijoje paspaudžia mygtuką "Užsisakyti paslaugas". Vartotojui pateikiamas paslaugų sąrašas lange "Paslaugos užsakymas" ir kiekvienos paslaugos kaina vienam žmogui. Vartotojas turi galimybę pasirinkti paslaugą ir užsakyti ją iki 10 žmonių, ir pasirinkti paslaugos laiką. Varotojui parašius žmonių skaičių ir patvirtinus užsakymą, jis atsiranda prekių krepšelyje ir paslaugos kaina pridedama prie bendros krepšelio kainos.
+\subsubsubsection{}
+	Trigeris: Vartotojas aplikacijoje paspaudžia mygtuką "Paslaugos", atidaromas langas "Palaugos"
+	Pagrindinis scenarijus: Vartotojas internetinėje aplikacijoje paspaudžia mygtuką "Paslaugos". Vartotojui pateikiamas jo užsakytų paslaugų sąrašas lange "Paslaugos". Vartotojui suteikiama galimybė paspaudus ant individualaus sąrašo elemento matyti detalią paslaugos informaciją.
+\subsubsubsection{}
+	Trigeris: Vartotojas aplikacijoje paspaudžia mygtuką "Trasos", ir jam atidaromas langas "Trasos"
+	Pagrindinis scenarijus: Vartotojas internetinėje aplikacijoje paspaudžia mygtuką "Trasos". Vartotojui pateikiamas trasų sąrašas lange "Trasos". Vartotojui suteikiama galimybė paspaudus ant individualaus sąrašo elemento matyti detalią trasos informaciją ir laisvas rezervacijai dienas bei valandas. Vartotojui pasirinkus laiką ir patvirtinus užsakymą, užsakymas pridedamas į krepšelį. Vartotojui parodomas pranešimas apie sėkmingai pridėtą užsakymą ir pasiūloma peržiūrėti prekių krepšelį.
+\subsubsubsection{}
+	Trigeris: Vartotojas aplikacijoje paspaudžia mygtuką "Trasos" ir jam atidaromas langas "Trasos"
+	Pagrindinis scenarijus: Vartotojas internetinėje aplikacijoje paspaudžia mygtuką "Trasos". Vartotojui atidaromas langas "Trasos", kuriame pateikiamas trasų sąrašas. Vartotojui paspaudus ant individualaus sąrašo elemento parodoma detalesnė trasos informacija.
+\subsubsubsection{}
+	Trigeris: Vartotojas paspaudžia mygtuką ''Žemėlapis'', ir jam atidaromas langas "Žemėlapis"
+	Pagrindinis scenarijus: Vartotojas paspaudžia mygtuką ''Žemėlapis'', atsiveria langas "Žemėlapis", kuriame yra vaizduojamos visos trasos. Raudonu tašku pažymėta vartotojo dabartinė vieta. Apačioje rodomas trasos pavadinimas, praleistas ir likęs vartotojo laikas joje. Paspaudus ant trasų pavadinimo žemėlapyje atveriamas langas su detalesne informacija apie ją.
+\subsubsubsection{}
+	Trigeris: Vartotojas paspaudžia mygtuką ''Profilis'' ir jam atidaromas langas "Profilis"
+	Pagrindinis scenarijus: Vartotojas paspaudžia mygtuką ''Profilis'', jam atveriamas langas "Profilis", su laukais: Vardas, Pavardė, El. paštas, Keisti slaptažodį. Galima redaguoti visus laukus. Paspaudus 'Keisti slaptažodį'' sugeneruojamas naujas raktas ir jis išsiunčiamas į jo el. paštą. Apačioje yra mygtukas ''Atsijungti''. Jį paspaudus vartotojas atjungiamas nuo sistemos ir jam atveriamas prisijungimo langas.
+
 
 \section{Išvada}
 Šiame darbe pradėjome slidinėjimo sistemos analizę. Šią analizę atlikome pagal ICONIX principą. Gautus reikalavimus sutvarkėme, išgryninome, tuo metu paruošėme dalykinės srities modelius, iš kurių labai lengvai pavyko parašyti sistemos užduotis. Darant užduotis nubraižėme GUI šablonus, iš kurių užsakovui bus lengviau matyti, kaip sistema atrodys vizualiai. Galiausiai darbo pabaigoje perėjom per visas dalis ir atlikę peržiūrą pataisėme likusias klaidas. Iš šio darbo seks tolimesnis sistemos projektavimas kitame laboratoriniame darbe.
