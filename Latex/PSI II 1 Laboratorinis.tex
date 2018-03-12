@@ -841,6 +841,79 @@ Alternatyvus scenarijus: Vartotojas paspaudžia mygtuką ''Profilis'', jam atver
 	\item \textit{Sistema administratoriui suteikia galimybę pamatysi trasas rezervavusių žmonių sąrašą}
 \end{enumerate}
 
+\subsection{Pataisyta nefunkcinių reikalavimų specifikacija}
+\begin{enumerate}
+	\item Slidinėjimo trasų įrangos bei kambarių pavadinimams maksimaliai skiriama 64 simbolių
+	\item Slidinėjimo trasos ilgis vaiduojamas vieno skaičiaus po kablelio tikslumu
+	\begin{enumerate}
+		\item Ilgio matavimo vienetas - kilometras
+	\end{enumerate}
+	\item Slidinėjimo trasos statumas vaizduoja vieno skaičio po kablelio tikslumu
+	\begin{enumerate}
+		\item Statumo matavimo vienetas - procentai
+	\end{enumerate}
+	\item Slidinėjimo trasų, įrangos bei apgyvendinimo įstaigos laisvų vietų skaičius rodomas vientų tikslumu.
+	\item Slidinėjimo trasų, įrangos bei apgyvendinimo įstaigos kainos pateikiamos centų po kablelio tikslumu (10,11eu)
+	\item Data turi būti vaizduojama formatu YYYY-MM-DD
+	\begin{enumerate}
+		\item YYYY - metai
+		\item MM - mėnuo
+		\item DD - diena
+	\end{enumerate}
+	\item Laikas turi būti vaizduojamas formatu hh:mm 24 valandų formatu (21:47)
+	\begin{enumerate}
+		\item hh - valandos. 24 valandų formatu
+		\item mm - minutės
+	\end{enumerate}
+	\item Vartotojo vardui, pavardei, elektroniniam paštui, slaptažodžiui registracijos formoje maksimaliai skiriama 64 simboliai. Taip pat registracijos formoje vartotojams reikia įvesti slaptažodį kuriam maksimaliai skiriama 512 simboliai.
+	\item Vartotojo raktas sugeneruojamas pagal GUID
+	\item Vartotojo elektroniniam paštui prisijungiant skiriama 64 simboliai o slaptažodžiui 512
+	\item Vartotojo slaptažodis negali būti trumpesnis negu 10 simbolių
+	\item Vardui, pavardei ir elektroniniam paštui rezervacijos formoje skiriama 64 simboliai
+	\item Telefono numeriui rezervacijos formoje skiriama 15 simbolių
+	\item Svečių skaičiuo rezervacijos formoje maksimaliai skiriama 3 skaičiai
+	\item Orų temperatūra rodoma vienetų tikslumu. Matavimo vienetas celsijus
+	\item Rezervacijos/užsakyo/sutarties numeris pateikiamas vienetų tikslumu
+	\item Įrangos dydžiai - europietiški. Vaizduojama vienetų tikslumu
+	\item Keičiant naršyklės dydį, tinklapio vaizdas pritaikomas automatiškai(Responsive design).
+	\item Sistema turi veikti 95proc laiko per dieną. Tai yra leidžiama neveikti 1 valandą 10 min.	
+	\item Registruojant naują vartotoją sistema turi patikrinti ar teisingai įvesti jo duomenys.
+	\item Prisijungiant vartotojui sistema turi patikrinti ar įvesti duomenys teisingi.
+	\item Vartotojui rezervuojant paslaugas sistema turi patikrinti ar duomenys įvesti korektiškai
+	\item Vartotojui rezervuoijant paslaugas sistema rezervacijai turi priskirti uniklalų numerį.
+	\item Modifikuojama tinklapio atsarginė kopija po kiekvieno informacijos atnaujinimo apie slidinėjimo kurortą, orų prognozes, slidinėjimo trasa, įrangą, apgyvendinimo įstaigą, jų užimtumą bei po kiekvienos esybės registracijos ir įvestos informacijos pakeitimo.
+	\item Bandant pildyti laukus ne pagal pateiktus reikalavimus, užklausa negali būti įvykdyta.
+	\item Sistemoje turi būti įdiegtos apsaugos priemonės nuo duomenų sugadinimo, praradimo, klaidingų duomenų įvedimo į duomenų bazėje.
+	\item Po kiekvienos sėkmingos operacijos pakeitimai turi būti išsaugoti duomenų bazėje.
+	\item Nepavykus prisijungti arba negavus duomenų iš duomenų bazės, sistema turi informuoti vartotoją parodydamas klaidos pranešimą
+	\item Didžiausia leistina tinklalapio apkrova yra 10000 vartotojų vienu metu
+	\item Tinklalapio didžiausia leistinas reakcijos laikas, neįvertinant interneto greičio turi būti ne didesnis kaip 2 sekundės.
+	\item Užklausos vykdymo laikas turi būti ne didesnis nei 3 sekundės
+	\item Konkrečios slidinėjimo trasos, įrangos, kambario, jų užimtumo paieškai duomenų bazėje turi būti sugaišta ne ilgiau nei 3 sekundės
+	\item Tinklapis pasiekiamas prisijungiant iš bet kurio IP adreso
+	\item Pradinėje sistemoje turi būti administratoriaus prisijungimo duomenys
+	\item Pasirinkimų lentelė turi turėti bent 5 pradines užpildytas eilutes su informacija apie slidinėjimo trasas, įrangą, kambarius. Šią informaciją įveda įgaliotas įmonės administratoriusinterfeisu.
+	\item Sistemos turi funkcionuoti lietuvių ir anglų kalbomis
+	\item Įmonės darbuotojai turi būti apmokomi naudotis sistema
+	\item Tinkalpyje negali būti klaidinančios informacijos
+	\item Pakeitimai turi būti įvykdyti ne vėliau nei per 7 darbo dienas po sėkmingo testavimo.
+	\item Visi vartotojo atliekami veiksmai turi būti saugomi laikinoje duomenų bazėje, kad atradus klaidą tinklalapyje būtų galima testavimo metu atkurti konkrečia klaidą
+	\item Pastebėtos ar esybės praneštos klaidos turi būti ištaisytos kaip galima greičiau.
+	\item Į vartotojo atsiųstus laiškus su pastebėjimai ir skundais reikia atsakyti automatine žinute.
+	\item Sistema atnaujinti reikia tuo metu, kai yra mažiausias vartotojų srautas
+	\item Internetinė aplikacija turi veikti vet kuriame įrenginyje, kuris turi naršyklę palaikančia HTML5 standartą.
+	\item Vartotojui prisijungiant prie sistemos vykdoma jo indentifikacija.
+	\item Duomenų bazėje saugomas slaptažodžių maišos kodas sumaišytas SHA512 algoritmu.
+	\item Visi duomenys apie sistema saugomi duomenų bazėje, o prie jos prieeiga turi tik įgalioti asmenys.
+	\item Atsarginė duomenų bazės kopija turi būti daroma reguleriai kas 7 darbo dienas.
+	\item Jeigu eisybė neaktyvi ilgiau nei 15 minučių, vartotojas automatiškai atjungiamas.
+	\item Kuriant sistemą projekto komandai draudžiama naudotis nelegalia programine įranga
+	\item Duomenų perdavimas ir saugojimas neturi pažeisti LR asmens duomenų teisinės apsaugos įstatymo.
+	\item Esybių asmeniniai duomenys turi būti įslaptinti t.y. tinklapyje negali būti saugoti ekoduoti duomenys
+
+
+\end{enumerate}
+
 \section{Išvada}
 
 \section{Asmeninis darbo indėlis}
