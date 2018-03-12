@@ -576,6 +576,29 @@ NFR 65. & Esybių asmeniniai duomenys turi būti įslaptinti, t.y. tinklalapyje 
 
 \section{Dalykinė sritis}
 \subsection{Dalykinės srities žodynas}
+
+\begin{enumerate}
+	\item Internetinė aplikacija - Mūsų kuriama android programėlė
+	\item Administratorius - Sistemą prižiūrintis žmogus
+	\item Vartotojas - Slidinėjimo kurorto klientas naudojantis programėlę
+	\item Susirašinėjimas - Dviejų vartotojų žinučių grandinė
+	\item Žinutė - Simbolių rinkinys, kurį vienas vartotojas siunčia kitam
+	\item Virtuali piniginė - Piniginė, kurioje esančiais pinigais galima atsiskaityti už pramogas
+	\item Kaina - Pinigų suma už prekę ar paslaugą
+	\item Sekimo prietaisas - Įrenginys siunčiantis savo poziciją sistemai
+	\item Biometrinis terminalas - Įrenginys, kuris skenuoja piršto antspaudą
+	\item Tiekėjai - Žmonės, kurie tiekia įrangą
+	\item Orai - Informacija apie orų prognozę
+	\item Atsiskaitymų sistema - Sistema, kuri apdoroja bankinius pinigų pervedimus
+	\item Duomenų bazė - Organizuota duomenų struktūra
+	\item Vartotojo statistika - Duomenys renkami apie vartotoją
+	\item Atsiliepimas - Simbolių rinkinys parašytas vartotojo apie aplikaciją
+	\item Sutartys - Rašytinis susitarimas tarp vartotojo ir slidinėjimo kurorto
+	\item Slidinėjimo trasos - Informacija apie slidinėjimo trasas
+	\item Kurorto statistika - Duomenys renkami apie kurortą
+\end{enumerate}
+\pagebreak
+
 \subsection{dalykinies srities modelio diagrama}
 \begin{figure}[h]
     \centering
@@ -583,6 +606,8 @@ NFR 65. & Esybių asmeniniai duomenys turi būti įslaptinti, t.y. tinklalapyje 
     \caption{Domain model diagrama}
     \label{fig:DomainModel}
 \end{figure}
+\pagebreak
+
 \subsection{Reikalavimų/esybių atsekamumo matrica}	
 \begin{figure}[h]
     \centering
@@ -687,6 +712,26 @@ Alternatyvūs scenarijai:\\ \\
 1. Vartotojui pasirinkus užsakytų paslaugų peržiūrą nerandama užsakytų paslaugų. Vartotojui parodoma nuoroda užsakyti paslaugas. Vartotojui siūloma palaukti, jei neseniai užsisakė paslaugą. Vartotojui siūloma kreiptis pagalbos, jei nuo paslaugos užsakymo jau praėjo diena laiko.\\ \\
 2. Vartotojui pasirinkus užsakytų paslaugų peržiūrą sistema negali susisiekti su duomenų baze. Vartotojui parodomas pranešimas, kad vyksta techniniai darbai ir pasiūloma sugrįšti vėliau. Vartotojui pateikiama nuoroda grįšti į pagrindinį puslapį.\\ \\
 
+\begin{figure}[h]
+\centering
+\parbox{5cm}{
+\includegraphics[width=4cm]{GUI-17-uzsakytos-paslaugos(1).png}
+\caption{Vartotojas neužsisakė jokių paslaugų}
+\label{fig:2figsA}}
+\qquad
+\begin{minipage}{5cm}
+\includegraphics[width=4cm]{GUI-17-uzsakytos-paslaugos(2).png}
+\caption{Paslaugos ir jų užsakymo laikas}
+\label{fig:2figsB}
+\end{minipage}
+\begin{minipage}{5cm}
+\includegraphics[width=4cm]{GUI-17-uzsakytos-paslaugos(3).png}
+\caption{Detali paslaugos informacija}
+\label{fig:2figsC}
+\end{minipage}
+\end{figure}
+
+
 \subsection{Vartotojas rezervuoja trasą}
 	Trigeris: Vartotojas aplikacijoje paspaudžia mygtuką ,,Trasos"\\ \\
 	Aktoriai: Vartotojas\\ \\
@@ -695,6 +740,20 @@ Alternatyvūs scenarijai:\\ \\
 1. Vartotojui besirenkant rezervacijos laiką įvyksta kitas užsakymas ir jo pasirinktas laikas tampa užimtas. Vartotojui patvirtinus užsakymą parodomas pranešimas, kad trasa tuo laiku užimta. Vartotojui pasiūloma atnaujinti langą ir pamatyti naują trasos užimtumą.\\ \\
 2. Vartotojui paspaudus mygtuką ,,Trasos" trasų sąrašas yra tuščias. Vartotojui siūloma dėl trasų rezervacijos pasiteirauti telefonu ar elektroniniu paštu.\\ \\
 3. Vartotojui paspaudus mygtuką ,,Trasos" sistema negali susisiekti su duomenų baze. Vartotojui parodomas pranešimas, kad vyksta techniniai darbai ir pasiūloma sugrįšti vėliau. Vartotojui pateikiama nuoroda grįšti į pagrindinį puslapį.\\ \\
+
+\begin{figure}[h]
+\centering
+\parbox{5cm}{
+\includegraphics[width=4cm]{GUI-18-19-trasos.png}
+\caption{Visos trasos}
+\label{fig:2figsA}}
+\qquad
+\begin{minipage}{5cm}
+\includegraphics[width=4cm]{GUI-18-19-detali-trasos-informacija.png}
+\caption{Rezervuoti trasą}
+\label{fig:2figsB}
+\end{minipage}
+\end{figure}
 
 \subsection{Vartotojas peržiūri informaciją apie trasą}
 	Trigeris: Vartotojas aplikacijoje paspaudžia mygtuką ,,Trasos"\\ \\
@@ -800,12 +859,15 @@ Alternatyvus scenarijus: Vartotojas paspaudžia mygtuką ''Profilis'', jam atver
 	14.1    Vartotojas turi galėti peržiūrėti savo statistiką \newline
 	14.2    Vartotojas turi galėti peržiūrėti kurorto statistiką, jeigu ji patvirtinta administratoriaus \newline
 	14.2.1		Administratorius turi galėti patvirtinti arba atmesti naują statistiką apie kurortą \\ \hline
+
 	4. & FR 16: Sistema per aplikacija vartotojui suteikia galimybę užsisakyti paslaugas & M & Per daug abstraktus reikalavimas 
 	& FR 17. Sistema per aplikacija vartotojui suteikia galimybę užsisakyti paslaugas \newline
 	17.1	Užsisakyti maisto į viešbučio kambarį \newline
 	17.2	Rezervuoti slidinėjimo įrangą \\ \hline
 
-
+	5. & FR 1: Sistema seka vartotojų laiką praleista trasoje pasinaudodama sekimo prietaisu & M & Pakeistas reikalavimas, ištrintas nefunkcinis reikalavimo elementas & FR 1:  Sistema seka vartotoją trasoje, rodo jo poziciją ir praleistą laiką trasoje\\ \hline
+	
+	6. & FR 6: Sistema seka kiekvieno vartojo laiką praleistą trasoje ir poziciją jam esant kurorte. & X & Reikalavimas dubliuojasi su FR 1 & -\\ \hline
 
 
 \end{longtable}
@@ -825,7 +887,6 @@ Alternatyvus scenarijus: Vartotojas paspaudžia mygtuką ''Profilis'', jam atver
 		\item sistema saugo greičiausią laiką, per kurį vartotojas įveikė trasą.
 	\end{enumerate}
 	\item Vartotojo trasų laikai rodomi internetinėje aplikacijoje.
-	\item Sistema seka kiekvieno vartojo laiką praleistą trasoje ir poziciją jam esant kurorte.
 	\item Sistema suteikia vartotojui galimybę tvarkyti savo paskyrą.
 	\begin{enumerate}
 		\item Prisijungti.
