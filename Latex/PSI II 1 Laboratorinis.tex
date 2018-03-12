@@ -45,7 +45,7 @@
 \maketitle
 \tableofcontents
 
-\section{Autoriai}
+\section{Anotacija}
 	\begin{itemize}
 		\item Matas Savickis
 		\item Greta Pyrantaitė
@@ -473,7 +473,7 @@ FR 70.4. Galima pasirinkti tik vieną sutartį. & M & Apibendrinamas reikalavima
 	\end{longtable}
 
  
-\section{Nefunkciniai}
+\section{Nefunkciniai reikalavimai}
 
 
 \begin{longtable}{ | p{0.04\textwidth}|p{0.43\textwidth}|p{0.09\textwidth}|p{0.15\textwidth}|p{0.21\textwidth}| }  \hline
@@ -616,7 +616,7 @@ NFR 65. & Esybių asmeniniai duomenys turi būti įslaptinti, t.y. tinklalapyje 
     \label{fig:r/e_matrica}
 \end{figure}
 \section{Užduotys}
-\subsection{Use case diagramos}
+\Large{Use case diagramos}
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.75\textwidth]{useCaseVartotojas.png}
@@ -830,7 +830,7 @@ Alternatyvus scenarijus: Vartotojas paspaudžia mygtuką ''Profilis'', jam atver
 \section{Reikalavimų specifikacijos, dalykinės srities modelio ir užduočių diagramos peržiūros rezultatai}
 \subsection{Reikalavimų specifikacijos peržiūra}
 \subsubsection{Funkcinių reikalavimų specifikacijos pokyčių lentelė}
-\begin{longtable}{ | p{0.1\textwidth}|p{0.20\textwidth}|p{0.09\textwidth}|p{0.15\textwidth}|p{0.40\textwidth}| }  \hline
+\begin{longtable}{ | p{0.13\textwidth}|p{0.2\textwidth}|p{0.13\textwidth}|p{0.13\textwidth}|p{0.35\textwidth}| }  \hline
 	Pataisymo nr. & Pradiniai reikalavimas &  Pakeitimo tipas & Klaidos aprašas  & Naujas reikalavimas \\ \hline
 	0. & FR 2: Sistema suteikia vartotojui įsidėti pinigų į virtualią piniginę. Atsiskaitinėjant vartotojas gali būti intentifikuojamas piršto antspaudu & M & 2 reikalavimai sudėti į vieną 
 	& FR 2. Sistema suteikia vartotojui įsidėti pinigų į virtualią piniginę. \newline
@@ -937,7 +937,7 @@ Alternatyvus scenarijus: Vartotojas paspaudžia mygtuką ''Profilis'', jam atver
 	\item \textit{Sistema administratoriui suteikia galimybę pamatysi trasas rezervavusių žmonių sąrašą}
 \end{enumerate}
 
-\subsection{Pataisyta nefunkcinių reikalavimų specifikacija}
+\subsubsection{Pataisyta nefunkcinių reikalavimų specifikacija}
 \begin{enumerate}
 	\item Slidinėjimo trasų įrangos bei kambarių pavadinimams maksimaliai skiriama 64 simbolių
 	\item Slidinėjimo trasos ilgis vaiduojamas vieno skaičiaus po kablelio tikslumu
@@ -1009,6 +1009,19 @@ Alternatyvus scenarijus: Vartotojas paspaudžia mygtuką ''Profilis'', jam atver
 
 \end{enumerate}
 
+<<<<<<< HEAD
+\pagebreak
+
+Mėlina spalva pažymėtos diagramos dalys buvo pataisytos dėl nekorektiškai nubrėžtų diagramų ir logikos klaidų.
+
+\subsection{Pataisytas dalykinės srities diagrama}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.80\textwidth]{DomainModelFixed.png}
+    \caption{Pataisyta dalykines srities diagrama}
+    \label{fig:Pataisyta dalykines srities diagrama}
+\end{figure}
+=======
 \subsection{Use case peržiūra}
 \subsubsection{Use case pokyčių lentelė}
 \begin{longtable}{ | p{0.2\textwidth}|p{0.2\textwidth}|p{0.5\textwidth}| }  \hline
@@ -1050,6 +1063,7 @@ Alternatyvus scenarijus: Vartotojas paspaudžia mygtuką ''Profilis'', jam atver
 	Triggeris: Vartotojas paspaudžia mygtuką ''Profilis'' ir jam atidaromas langas "Profilis"
 	Pagrindinis scenarijus: Vartotojas paspaudžia mygtuką ''Profilis'', jam atveriamas langas "Profilis", su laukais: Vardas, Pavardė, El. paštas, Keisti slaptažodį. Galima redaguoti visus laukus. Paspaudus 'Keisti slaptažodį'' sugeneruojamas naujas raktas ir jis išsiunčiamas į jo el. paštą. Apačioje yra mygtukas ''Atsijungti''. Jį paspaudus vartotojas atjungiamas nuo sistemos ir jam atveriamas prisijungimo langas.
 
+>>>>>>> d3e6e0551b8ffcdc40439ecefb908d985b20cdfe
 
 \section{Išvada}
 Šiame darbe pradėjome slidinėjimo sistemos analizę. Šią analizę atlikome pagal ICONIX principą. Gautus reikalavimus sutvarkėme, išgryninome, tuometu paruosėme dalykinės srities modelis iš kurių labai lengvai pavyko parašyti sistemos užduotis. Darant užduotis nubraižėme GUI šablonus iš kurių užsakovui bus lengviau matyti kaip sistema atrodys vizuoliai. Galiausiai darbo pabaigoje perėjom per visas dalis ir atlikę peržiūra pataisėme likusias klaidas. Iš šio darbo seks tolimesnis sistemos projektavimas kitame laboratoriniame darbe.
