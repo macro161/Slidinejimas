@@ -766,9 +766,7 @@ Alternatyvūs scenarijai:\\ \\
 \subsection{Vartotojas peržiūri orus}
 	Triggeris: Vartotojas aplikacijoje paspaudžia mygtuką "Orai", atsidaro naujas langas "Orų peržiūra" \\ \\
 	Aktoriai: Vartotojas \\ \\
-	Pagrindiniai scenarijai: \\ \\
-1. Vartotojas aplikacijoje paspaudžia mygtuką "Orai". Atidaromas naujas langas "Orų peržiūra", kuriame yra du mygtukai: "Dabartiniai orai" ir "Orų prognozė". 		Vartotojas paspaudžia mygtuką "Dabartiniai orai" ir aplikacijoje atsidaro langas kuriame rodoma dabartinė temperatūra, drėgmė, krituliai bei vėjo greitis. Peržiūrėjęs orus vartotojas uždaro langą paspausdamas mygtuką "Grįžti į pagrindinį meniu". \\
-2. Vartotojas aplikacijoje paspaudžia mygtuką "Orai". Atidaromas naujas langas "Orų peržiūra", kuriame yra du mygtukai: "Dabartiniai orai" ir "Orų prognozė". 		Vartotojas paspaudžia mygtuką "Orų prognozė" ir aplikacijoje atsidaro langas kuriame rodoma temperatūros, drėgmės, kritulių bei vėjo greičio prognozės. Peržiūrėjęs orų prognozę vartotojas uždaro langą paspausdamas mygtuką "Grįžti į pagrindinį meniu". \\ \\
+	Pagrindinis scenarijus: Vartotojas aplikacijoje paspaudžia mygtuką "Orai". Atidaromas naujas langas "Orų peržiūra", kuriame yra du mygtukai: "Dabartiniai orai" ir "Orų prognozė". Vartotojas paspaudžia mygtuką "Dabartiniai orai" ir aplikacijoje atsidaro langas kuriame rodoma dabartinė temperatūra, drėgmė, krituliai bei vėjo greitis. Peržiūrėjęs orus vartotojas uždaro langą paspausdamas mygtuką "Grįžti į pagrindinį meniu". \\
 	Alternatyvus scenarijus: Vartotojas paspaudžia mygtuka "Orai". Atidaromas naujas langas "Orų peržiūra", tačiau nepavyksta prisijungti prie orų sekimo įrenginio. Vartotojui parodomas pranešimas, jog nepavyko prisijungti prie orų sekiklio ir prašoma pabandyti vėliau. Vartotojas gražinamas į pagrindinį meniu. \\ \\
 
 \begin{figure}[h]
@@ -1009,8 +1007,49 @@ Alternatyvus scenarijus: Vartotojas paspaudžia mygtuką ''Profilis'', jam atver
 	\item Duomenų perdavimas ir saugojimas neturi pažeisti LR asmens duomenų teisinės apsaugos įstatymo.
 	\item Esybių asmeniniai duomenys turi būti įslaptinti t.y. tinklapyje negali būti saugoti ekoduoti duomenys
 
-
 \end{enumerate}
+
+\subsection{Use case peržiūra}
+\subsubsection{Use case pokyčių lentelė}
+\begin{longtable}{ | p{0.2\textwidth}|p{0.2\textwidth}|p{0.5\textwidth}| }  \hline
+	Pataisymo nr. & Use case numeris & Klaidos aprašas \\ \hline
+	0 & 5 & Use case aprašyme nėra paminėti visi naudojami GUI komponentai \\ \hline
+	1 & 6 & Use case aprašyme nėra paminėti visi naudojami GUI komponentai \\ \hline
+	2 & 7 & Use case aprašyme nėra paminėti visi naudojami GUI komponentai \\ \hline
+	3 & 8 & Use case aprašyme nėra paminėti visi naudojami GUI komponentai \\ \hline
+	4 & 9 & Use case aprašyme nėra paminėti visi naudojami GUI komponentai \\ \hline
+	5 & 10 & Use case aprašyme nėra paminėti visi naudojami GUI komponentai \\ \hline
+	6 & 15 & Use case aprašyme nėra paminėti visi naudojami GUI komponentai \\ \hline
+	7 & 16 & Use case aprašyme nėra paminėti visi naudojami GUI komponentai \\ \hline
+\end{longtable}
+
+\subsubsection{Pataisyti use case}
+
+\subsubsubsection{}
+	Triggeris: Vartotojas aplikacijoje paspaudžia mygtuką "Paslaugos" ir jam atidaromas langas "Paslaugų peržiūra"
+	Pagrindis scenarijus: Vartotojas internetinėje aplikacijoje pasirenka peržiūrėti paslaugas. Sistema vartotoja nukelią į kitą aplikacijos langą "Paslaugų peržiūra" kuriame vartotojui suteikiamas pasirinkimas peržiūrėti paslaugas arba kurorte naudojama techniką. Tiek paslaugos tiek technika pateikiama sąrašu, prie kiekvieno sąrašo elemento yra paveiksliukas atitinkanti konkrečia paslaugą ir paslaugos ar įrangos pavadinimas. Vartotojas gali paspausti ant kiekvieno sąrašo elemento sužinoti detalesnią informaciją
+\subsubsubsection{}
+	Triggeris: Administratorius aplikacijos suteiktoje darbo aplinkoje paspaudžia mygtuką "Sutarčių ataskaitos" ir jam atidaromas langas "Ataskaitos"
+	Pagrindinis scenarijus: Administratorius darbo aplinkoje pasirenka peržiūrėti sutarčių ataskaitas. Sistema iš duombazės gauna ir atvaizduoja sutarčių sąrašą lange "Ataskaitos". Kiekvienas sarašo elementas turi pavadinimą, sutarties numerį ir pasirašymo datą. Administratoriui suteikiama galimybė paspaudus ant individualaus sąrašo elemento matyti detalią konkrečios sutarties ataskaitą. Taip pat suteikiama galimybė ieškoti sutarties pagal jos numerį bei rušiuoti sutartis pagal datą
+\subsubsubsection{}
+	Triggeris: Vartotojas aplikacijoje paspaudžia mygtuką "užsakyti paslaugas", atidaromas langas "Paslaugos užsakymas"
+	Pagrindinis scenarijus: Vartotojas internetinėje aplikacijoje paspaudžia mygtuką "Užsisakyti paslaugas". Vartotojui pateikiamas paslaugų sąrašas lange "Paslaugos užsakymas" ir kiekvienos paslaugos kaina vienam žmogui. Vartotojas turi galimybę pasirinkti paslaugą užsakyti ją iki 10 žmonių ir pasirinkti paslaugos laiką. Varotojui parašius žmonių skaičių ir patvirtinus užsakymą jis atsiranda prekių krepšelyje ir paslaugos kaina pridedama prie bendros krepšelio kainos.
+\subsubsubsection{}
+	Trigeris: Vartotojas aplikacijoje paspaudžia mygtuką "Paslaugos", atidaromas langas "Palaugos"
+	Pagrindinis scenarijus: Vartotojas internetinėje aplikacijoje paspaudžia mygtuką "Paslaugos". Vartotojui pateikiamas jo užsakytų paslaugų sąrašas lange "Paslaugos". Vartotojui suteikiama galimybė paspaudus ant individualaus sąrašo elemento matyti detalią paslaugos informaciją.
+\subsubsubsection{}
+	Trigeris: Vartotojas aplikacijoje paspaudžia mygtuką "Trasos", ir jam atidaromas langas "Trasos"
+	Pagrindinis scenarijus: Vartotojas internetinėje aplikacijoje paspaudžia mygtuką "Trasos". Vartotojui pateikiamas trasų sąrašas lange "Trasos". Vartotojui suteikiama galimybė paspaudus ant individualaus sąrašo elemento matyti detalią trasos informaciją ir laisvas rezervacijai dienas bei valandas. Vartotojui pasirinkus laiką ir patvirtinus užsakymą, užsakymas pridedamas į krepšelį. Vartotojui parodomas pranešimas apie sėkmingai pridėtą užsakymą ir pasiūloma peržiūrėti prekių krepšelį.
+\subsubsubsection{}
+	Trigeris: Vartotojas aplikacijoje paspaudžia mygtuką "Trasos" ir jam atidaromas langas "Trasos"
+	Pagrindinis scenarijus: Vartotojas internetinėje aplikacijoje paspaudžia mygtuką "Trasos". Vartotojui atidaromas langas "Trasos", kuriame pateikiamas trasų sąrašas. Vartotojui paspaudus ant individualaus sąrašo elemento parodoma detalesnė trasos informacija.
+\subsubsubsection{}
+	Triggeris: Vartotojas paspaudžia mygtuką ''Žemėlapis'', ir jam atidaromas langas "Žemėlapis"
+	Pagrindinis scenarijus: Vartotojas paspaudžia mygtuką ''Žemėlapis'', atsiveria langas "Žemėlapis", kuriame yra vaizduojamos visos trasos. Raudonu tašku pažymėta vartotojo dabartinė vieta. Apačioje rodomas trasos pavadinimas, praleistas ir likęs vartotojo laikas joje. Paspaudus ant trasų pavadinimo žemėlapyje atveriamas langas su detalesne informacija apie ją.
+\subsubsubsection{}
+	Triggeris: Vartotojas paspaudžia mygtuką ''Profilis'' ir jam atidaromas langas "Profilis"
+	Pagrindinis scenarijus: Vartotojas paspaudžia mygtuką ''Profilis'', jam atveriamas langas "Profilis", su laukais: Vardas, Pavardė, El. paštas, Keisti slaptažodį. Galima redaguoti visus laukus. Paspaudus 'Keisti slaptažodį'' sugeneruojamas naujas raktas ir jis išsiunčiamas į jo el. paštą. Apačioje yra mygtukas ''Atsijungti''. Jį paspaudus vartotojas atjungiamas nuo sistemos ir jam atveriamas prisijungimo langas.
+
 
 \section{Išvada}
 Šiame darbe pradėjome slidinėjimo sistemos analizę. Šią analizę atlikome pagal ICONIX principą. Gautus reikalavimus sutvarkėme, išgryninome, tuometu paruosėme dalykinės srities modelis iš kurių labai lengvai pavyko parašyti sistemos užduotis. Darant užduotis nubraižėme GUI šablonus iš kurių užsakovui bus lengviau matyti kaip sistema atrodys vizuoliai. Galiausiai darbo pabaigoje perėjom per visas dalis ir atlikę peržiūra pataisėme likusias klaidas. Iš šio darbo seks tolimesnis sistemos projektavimas kitame laboratoriniame darbe.
