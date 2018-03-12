@@ -15,6 +15,7 @@
 \usepackage{ltablex}
 \usepackage{longtable}
 \usepackage{wrapfig}
+\usepackage{subfig}
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 \usepackage[%  
     colorlinks=true,
@@ -439,26 +440,25 @@ FR 70.4. Galima pasirinkti tik vieną sutartį. & M & Apibendrinamas reikalavima
 \subsection{Funkcinių reikalavimų sąrašas}
 \begin{longtable}{ | p{0.1\textwidth}|p{0.45\textwidth}|p{0.15\textwidth}| }  \hline
 	Nr. & Reikalavimas &  Svarba   \\ \hline
-	FR 1 & Sistema seka vartotojų laiką praleista trasoje pasinaudodama sekimo prietaisu & nefunkcinis? \\ \hline
-	FR 2 & Sistema suteikia vartotojui įsidėti pinigų į virtualią piniginę. Atsiskaitinėjant vartotojas intentifikuojamas piršto antspaudu & nefunkcinis? \\ \hline
-	FR 3 & Sistema leidžia vartotojui už paslaugas atsiskaityti e-bankininkyste & - \\ \hline
-	FR 4 & Sekimo prietaisas fiksuoją greičiausią laiką, per kurį vartotojas įveikė trasą ir saugo šia informaciną & - \\ \hline
-	FR 5 & Vartotojo trasų laikai rodomi internetinėje aplikacijoje & - \\ \hline
-	FR 6 & Sistema seka kiekvieno vartojo laiką praleistą trasoje ir poziciją jam esant kurorte.   & nefunkcinis? \\ \hline
-	FR 7 &  Sistema suteikia vartotojui galimybę pakeisti savo asmeninius duomenis ir atsijunti nuo paskyros& - \\ \hline
-	FR 8 & Sistema suteikia vartotojui galimybę atnaujinti savo paskyros slaptažodį & - \\ \hline
-	FR 9 & Sistema internetinės aplikacijos pagalba vartotojui suteikia galimybę peržiūrėti dabartines oro salygas ir orų prognozę. Prognozėje turi būti pateikta temperatūra, drėgmė, krituliai, vėjo greitis  & - \\ \hline
-	FR 10 & Internetinėje aplikacijoje vartotojas gali rašyti žinutes kitiems kurorto svečiams, adminisntracijai ir maisto į kambarį tarnybai & - \\ \hline
-	FR 11 & Sistema vartotojui suteikia galimybę rašyti atsiliepimą apie jo viešnagę kurorte ir skirti viešą vertinimą kurortui & - \\ \hline
-	FR 12 & Internetinė aplikacija administratoriui suteikia galimybę stebėti duombazės objektų būseną ir ją keisti & - \\ \hline
-	FR 13 & Internetinė aplikacija, duombazės pagalba suteikia vartotojui galimybę peržiūrėti kurorto ir vartotojo statistiką. Rodomi statistiniai duomenys turi būti patvirtinti administracijos ir kurorto vadovo. & - \\ \hline
-	FR 14 & Sistemoja per internetinę aplikaciją vartotojui suteikia galimybę peržiūrėti paslaugų kainas, tiekėjų sąrašą ir kiekvienos įrangos technines charakteristikas & - \\ \hline
-	FR 15 & Administratorius turi galimybę skaityti sutarčių ataskaitas & - \\ \hline
-	FR 16 & Sistema per aplikacija vartotojui suteikia galimybę užsisakyti papildomas paslaugas, kurių jis dar neužsakė & Nefunkcinis? \\ \hline
-	FR 17 & Sistema internetinės aplikacijos pagalba leidžia vartotojui peržiųrėti visas jo pasirašytas sutartis & - \\ \hline
-	FR 18 &  Vartotojas turi galimybę užrezervuoti slidinėjimo trasą nurodant: trasos pavadinimą, telefono numerį, slidinėtojų skaičių ir rezervacijos laikotarpį per internetinę aplikaciją & - \\ \hline
-	FR 19 &  Vartotojas gali matyti informaciją apie slidinėjimo trasą:pavadinimą,sunkumą, rūšis, prieinamas kiekis, nuomos kaina, užimtumas nurodytu laiko tarpu. & - \\ \hline
-	FR 20 & - & - \\ \hline
+	FR 1 & Sistema seka vartotojų laiką praleista trasoje pasinaudodama sekimo prietaisu & 9 \\ \hline
+	FR 2 & Sistema suteikia vartotojui įsidėti pinigų į virtualią piniginę. Atsiskaitinėjant vartotojas gali būti intentifikuojamas piršto antspaudu & 8 \\ \hline
+	FR 3 & Sistema leidžia vartotojui už paslaugas atsiskaityti e-bankininkyste & 10 \\ \hline
+	FR 4 & Sekimo prietaisas fiksuoją greičiausią laiką, per kurį vartotojas įveikė trasą ir saugo šia informaciją & 9 \\ \hline
+	FR 5 & Vartotojo trasų laikai rodomi internetinėje aplikacijoje & 9 \\ \hline
+	FR 6 & Sistema seka kiekvieno vartojo laiką praleistą trasoje ir poziciją jam esant kurorte.   & 8 \\ \hline
+	FR 7 &  Sistema suteikia vartotojui galimybę pakeisti savo asmeninius duomenis ir atsijunti nuo paskyros& 10\\ \hline
+	FR 8 & Sistema suteikia vartotojui galimybę atnaujinti savo paskyros slaptažodį & 8\\ \hline
+	FR 9 & Sistema internetinės aplikacijos pagalba vartotojui suteikia galimybę peržiūrėti dabartines oro salygas ir orų prognozę. Prognozėje turi būti pateikta temperatūra, drėgmė, krituliai, vėjo greitis  & 8 \\ \hline
+	FR 10 & Internetinėje aplikacijoje vartotojas gali rašyti žinutes kitiems kurorto svečiams, adminisntracijai ir maisto į kambarį tarnybai & 7 \\ \hline
+	FR 11 & Sistema vartotojui suteikia galimybę rašyti atsiliepimą apie jo viešnagę kurorte ir skirti viešą vertinimą kurortui & 9 \\ \hline
+	FR 12 & Internetinė aplikacija administratoriui suteikia galimybę stebėti duombazės objektų būseną ir ją keisti & 7 \\ \hline
+	FR 13 & Internetinė aplikacija, duombazės pagalba suteikia vartotojui galimybę peržiūrėti kurorto ir vartotojo statistiką. Rodomi statistiniai duomenys turi būti patvirtinti administracijos ir kurorto vadovo. & 9 \\ \hline
+	FR 14 & Sistemoja per internetinę aplikaciją vartotojui suteikia galimybę peržiūrėti paslaugų kainas, tiekėjų sąrašą ir kiekvienos įrangos technines charakteristikas & 8 \\ \hline
+	FR 15 & Administratorius turi galimybę skaityti sutarčių ataskaitas & 10\\ \hline
+	FR 16 & Sistema per aplikacija vartotojui suteikia galimybę užsisakyti paslaugas &  9\\ \hline
+	FR 17 & Sistema internetinės aplikacijos pagalba leidžia vartotojui peržiūrėti visas jo pasirašytas sutartis & 10 \\ \hline
+	FR 18 &  Vartotojas turi galimybę užrezervuoti slidinėjimo trasą nurodant: trasos pavadinimą, telefono numerį, slidinėtojų skaičių ir rezervacijos laikotarpį per internetinę aplikaciją & 9 \\ \hline
+	FR 19 &  Vartotojas gali matyti informaciją apie slidinėjimo trasą:pavadinimą,sunkumą, rūšis, prieinamas kiekis, nuomos kaina, užimtumas nurodytu laiko tarpu. & 8 \\ \hline
 	\end{longtable}
 
  
@@ -563,9 +563,22 @@ NFR 65. & Esybių asmeniniai duomenys turi būti įslaptinti, t.y. tinklalapyje 
 
 \hbox to 150mm{\hbox to 149.99mm{}}
 
-\subsection{Dalykinė sritis}
-
-	
+\section{Dalykinė sritis}
+\subsection{Dalykinės srities žodynas}
+\subsection{dalykinies srities modelio diagrama}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{DomainModel.png}
+    \caption{Domain model diagrama}
+    \label{fig:DomainModel}
+\end{figure}
+\subsection{Reikalavimų/esybių atsekamumo matrica}	
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{Reikalavimai_Esybes.png}
+    \caption{Reikalavimų/Esybių atekamumo matrica}
+    \label{fig:r/e_matrica}
+\end{figure}
 \section{Užduotys}
 \subsection{Vartotojas įsideda pinigų į virtualią piniginę}
 Trigeris: Vartotojas aplikacijoje paspaudžia ant pinigų likučio ir atsidariusiame lange paspaudžia "Papildyti piniginę". \\ \\ 
@@ -574,6 +587,12 @@ Pagrindinis scenarijus: Vartotojui pasirinkus "Papildyti sąskaitą" atsidaro la
 Alternatyvūs scenarijai: \\ \\ 
 1. Vartotojas atlieka visus nurodytus žingsnius, papildymą atlikdamas bankinio pervedimo būdu, tačiau po 3 darbo dienų jo virtuali piniginė dar nepasipildė, tuo atveju   vartotojas spaudžia klaustuka aplikacijos pagrindiniame lange, jį paspaudus atsidaro langas "Pagalba", kuriame jis nusiunčia atitinkamą pranešimą, prisegdamas pavedimo išrašo kopiją, jam kuo skubiau atrašo administratorius. \\ \\
 2. Vartotojas atlieka visus nurodytus žingsnius, papildymą atlikdamas top-up būdu, tačiau mokėjimo metu dingsta prieeiga prie interneto, tuo atveju tas papildymo procesas atšaukiamas ir vartotojui kitą kartą prisijungus tenka visą procesą pradėti nuo pradžių. \\ \\
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.20\textwidth]{Mokejimo_Pasirinkimas.png}
+    \caption{Mokėjimo pasirinkimo langas}
+    \label{fig:apmokejimas}
+\end{figure}
 \subsection{Vartotojas peržiūri savo mėnesio veiklą slidinėjimo trasose}
 Trigeris: Vartotojas aplikacijoje paspaudžia mygtuką "Statistika", atsidaro langas "Vartotojo statistika" jame vartotojas pasirenka mygtuką "Mano trasų istorija" \\ \\
 Aktoriai: Vartotojas \\ \\
@@ -588,15 +607,20 @@ Pagrindinis scenarijus: Vartotojui pasirinkus, mygtuką "Vidutinis greitis", ats
 Alternatyvūs scenarijai \\ \\
 1. Vartotojas veda trasos pavadinimą, tačiau tokia trasa kurorte neegzistuoja, tuo atvėju vartotojui pranešame, kad tokios trasos rasti nepavyko, bei pasiūloma pasitikslinti trąsos pavadinimą, bei bandyti dar kartą. \\ \\
 2. Vartotojas suveda trasos pavadinima, bei norimą laikotarpį, tačiau patikrinus aptinkama, kad šiuo laikotarpiu vartotojas joje nebuvo. Tuo atvėju jam parodomas atitinkamas pranešimas ir į ekraną išvedama lentelė, kurioje yra surašyti kitų vartotojų vidutiniai laikai. Vartotojas gali grįžti į pagrindinį meniu paspaudęs mygtuką "Grįžti" esantį lango apačioje, dešinėje pusėje. \\ \\
+\begin{figure}[h]
+\centering
+\parbox{5cm}{
+\includegraphics[width=4cm]{ManoTrasuIstorija.png}
+\caption{Vartotojo trasu istorija}
+\label{fig:2figsA}}
+\qquad
+\begin{minipage}{5cm}
+\includegraphics[width=4cm]{VidutiniaiGreičiai.png}
+\caption{Vidutiniai greičiai}
+\label{fig:2figsB}
+\end{minipage}
+\end{figure}
 
-\subsection{Vartotojas peržiūri statistika}
-	
-	Triggeris: Vartotojas aplikacijoje paspaudžia mygtuką ,,Peržiūrėti statistika" \\ \\
-	Aktoriai: vartotojas, administratorius \\ \\
-	Pagrindinis scenarijus: Vartotojas internetinėje aplikacijoje paspaudžia mygtuką peržiūrėti statistika. Sistema iš duombazės paima sąrašą administracijos patvirtintų statistinių duomenų ir pateikia juos vartotojui. Vartotojas gali paspausti ant atskirų statistinių duomenų ir gauti detalesnį jų apreašymą arba grįšti į pagrindinį aplikacijos langą. \\ \\
-	Alternatyvūs scenarijai: \\ \\
-1. Vartotojas bando peržiūrėti statistiką, tačiau nėra jokios statistikos patvirtintos administracijos. Vartotojui parodomas pranešimas, kad statistika šiuo metu nėra pasiekiama ir jam suteikiamas pasirinkimas grįšti į pagrindinį aplikacijos langą. \\
-2. Vartotojas bando pežiūrėti statistiką, tačiau sistema negauna atsakymo iš duomenų bazės. Vartotojui pateikiamas pranešimas, kad vyksta techniniai tvarkymai ir pasiūloma sugįšti vėliau. vartotojui suteikiama galimybė grįšti į pagrindinį aplikacijos langą
 
 \subsection{Paslaugų peržiūra}
 	Triggeris: Vartotojas aplikacijoje paspaudžia mygtuką ,,Paslaugos"\\ \\
@@ -695,6 +719,5 @@ Alternatyvus scenarijus: Vartotojas paspaudžia mygtuką ''Profilis'', jam atver
 
 \section{Asmeninis darbo indėlis}
 
-\section{Žodynas}
 
 \end{document}
