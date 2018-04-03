@@ -1,0 +1,37 @@
+\BOOKMARK [1][-]{section.1}{Anotacija}{}% 1
+\BOOKMARK [1][-]{section.2}{Įžanga}{}% 2
+\BOOKMARK [1][-]{section.3}{Reikalavimai}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Reikalavimų pataisymai}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Funkcinių reikalavimų sąrašas}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{Nefunkciniai\040reikalavimai}{section.3}% 6
+\BOOKMARK [1][-]{section.4}{Dalykinė sritis}{}% 7
+\BOOKMARK [2][-]{subsection.4.1}{Dalykinės srities žodynas}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.2}{dalykinies\040srities\040modelio\040diagrama}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.3}{Reikalavimų/esybių atsekamumo matrica}{section.4}% 10
+\BOOKMARK [1][-]{section.5}{Užduotys}{}% 11
+\BOOKMARK [2][-]{subsection.5.1}{Vartotojas įsideda pinigų į virtualią piniginę}{section.5}% 12
+\BOOKMARK [2][-]{subsection.5.2}{Vartotojas peržiūri savo mėnesio veiklą slidinėjimo trasose}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.3}{Vartotojas peržiūri vidutinį greitį pasirinktoje trasoje}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.4}{Paslaugų peržiūra}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.5}{Administratorius peržiūri sutarčių ataskaitą}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.6}{Vartotojas užsako paslaugas}{section.5}% 17
+\BOOKMARK [2][-]{subsection.5.7}{Vartotojas peržiūri užsakytas paslaugas}{section.5}% 18
+\BOOKMARK [2][-]{subsection.5.8}{Vartotojas rezervuoja trasą}{section.5}% 19
+\BOOKMARK [2][-]{subsection.5.9}{Vartotojas peržiūri informaciją apie trasą}{section.5}% 20
+\BOOKMARK [2][-]{subsection.5.10}{Vartotojas peržiūri orus}{section.5}% 21
+\BOOKMARK [2][-]{subsection.5.11}{Vartotojas rašo žinutę}{section.5}% 22
+\BOOKMARK [2][-]{subsection.5.12}{Vartotojas parašo atsiliepimą}{section.5}% 23
+\BOOKMARK [2][-]{subsection.5.13}{Administratorius peržiūri duomenų bazę}{section.5}% 24
+\BOOKMARK [2][-]{subsection.5.14}{Vartotojas peržiūri savo poziciją ir laiką praleistą trasoje}{section.5}% 25
+\BOOKMARK [2][-]{subsection.5.15}{Vartotojas\040nori\040pasikeisti\040asmeninis\040duomenis}{section.5}% 26
+\BOOKMARK [2][-]{subsection.5.16}{Reikalavimų - užduočių atsekamumo matrica}{section.5}% 27
+\BOOKMARK [1][-]{section.6}{Reikalavimų specifikacijos, dalykinės srities modelio ir užduočių diagramos peržiūros rezultatai}{}% 28
+\BOOKMARK [2][-]{subsection.6.1}{Reikalavimų specifikacijos peržiūra}{section.6}% 29
+\BOOKMARK [3][-]{subsubsection.6.1.1}{Funkcinių reikalavimų specifikacijos pokyčių lentelė}{subsection.6.1}% 30
+\BOOKMARK [3][-]{subsubsection.6.1.2}{Pataisyta funkcinių reikalavimų specifikacija}{subsection.6.1}% 31
+\BOOKMARK [3][-]{subsubsection.6.1.3}{Pataisyta nefunkcinių reikalavimų specifikacija}{subsection.6.1}% 32
+\BOOKMARK [2][-]{subsection.6.2}{Pataisytas dalykinės srities diagrama}{section.6}% 33
+\BOOKMARK [2][-]{subsection.6.3}{Use case peržiūra}{section.6}% 34
+\BOOKMARK [3][-]{subsubsection.6.3.1}{Use case pokyčių lentelė}{subsection.6.3}% 35
+\BOOKMARK [3][-]{subsubsection.6.3.2}{Pataisyti\040use\040case}{subsection.6.3}% 36
+\BOOKMARK [1][-]{section.7}{Išvada}{}% 37
