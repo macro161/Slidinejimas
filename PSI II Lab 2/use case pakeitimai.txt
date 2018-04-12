@@ -1,0 +1,3 @@
+use case 1: alternatyvus scenarijus 1 lauk
+use case 2: pagrindinis scenarijus: vartotojas paspaudžia mygtuka "Statistika", atsidaro langas "Vartotojo statistika"
+use case 3: statistikos palyginimas su kitais vartotojais
