@@ -250,8 +250,12 @@
     \caption{Reikalavimų/Esybių atsekamumo matrica}
     \label{fig:r/e_matrica}
 \end{figure}
+
+
+
+
 \section{Užduotys}
-\Large{Use case diagramos}
+\subsection{Use case diagramos}
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.75\textwidth]{useCaseVartotojas.png}
@@ -266,195 +270,119 @@
     \label{fig:AdministratoriausUseCase}
 \end{figure}
 
+\break
+\subsection{Robustiškumo diagramos}
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.30\textwidth]{mainmenu.png}
-    \caption{Pagrindinio meniu langas}
-    \label{fig:mainmenu}
+    \includegraphics[width=1.0\textwidth]{Rob1.png}
+    \caption{UC: Vartotojas įsideda pinigų į virtualią piniginę}
+    \label{fig:rob1}
 \end{figure}
-
-\subsection{Vartotojas įsideda pinigų į virtualią piniginę}
-Trigeris: Vartotojas aplikacijoje paspaudžia ant pinigų likučio ir atsidariusiame lange paspaudžia "Papildyti piniginę". \\ \\ 
-Aktoriai: Vartotojas, administratorius. \\ \\
-Pagrindinis scenarijus: Vartotojui pasirinkus "Papildyti sąskaitą" atsidaro langas "Mokėjimo pasirinkimas", kuriame vartotojas gali pasirinkti, kokiu būdu nori papildyti sąskaitą, bei norimą sumą(min 3€). Mokant top-up apmokėjimo būdu vartotojas nukreipiamas į šios paslaugos teikėjo puslapį, o pasirinkus pervedimą vartotojui tame pačiame lange parodoma mokėjimo informacija, naudojantis šiuo būdu pervesti pinigai virtualioje piniginėje atsiranda administratoriui patvirtinus banko pavedimą. Viską atlikęs vartotojas gali pasinaudoti lango apačioje esančiu mygtuku "Grįžti" ir patekti atgal į pagrindinį meniu. \\ \\
-Alternatyvūs scenarijai: \\ \\ 
-1. Vartotojas atlieka visus nurodytus žingsnius, papildymą atlikdamas bankinio pervedimo būdu, tačiau po 3 darbo dienų jo virtuali piniginė dar nepasipildė, tuo atveju   vartotojas spaudžia klaustuką aplikacijos pagrindiniame lange, jį paspaudus atsidaro langas "Pagalba", kuriame jis nusiunčia atitinkamą pranešimą, prisegdamas pavedimo išrašo kopiją, jam kuo skubiau atrašo administratorius. \\ \\
-2. Vartotojas atlieka visus nurodytus žingsnius, papildymą atlikdamas top-up būdu, tačiau mokėjimo metu dingsta prieiga prie interneto, tuo atveju tas papildymo procesas atšaukiamas ir vartotojui kitą kartą prisijungus tenka visą procesą pradėti nuo pradžių. \\ \\
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.20\textwidth]{Mokejimo_Pasirinkimas.png}
-    \caption{Mokėjimo pasirinkimo langas}
-    \label{fig:apmokejimas}
-\end{figure}
-\subsection{Vartotojas peržiūri savo mėnesio veiklą slidinėjimo trasose}
-Trigeris: Vartotojas aplikacijoje paspaudžia mygtuką "Statistika", atsidaro langas "Vartotojo statistika", jame vartotojas pasirenka mygtuką "Mano trasų istorija" \\ \\
-Aktoriai: Vartotojas \\ \\
-Pagrindinis scenarijus: Vartotojas paspaudžia mygtuką "Mano trasų istorija", atsidaro langas "Vartotojo istorija", šiame lange vartotojui tinklelio pavidalu(po du eskizus horizontaliai) pavaizduotos trasos(su pavadinimais), kuriose vartotojas lankėsi per paskutinias 30 dienų, jam paspaudus ant norimos trasos iššoka pop-up langas, kuriame išrašyta vartotojo vidutinis greitis, greičiausias laikas, bei visas praleistas laikas toje trasoje. Susipažinęs su informacija vartotojas spaudžia mygtuką "Gerai", taip pašalindamas pop-up langą ir sugrįždamas į  langą "Vartotojo istorija", kurio apačioje yra mygtukas, suteikiantis galimybę grįžti į pagrindinį meniu. \\ \\
-Alternatyvūs scenarijai: \\ \\
-1. Vartotojas paspaudžia mygtuką "Mano trasų istorija", tačiau per pastarąjį mėnesį jis nebuvo jokioje trasoje, sistema jam parodo atitinkamą pranešimą ir nukreipia atgal į pagrindinį aplikacijos langą. \\
-2. Vartotojas paspaudžia mygtuką "Mano trasų istorija", tačiau tuo metu neturi prisijungimo prie interneto, tuo atveju išvedamas pranešimas, kad norint pamatyti šią informaciją reikalingas interneto ryšys. Vartotojas nukreipiamas į pagrindinį meniu. \\
-\subsection{Vartotojas peržiūri vidutinį greitį pasirinktoje trasoje}
-Trigeris: Vartotojas aplikacijoje paspaudžia mygtuką "Statiska", atsidaro langas "Vartotojo statistika", jame vartotojas pasirenka "Vidutinis greitis" mygtuką. \\ \\
-Aktoriai: Vartotojas. \\ \\ 
-Pagrindinis scenarijus: Vartotojui pasirinkus mygtuką "Vidutinis greitis" atsidaro langas "Vidutiniai greičiai", kuriame vartotojas įveda norimos trasos pavadinimą(įvedus 3 pirmas raides sistema pasiūlo galimai tinkamus variantus), bei laikotarpį, kurio vidutinį greitį nori peržiūrėti, bei spaudžia mygtuką "Peržiūrėti". Vartotojui parodoma lentelė, kurioje surašyti kitų vartotojų vid. laikai toje trasoje, bei paryškintai rodomas vartotojo vidutinis laikas, bei šalia šios lentelės parodomas paprastas pasirinktos trasos eskizas. Lango apačioje, dešiniajame kampe vartotojas gali paspausti mygtuką "Grįžti", norėdamas patekti atgal į pagrindinį meniu. \\ \\
-Alternatyvūs scenarijai: \\ \\
-1. Vartotojas veda trasos pavadinimą, tačiau tokia trasa kurorte neegzistuoja, tuo atvėju vartotojui pranešame, kad tokios trasos rasti nepavyko, bei pasiūloma pasitikslinti trasos pavadinimą, bei bandyti dar kartą. \\ \\
-2. Vartotojas suveda trasos pavadinimą, bei norimą laikotarpį, tačiau patikrinus aptinkama, kad šiuo laikotarpiu vartotojas joje nebuvo. Tuo atveju jam parodomas atitinkamas pranešimas ir į ekraną išvedama lentelė, kurioje yra surašyti kitų vartotojų vidutiniai laikai. Vartotojas gali grįžti į pagrindinį meniu paspaudęs mygtuką "Grįžti", esantį lango apačioje, dešinėje pusėje. \\ \\
-\begin{figure}[h]
-\centering
-\parbox{5cm}{
-\includegraphics[width=4cm]{ManoTrasuIstorija.png}
-\caption{Vartotojo trasų istorija}
-\label{fig:2figsA}}
-\qquad
-\begin{minipage}{5cm}
-\includegraphics[width=4cm]{VidutiniaiGreičiai.png}
-\caption{Vidutiniai greičiai}
-\label{fig:2figsB}
-\end{minipage}
-\end{figure}
-
-
-\subsection{Paslaugų peržiūra}
-	Trigeris: Vartotojas aplikacijoje paspaudžia mygtuką "Paslaugos" ir jam atidaromas langas "Paslaugų peržiūra" \\
-	Pagrindis scenarijus: Vartotojas internetinėje aplikacijoje pasirenka peržiūrėti paslaugas. Sistema vartotoją nukelią į kitą aplikacijos langą "Paslaugų peržiūra", kuriame vartotojui suteikiamas pasirinkimas peržiūrėti paslaugas arba kurorte naudojamą techniką. Tiek paslaugos, tiek technika pateikiama sąrašu, prie kiekvieno sąrašo elemento yra paveiksliukas, atitinkantis konkrečią paslaugą, ir paslaugos ar įrangos pavadinimas. Vartotojas gali paspausti ant kiekvieno sąrašo elemento, norėdamas sužinoti detalesnę informaciją \\ \\
-Alternatyvūs scenarijai:\\ \\
-1. Sistema negali pateikti paslaugų sąrašo. Vartotojui parodomas informacinis pranešimas, kad vyksta techniniai darbai ir pasiūloma sugrįžti vėliau. Vartotojui suteikiama galimybė grįžti į pagrindinį aplikacijos langą.\\
-2. Nėra detalesnės informacijos apie paslaugą arba įrangą. Vartotojui parašoma, kad papildomos informacijos nėra ir pasiūloma susisiekti su klientų aptarnavimo skyriumi dėl detalesnės informacijos. Vartotojui parodomas aptarnavimo skyriaus elektroninis paštas ir suteikiama galimybė grįžti į pagrindinį aplikacijos langą.
-
-\subsection{Administratorius peržiūri sutarčių ataskaitą}
-	Trigeris: Administratorius aplikacijos suteiktoje darbo aplinkoje paspaudžia mygtuką "Sutarčių ataskaitos" ir jam atidaromas langas "Ataskaitos"\\
-	Pagrindinis scenarijus: Administratorius darbo aplinkoje pasirenka peržiūrėti sutarčių ataskaitas. Sistema iš duombazės gauna ir atvaizduoja sutarčių sąrašą lange "Ataskaitos". Kiekvienas sarašo elementas turi pavadinimą, sutarties numerį ir pasirašymo datą. Administratoriui suteikiama galimybė paspaudus ant individualaus sąrašo elemento matyti detalią konkrečios sutarties ataskaitą. Taip pat suteikiama galimybė ieškoti sutarties pagal jos numerį bei rušiuoti sutartis pagal datą\\ \\
-	Alternatyvūs scenarijai: \\ \\
-1. Administratoriui pasirinkus sutarčių peržiūrą sistemai nepavyksta susisiekti su duomenų baze. Administratoriui pateikiamas klaidos kodas, serverių statusas, nurodymai, kas padėtų išspręsti problemą, ir suteikiami techninės pagalbos kontaktai. \\ 
-2. Administratorius į paieškos lauką įveda sutarties numerį, tačiau tokia sutartis sistemoje neegzistuoja. Parodomas informacinis pranešimas, kad tokia sutartis neegzistuoja \\ \\
-
-\subsection{Vartotojas užsako paslaugas}
-	Trigeris: Vartotojas aplikacijoje paspaudžia mygtuką "užsakyti paslaugas", atidaromas langas "Paslaugos užsakymas"\\
-	Pagrindinis scenarijus: Vartotojas internetinėje aplikacijoje paspaudžia mygtuką "Užsisakyti paslaugas". Vartotojui pateikiamas paslaugų sąrašas lange "Paslaugos užsakymas" ir kiekvienos paslaugos kaina vienam žmogui. Vartotojas turi galimybę pasirinkti paslaugą ir užsakyti ją iki 10 žmonių, ir pasirinkti paslaugos laiką. Varotojui parašius žmonių skaičių ir patvirtinus užsakymą, jis atsiranda prekių krepšelyje ir paslaugos kaina pridedama prie bendros krepšelio kainos.\\ \\
-	Alternatyvūs scenarijai:  \\ \\
-1. Vartotojui pasirinkus užsakyti konkrečią paslaugą ir jos laiką ši paslauga tuo laiku negalima. Vartotojui parodomas pranešimas, kad paslauga tuo metu negalima. Vartotojui pateikiamas artimiausias laisvas laikas. \\ 
-2. Vartotojui pasirinkus užsakyti paslaugą sistema negali nusiųsti paslaugos užsakymo užklausos. Vartotojui parodomas informacinis pranešimas, kad vyksta techniniai darbai ir paslaugų užsakyti negalima. Vartotojui paskiūloma paslaugą užsisakyti telefonu paskambinus į kurortą, užsakymą parašyti elektroniniu paštu arba sugrįžti vėliau.\\ \\
-
-\subsection{Vartotojas peržiūri užsakytas paslaugas}
-	Trigeris: Vartotojas aplikacijoje paspaudžia mygtuką "Paslaugos", atidaromas langas "Palaugos"\\
-	Pagrindinis scenarijus: Vartotojas internetinėje aplikacijoje paspaudžia mygtuką "Paslaugos". Vartotojui pateikiamas jo užsakytų paslaugų sąrašas lange "Paslaugos". Vartotojui suteikiama galimybė paspaudus ant individualaus sąrašo elemento matyti detalią paslaugos informaciją.\\ \\
-	Alternatyvūs scenarijai:\\ \\
-1. Vartotojui pasirinkus užsakytų paslaugų peržiūrą nerandama užsakytų paslaugų. Vartotojui parodoma nuoroda užsakyti paslaugas. Vartotojui siūloma palaukti, jei neseniai užsisakė paslaugą. Vartotojui siūloma kreiptis pagalbos, jei nuo paslaugos užsakymo jau praėjo diena laiko.\\ \\
-2. Vartotojui pasirinkus užsakytų paslaugų peržiūrą sistema negali susisiekti su duomenų baze. Vartotojui parodomas pranešimas, kad vyksta techniniai darbai ir pasiūloma sugrįžti vėliau. Vartotojui pateikiama nuoroda grįžti į pagrindinį puslapį.\\ \\
-
-\begin{figure}[h]
-\centering
-\parbox{5cm}{
-\includegraphics[width=4cm]{GUI-17-uzsakytos-paslaugos(1).png}
-\caption{Vartotojas neužsisakė jokių paslaugų}
-\label{fig:2figsA}}
-\qquad
-\begin{minipage}{5cm}
-\includegraphics[width=4cm]{GUI-17-uzsakytos-paslaugos(2).png}
-\caption{Paslaugos ir jų užsakymo laikas}
-\label{fig:2figsB}
-\end{minipage}
-\begin{minipage}{5cm}
-\includegraphics[width=4cm]{GUI-17-uzsakytos-paslaugos(3).png}
-\caption{Detali paslaugos informacija}
-\label{fig:2figsC}
-\end{minipage}
-\end{figure}
-
-
-\subsection{Vartotojas rezervuoja trasą}
-	Trigeris: Vartotojas aplikacijoje paspaudžia mygtuką ,,Trasos"\\ \\
-	Aktoriai: Vartotojas\\ \\
-	Pagrindinis scenarijus: Vartotojas internetinėje aplikacijoje paspaudžia mygtuką ,,Trasos". Vartotojui pateikiamas trasų sąrašas. Vartotojui suteikiama galimybė paspaudus ant individualaus sąrašo elemento matyti detalią trasos informaciją ir laisvas rezervacijai dienas bei valandas. Vartotojui pasirinkus laiką ir patvirtinus užsakymą, užsakymas pridedamas į krepšelį. Vartotojui parodomas pranešimas apie sėkmingai pridėtą užsakymą ir pasiūloma peržiūrėti prekių krepšelį.\\ \\
-	Alternatyvūs scenarijai:\\ \\
-1. Vartotojui besirenkant rezervacijos laiką įvyksta kitas užsakymas ir jo pasirinktas laikas tampa užimtas. Vartotojui patvirtinus užsakymą parodomas pranešimas, kad trasa tuo laiku užimta. Vartotojui pasiūloma atnaujinti langą ir pamatyti naują trasos užimtumą.\\ \\
-2. Vartotojui paspaudus mygtuką ,,Trasos" trasų sąrašas yra tuščias. Vartotojui siūloma dėl trasų rezervacijos pasiteirauti telefonu ar elektroniniu paštu.\\ \\
-3. Vartotojui paspaudus mygtuką ,,Trasos" sistema negali susisiekti su duomenų baze. Vartotojui parodomas pranešimas, kad vyksta techniniai darbai ir pasiūloma sugrįžti vėliau. Vartotojui pateikiama nuoroda grįžti į pagrindinį puslapį.\\ \\
-
-\begin{figure}[h]
-\centering
-\parbox{5cm}{
-\includegraphics[width=4cm]{GUI-18-19-trasos.png}
-\caption{Visos trasos}
-\label{fig:2figsA}}
-\qquad
-\begin{minipage}{5cm}
-\includegraphics[width=4cm]{GUI-18-19-detali-trasos-informacija.png}
-\caption{Rezervuoti trasą}
-\label{fig:2figsB}
-\end{minipage}
-\end{figure}
-
-\subsection{Vartotojas peržiūri informaciją apie trasą}
-	Trigeris: Vartotojas aplikacijoje paspaudžia mygtuką "Trasos" ir jam atidaromas langas "Trasos"\\
-	Pagrindinis scenarijus: Vartotojas internetinėje aplikacijoje paspaudžia mygtuką "Trasos". Vartotojui atidaromas langas "Trasos", kuriame pateikiamas trasų sąrašas. Vartotojui paspaudus ant individualaus sąrašo elemento parodoma detalesnė trasos informacija.\\ \\
-	Alternatyvūs scenarijai:\\ \\
-1. Vartotojui paspaudus ant sąrašo elemento trūksta informacijos apie trasą. Vartotojui pasiūloma pasiteirauti telefonu ar elektroniniu paštu.\\ \\
-2. Vartotojui paspaudus mygtuką ,,Trasos" sistema negali susisiekti su duomenų baze. Vartotojui parodomas pranešimas, kad vyksta techniniai darbai ir pasiūloma sugrįžti vėliau. Vartotojui pateikiama nuoroda grįžti į pagrindinį puslapį.\\ \\
-	
-\subsection{Vartotojas peržiūri orus}
-	Trigeris: Vartotojas aplikacijoje paspaudžia mygtuką "Orai", atsidaro naujas langas "Orų peržiūra" \\ \\
-	Aktoriai: Vartotojas \\ \\
-Pagrindinis scenarijus: Vartotojas aplikacijoje paspaudžia mygtuką "Orai". Atidaromas naujas langas "Orų peržiūra", kuriame yra du mygtukai: "Dabartiniai orai" ir "Orų prognozė".Vartotojui pasirinkus ,,Dabartinė orų prognozė" pateikiami esami orų duomenys. Pasirinkus ,,Orų prognozė" vartotojo paprašoma pasirinkt kokios dienos prognozės nori matyti. Abiejuose pasirinkimuose pateikiami šie duomenys: temperatūra, drėgmė, krituliai bei vėjo greitis. Peržiūrėjęs orus vartotojas uždaro langą, paspausdamas mygtuką "Grįžti į pagrindinį meniu". \\
-	Alternatyvus scenarijus: Vartotojas paspaudžia mygtuką "Orai". Atidaromas naujas langas "Orų peržiūra", tačiau nepavyksta prisijungti prie orų API. Vartotojui parodomas pranešimas, jog nepavyko gauti orų informacijos, ir prašoma pabandyti vėliau. Vartotojas grąžinamas į pagrindinį meniu. \\ \\
-
+\vskip 1cm
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.80\textwidth]{GUI11.jpg}
-    \caption{Orų peržiūros langas}
-    \label{fig:orai}
+    \includegraphics[width=1.0\textwidth]{rob2.png}
+    \caption{UC: Vartotojas peržiūri savo mėnesio veiklą slidinėjimo trasose}
+    \label{fig:rob2}
 \end{figure}
-
-
-\subsection{Vartotojas rašo žinutę}
-	Trigeris: Vartotojas aplikacijoje paspaudžia mygtuką "Rašyti naują žinutę", jam iššoka langas "Nauja žinutė" \\ \\
-	Aktoriai: Vartotojas \\ \\
-	Pagrindinis scenarijus: Vartotojas aplikacijoje paspaudžia mygtuką "Rašyti naują žinutę", jam iššoka langas "Nauja žinutė". Vartotojas pasirenka gavėją (kitas vartotojas, administratorius ar maisto į kambarį tarnyba), nurodo gavėjo vardą (jei to reikia), nurodo žinutės temą, parašo žinutę ir ją išsiunčia paspausdamas mygtuką "Siųsti žinutę". Išsiuntus žinutę vartotojui atidaromas naujas langas "Nauja žinutė", kurį jis uždaro paspausdamas mygtuką "Atgal". \\ \\
-	Alternatyvus scenarijus: Vartotojas aplikacijoje paspaudžia mygtuką "Rašyti naują žinutę", jam iššoka langas "Nauja žinutė". Vartotojas pasirenka gavėją (kitas vartotojas, administratorius ar maisto į kambarį tarnyba), nurodo gavėjo vardą (jei to reikia), nurodo žinutės temą, parašo žinutę ir ją išsiunčia paspausdamas mygtuką "Siųsti žinutę", tačiau neteisingai nurodo gavėjo vardą ir žinutė neišsiunčiama. Sistema vartotojui išmeta klaidos pranešimą ir leidžia jam atlikti norimus pakeitimus. \\ \\
-
-\subsection{Vartotojas parašo atsiliepimą}
-	Trigeris: Vartotojas aplikacijoje paspaudžia mygtuką "Rašyti atsiliepimą", atsidaro naujas langas "Atsiliepimai" \\ \\
-	Aktoriai: Vartotojas \\ \\
-	Pagrindinis scenarijus: Vartotojas paspaudžia mygtuką "Rašyti atsiliepimą". Aplikacijoje atsidaro naujas langas "Atsiliepimai", kuriame vartotojas gali sukurti naują atsiliepimą. Vartotojas įvertina savo viešnagę 1-5 žvaigždutėm, bei atskirame laukelyje parašo savo komentarus. Baigęs rašyti savo atsiliepimą vartotojas paspaudžia mygtuką "Siųsti" ir atsiliepimas išsiunčiamas. Vartotojas paspaudžia mygtuką atgal ir grįžta į pagrindinį meniu. \\ \\
-	Alternatyvus scenarijus: Vartotojas paspaudžia mygtuką "Rašyti atsiliepimą". Aplikacijoje atsidaro naujas langas "Atsiliepimai", kuriame vartotojas gali sukurti naują atsiliepimą. Vartotojas laukelyje parašo komentarus apie savo viešnagę. Baigęs rašyti savo atsiliepimą vartotojas paspaudžia mygtuką "Siųsti", tačiau vartotojas neįvertino savo viešnagės. Vartotojo paprašoma pateikti 1-5 žvaigždučių įvertinimą. Vartotojas baigęs grįžta į pagrindinį meniu paspaudęs mygtuką "Atgal". \\ \\
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.30\textwidth]{GUI13.jpg}
-    \caption{Atsiliepimo parašymo langas}
-    \label{fig:atsiliepimas}
+    \includegraphics[width=1.0\textwidth]{rob3.png}
+    \caption{UC: Vartotojas palygina savo statistiką konkrečioje trasoje su kitų vartotojų}
+    \label{fig:rob3}
 \end{figure}
+\vskip 1cm
 
-
-\subsection{Administratorius peržiūri duomenų bazę}
-	Trigeris: Administratorius aplikacijoje paspaudžia mygtuką "Peržiūrėti duomenų bazę", jam atidaromas duombazės peržiūros langas "Duomenų bazės peržiūra"
-	Aktoriai: Administratorius
-	Pagrindinis scenarijus: Administratorius paspaudžia mygtuką "Peržiūrėti duomenų bazę", jam prisijungiama prie duomanų bazės ir atidaromas duombazės peržiūros langas "Duomenų bazės peržiūra". Administratorius stebi duomenų bazėje esančių objektų būseną. Administratorius pasirenka objektą ir pakeičia jo duomenis. Padaręs pakeitimus, administratorius juo išsaugo paspaudęs mygtuką "Saugoti" ir baigęs darbą su duombaze, nuo jos atsijungia paspausdamas mygtuką "Atgal". \\ \\
-	Alternatyvūs scenarijai:  \\ \\ 
-1. Administratorius paspaudžia mygtuką "Peržiūrėti duomenų bazę", tačiau sistemai nepavyksta prisijungti prie duomenų bazės. Administratoriui išmetamas pranešimas, jog nepavyko prisijungti prie duomenų bazės ir paprašoma jo bandyti vėliau. Administratorius grąžinamas į pagrindinį meniu. \\
-2. Administratorius paspaudžia mygtuką "Peržiūrėti duomenų bazę", jam prisijungiama prie duomanų bazės ir atidaromas duombazės peržiūros langas "Duomenų bazės peržiūra". Administratorius stebi duomenų bazėje esančių objektų būseną. Administratorius pasirenka objektą ir pakeičia jo duomenis. Padaręs pakeitimus administratorius bando atsijungti nuo duomenų bazės spausdamas mygtuką "Atgal". Sistema išmeta pranešimą, jog jo padaryti pakeitimai nėra išsaugoti ir paklausia, ar jis nori išsaugoti pakeitimus. Administratorius paspaudžia mygtuką "Taip", tada paspaudžia mygtuką "Saugoti" ir atsijungia nuo duomenų bazės paspausdamas mygtuką "Atgal", kuris grąžina jį į pagrindinį meniu. \\ \\
-
-\subsection{Vartotojas peržiūri savo poziciją ir laiką praleistą trasoje}
-	Trigeris: Vartotojas paspaudžia mygtuką ''Žemėlapis'', ir jam atidaromas langas "Žemėlapis"\\
-	Pagrindinis scenarijus: Vartotojas paspaudžia mygtuką ''Žemėlapis'', atsiveria langas "Žemėlapis", kuriame yra vaizduojamos visos trasos. Raudonu tašku pažymėta vartotojo dabartinė vieta. Apačioje rodomas trasos pavadinimas, praleistas ir likęs vartotojo laikas joje. Paspaudus ant trasų pavadinimo žemėlapyje atveriamas langas su detalesne informacija apie ją.\\ \\
-Alternatyvūs scenarijai:  \\ \\
-1. Vartotojas paspaudžia mygtuką ''Žemėlapis'', atveriamas langas su trasų žemėlapiu, bet nerandama vartotojo dabartinė vieta. Vartotojui parodomas langas, kuriame siūloma įsijungti GPS, o alternatyviai - pagalbos telefonas.\\
-2. Vartotojas paspaudžia mygtuką ''Žemėlapis'', atveriamas langas su trasų žemėlapiu. Paspaudus ant trasos pavadinimo, atveriamas naujas langas, bet trūksta informacijos jame.  Vartotojui pasiūloma pasiteirauti telefonu ar elektroniniu paštu. \\ \\ 
-
-\subsection{Vartotojas nori pasikeisti asmeninis duomenis}
-Trigeris: Vartotojas paspaudžia mygtuką ''Profilis'' ir jam atidaromas langas "Profilis" \\
-	Pagrindinis scenarijus: Vartotojas paspaudžia mygtuką ''Profilis'', jam atveriamas langas "Profilis", su laukais: Vardas, Pavardė, El. paštas, Keisti slaptažodį. Galima redaguoti visus laukus. Paspaudus 'Keisti slaptažodį'' sugeneruojamas naujas raktas ir jis išsiunčiamas į jo el. paštą. Apačioje yra mygtukas ''Atsijungti''. Jį paspaudus vartotojas atjungiamas nuo sistemos ir jam atveriamas prisijungimo langas.\\
-Alternatyvus scenarijus: Vartotojas paspaudžia mygtuką ''Profilis'', jam atveriamas langas su laukais: Vardas, Pavardė, El. paštas, Keisti slaptažodį.  Paspaudus ''Keisti slaptažodį'' sugeneruojamas naujas raktas ir pranešama, kad slaptažodis išsiųstas į nurodytą el. paštą. Vartotojui jo negavus, spaudžiamas mygtukas ''Siųsti iš naujo''. Išvedamas pranešimas, kad slaptažodis išsiųstas ir pasiūloma pasitikrinti  ''Spam'' folderį. \\ \\ 
-
-\subsection{Reikalavimų - užduočių atsekamumo matrica}
 \begin{figure}[h]
     \centering
-    \includegraphics[width=1\textwidth]{reik_uzd_matrica_before.png}
-    \caption{Reikalavimų/Užduočių atsekamumo matrica}
-    \label{fig:matrica}
+    \includegraphics[width=1.0\textwidth]{Rob4.png}
+    \caption{UC: Paslaugų peržiūra}
+    \label{fig:rob4}
 \end{figure}
+\vskip 1cm
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.0\textwidth]{Rob5.png}
+    \caption{UC: Administratorius peržiūri sutarčių ataskaita}
+    \label{fig:rob5}
+\end{figure}
+\vskip 1cm
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.0\textwidth]{Robust6.png}
+    \caption{UC: Paslaugų užsakymas}
+    \label{fig:rob6}
+\end{figure}
+\vskip 1cm
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.0\textwidth]{Robust7.png}
+    \caption{UC: Vartotojas peržiūri užsakytas paslaugas}
+    \label{fig:rob7}
+\end{figure}
+\vskip 1cm
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.0\textwidth]{Robust8.png}
+    \caption{UC: Vartotojas rezervuoja trasą}
+    \label{fig:rob8}
+\end{figure}
+\vskip 1cm
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.0\textwidth]{Rob9.png}
+    \caption{UC: Vartotojas peržiūri informaciją apie trasą}
+    \label{fig:rob9}
+\end{figure}
+\vskip 1cm
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.0\textwidth]{Rob10.png}
+    \caption{UC: Orų peržiūra}
+    \label{fig:rob10}
+\end{figure}
+\vskip 1cm
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.0\textwidth]{Rob11.png}
+    \caption{UC: Vartotojas rašo žinutę}
+    \label{fig:rob11}
+\end{figure}
+\vskip 1cm
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.0\textwidth]{rob12.png}
+    \caption{UC: Vartotojas rašo atsiliepimą}
+    \label{fig:rob12}
+\end{figure}
+\vskip 1cm
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.0\textwidth]{Robostiškumo14.png}
+    \caption{UC: Vartotojas žiūri žemėlapį}
+    \label{fig:rob14}
+\end{figure}
+\vskip 1cm
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.0\textwidth]{Robostiškumo15.png}
+    \caption{UC: Vartotojas žiūri savo profilį}
+    \label{fig:rob15}
+\end{figure}
+\vskip 1cm
+
 
 \section{Robastiškumo analizė}
 
