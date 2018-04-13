@@ -62,6 +62,7 @@ Mūsų komanda gavo kitos komandos pirmame semestre(PSI I) paruoštą slidinėji
 \subsection{Reikalavimų pataisymai}
 	\begin{itemize}
 		\item{X - ištrintas}
+		\item{P - pridėtas}
 		\item{M - pakeistas}
 		\item{N - nekeistas}
 	\end{itemize}
@@ -559,6 +560,7 @@ NFR 62 .&  Jei esybė neaktyvi ilgiau nei 15 minučių, jis turi būti automati�
 NFR 63. & Kuriant sistemą projekto komanda neturi naudotis nelegalia programine įranga.& N & - & - \\ \hline
 NFR 64. & Duomenų perdavimas ir saugojimas neturi pažeisti LR asmens duomenų teisinės apsaugos įstatymo. & N & - & -  \\ \hline
 NFR 65. & Esybių asmeniniai duomenys turi būti įslaptinti, t.y. tinklalapyje negali būti saugomi nekoduoti esybių duomenys. & N & - & - \\ \hline
+NFR & - & P & Perkeltas NFR iš užduoties & Minimali sąskaitos papildymo suma 3€\\ \hline
 
 
 
@@ -641,7 +643,7 @@ NFR 65. & Esybių asmeniniai duomenys turi būti įslaptinti, t.y. tinklalapyje 
 \subsection{Vartotojas įsideda pinigų į virtualią piniginę}
 Trigeris: Vartotojas aplikacijoje paspaudžia ant pinigų likučio ir atsidariusiame lange paspaudžia "Papildyti piniginę". \\ \\ 
 Aktoriai: Vartotojas, administratorius. \\ \\
-Pagrindinis scenarijus: Vartotojui pasirinkus "Papildyti sąskaitą" atsidaro langas "Mokėjimo pasirinkimas", kuriame vartotojas gali pasirinkti, kokiu būdu nori papildyti sąskaitą, bei norimą sumą(min 3€). Mokant top-up apmokėjimo būdu vartotojas nukreipiamas į šios paslaugos teikėjo puslapį, o pasirinkus pervedimą vartotojui tame pačiame lange parodoma mokėjimo informacija, naudojantis šiuo būdu pervesti pinigai virtualioje piniginėje atsiranda administratoriui patvirtinus banko pavedimą. Viską atlikęs vartotojas gali pasinaudoti lango apačioje esančiu mygtuku "Grįžti" ir patekti atgal į pagrindinį meniu. \\ \\
+Pagrindinis scenarijus: Vartotojui pasirinkus "Papildyti sąskaitą" atsidaro langas "Mokėjimo pasirinkimas", kuriame vartotojas gali pasirinkti, kokiu būdu nori papildyti sąskaitą, bei norimą sumą. Mokant top-up apmokėjimo būdu vartotojas nukreipiamas į šios paslaugos teikėjo puslapį, o pasirinkus pervedimą vartotojui tame pačiame lange parodoma mokėjimo informacija, naudojantis šiuo būdu pervesti pinigai virtualioje piniginėje atsiranda administratoriui patvirtinus banko pavedimą. Viską atlikęs vartotojas gali pasinaudoti lango apačioje esančiu mygtuku "Grįžti" ir patekti atgal į pagrindinį meniu. \\ \\
 Alternatyvūs scenarijai: \\ \\ 
 1. Vartotojas atlieka visus nurodytus žingsnius, papildymą atlikdamas bankinio pervedimo būdu, tačiau po 3 darbo dienų jo virtuali piniginė dar nepasipildė, tuo atveju   vartotojas spaudžia klaustuką aplikacijos pagrindiniame lange, jį paspaudus atsidaro langas "Pagalba", kuriame jis nusiunčia atitinkamą pranešimą, prisegdamas pavedimo išrašo kopiją, jam kuo skubiau atrašo administratorius. \\ \\
 2. Vartotojas atlieka visus nurodytus žingsnius, papildymą atlikdamas top-up būdu, tačiau mokėjimo metu dingsta prieiga prie interneto, tuo atveju tas papildymo procesas atšaukiamas ir vartotojui kitą kartą prisijungus tenka visą procesą pradėti nuo pradžių. \\ \\
@@ -1008,6 +1010,7 @@ Alternatyvus scenarijus: Vartotojas paspaudžia mygtuką ''Profilis'', jam atver
 	\item Kuriant sistemą projekto komandai draudžiama naudotis nelegalia programine įranga
 	\item Duomenų perdavimas ir saugojimas neturi pažeisti LR asmens duomenų teisinės apsaugos įstatymo.
 	\item Esybių asmeniniai duomenys turi būti įslaptinti t.y. tinklapyje negali būti saugomi nekoduoti duomenys
+	\item Minimali sąskaitos papildymo suma 3€
 
 \end{enumerate}
 
