@@ -412,14 +412,18 @@
     \label{fig:domainfixed}
 \end{figure}
 \vskip 1cm
-\subsection{Pataisyta reikalavimų specifikacija}
 
-\section{Techninė architektūra}
 
 \section{Techninė architektūra}
 \subsection{sistemos architektūra}
 Sistema išskaidyta į 3 sluoksnius, View, controller ir model. View sluoksnyje talpiname vartotojo ir administratoriaus grafinius interfeisus, kurie bendrauja su Controller esančiais komponentais. Controller sluoksnyje esantys komponentai yra tarpiniai tarp grafinio interfeiso ir back-end, komponentai esantys jame gavę grafinio interfeiso signalus juos apdoroja ir kreipiasi į Model, kuriame esantys komponentai pagrinde skirti duomeų bazės redagavimui. Norint atvaizduoti atnaujintą informaciją vartotojui, model esantys komponentai perduoda informaciją į controller ir pastarasis perduoda informaciją view, kur ją išvysta vartotojas. 
 \subsection{Išdestymo diagrama}
+	\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.0\textwidth]{Deployment.png}
+    \caption{Pataisyta Domain diagrama}
+    \label{fig:domainfixed}
+\end{figure}
 \subsection{Architektūriniai sprendimai}
 \subsubsection{Front-end} Front-end'o kūrimui pasirinkome Javascript biblioteką ReactJS. Šią biblioteką pasirinkome dėl jos modularaus dizaino. Su React savo interfeisa galėsime išskaidyti į komponentus kas komandai leis lengviau įgyvendinti jį. Beto už šios bibliotekos vystyma yra atsakingi Facebook ir Instagram kas suteiks mums patikimumo norint ateityje keisti interfeisą. Ši biblioteka yra open source kas leis mums nemokamai naudoti juos.
 \subsubsection{Back-end} Back-end'us rasyti naudosime ASP.NET Web API framework'a. Nes su šiuo framework'u dėl kelių priežasčių. Pirma - komanda jau naudojo šią technologija kituose projektuose ir yra susipažinusi kaip framework'as veikia. Antra - šis framework'as yra pakankamai lengvai naudojamas, paprasta kurti tiek mažas tiek didelias sisterma, todėl tai užtikrins plėtimasi ateityje. Trečia - kaina, šiuo metu ASP.Net framework'a programuotojams yra suteikiamas nemokamai. Nors šis framework'as ir nėra open source tačiau projektui nėra numatyta jokių išskirtinių elementų.
