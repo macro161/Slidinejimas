@@ -413,5 +413,8 @@
 
 \section{Techninė architektūra}
 
+\section{Techninė architektūra}
+\subsection{sistemos architektūra}
+Sistema išskaidyta į 3 sluoksnius, View, controller ir model. View sluoksnyje talpiname vartotojo ir administratoriaus grafinius interfeisus, kurie bendrauja su Controller esančiais komponentais. Controller sluoksnyje esantys komponentai yra tarpiniai tarp grafinio interfeiso ir back-end, komponentai esantys jame gavę grafinio interfeiso signalus juos apdoroja ir kreipiasi į Model, kuriame esantys komponentai pagrinde skirti duomeų bazės redagavimui. Norint atvaizduoti atnaujintą informaciją vartotojui, model esantys komponentai perduoda informaciją į controller ir pastarasis perduoda informaciją view, kur ją išvysta vartotojas. 
 
 \end{document}
