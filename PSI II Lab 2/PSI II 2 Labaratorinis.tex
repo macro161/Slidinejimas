@@ -30,8 +30,8 @@
 \faculty{Matematikos ir informatikos fakultetas}
 \department{Programų sistemų katedra}
 \papertype{Programų sistemų inžinerija II laboratorinis darbas II}
-\title{Reikalavimų apibrėžimas}
-\titleineng{Requirements specification}
+\title{Reikalavimų analizė ir techninė architektūra}
+\titleineng{Requirements Analysis and Technical Architecture}
 \status{2 kurso 3 grupės studentai}
 
 
@@ -124,12 +124,12 @@
 \begin{enumerate}
 
 	
-	\item Sistema neleidžia vertinti kurorto kelis kartus tam pačiam asmeniui dažniau, nei kartą per 2 mėnesius.
+	\item Sistema neleidžia vertinti kurorto kelis kartus tam pačiam asmeniui dažniau nei kartą per 2 mėnesius.
 
 	\item Atsiskaitinėjant vartotojas gali identifikuotis piršto antspaudu.
 	\item Sistema leidžia vartotojui už paslaugas atsiskaityti e-bankininkyste.
-	\item Slidinėjimo trasų įrangos bei kambarių pavadinimams maksimaliai skiriama 64 simboliai
-	\item Slidinėjimo trasos ilgis vaiduojamas vieno skaičiaus po kablelio tikslumu
+	\item Slidinėjimo trasų įrangos bei kambarių pavadinimams maksimaliai skiriama 64 simboliai.
+	\item Slidinėjimo trasos ilgis vaizduojamas vieno skaičiaus po kablelio tikslumu
 	\begin{enumerate}
 		\item Ilgio matavimo vienetas - kilometras
 	\end{enumerate}
@@ -195,34 +195,15 @@
 	\item Kuriant sistemą projekto komandai draudžiama naudotis nelegalia programine įranga
 	\item Duomenų perdavimas ir saugojimas neturi pažeisti LR asmens duomenų teisinės apsaugos įstatymo.
 	\item Esybių asmeniniai duomenys turi būti įslaptinti t.y. tinklapyje negali būti saugomi nekoduoti duomenys
-	\item Minimali sąskaitos papildymo suma 3€
+	\item Minimali sąskaitos papildymo suma yra 3€
 
 \end{enumerate}
 
 
 \pagebreak
 
-\subsection{Pataisytas dalykinės srities diagrama}
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.80\textwidth]{DomainModelFixed.png}
-    \caption{Pataisyta dalykines srities diagrama}
-    \label{fig:Pataisyta dalykinės srities diagrama}
-\end{figure}
-\subsection{Use case peržiūra}
 
 
-\subsection{Pakeitimai}
-
-\begin{longtable}{ | p{0.2\textwidth}|p{0.2\textwidth}|p{0.5\textwidth}| }  \hline
-	Pataisymo nr. & Use case numeris & Klaidos aprašas \\ \hline
-	1 & 1 & Ištrintas užduotyje esantis NFR ir pridėtas į NFR sąrašą\\ \hline
-	2 & 2 & Ištrintas užduotyje esantis NFR, pakeistas į FR ir pridėtas į FR sąrašą\\ \hline
-	3 & 5 & Aktorius pakeistas iš administratoriaus į vartotoją\\ \hline
-	4 & 6 & Pakeisti alternatyvūs scenarijai, pataisytas pagrindinis scenarijus\\ \hline
-	5 & 8 & Pridėtas alternatyvus scenarijus\\ \hline
-	6 & 14 & Išimtas vienas metodas, kadangi turi būti rodoma tik dabartinės trasos informacija\\ \hline
-\end{longtable}
 
 
 \section{Dalykinė sritis}
@@ -246,18 +227,17 @@
 	\item Atsiliepimas - Simbolių rinkinys, parašytas vartotojo apie aplikaciją
 	\item Sutartys - Rašytinis susitarimas tarp vartotojo ir slidinėjimo kurorto
 	\item Slidinėjimo trasos - Informacija apie slidinėjimo trasas
-	\item Kurorto statistika - Duomenys renkami apie kurortą
+	\item Kurorto statistika - Duomenys, renkami apie kurortą
 \end{enumerate}
 \pagebreak
 
-\subsection{dalykinies srities modelio diagrama}
+\subsection{Pataisyta dalykinės srities diagrama}
 \begin{figure}[h]
     \centering
-    \includegraphics[width=1\textwidth]{DomainModel.png}
-    \caption{Domain model diagrama}
-    \label{fig:DomainModel}
+    \includegraphics[width=0.80\textwidth]{DomainModelFixed.png}
+    \caption{Pataisyta dalykinės srities diagrama}
+    \label{fig:dalykinesdiagrama}
 \end{figure}
-\pagebreak
 
 \subsection{Reikalavimų/esybių atsekamumo matrica}	
 \begin{figure}[h]
@@ -288,7 +268,7 @@
 
 \break
 
-\section{Robastiškumo analizė}
+\section{Robustiškumo analizė}
 \begin{figure}[h]
     \centering
     \includegraphics[width=1.0\textwidth]{Rob1.png}
@@ -315,7 +295,7 @@
 \begin{figure}[h]
     \centering
     \includegraphics[width=1.0\textwidth]{Rob4.png}
-    \caption{UC: Paslaugų peržiūra}
+    \caption{UC: Vartotojas nori peržiūrėti paslaugas}
     \label{fig:rob4}
 \end{figure}
 \vskip 1cm
@@ -323,7 +303,7 @@
 \begin{figure}[h]
     \centering
     \includegraphics[width=1.0\textwidth]{Rob5.png}
-    \caption{UC: Administratorius peržiūri sutarčių ataskaita}
+    \caption{UC: Administratorius peržiūri sutarčių ataskaitą}
     \label{fig:rob5}
 \end{figure}
 \vskip 1cm
@@ -331,8 +311,7 @@
 \begin{figure}[h]
     \centering
     \includegraphics[width=1.0\textwidth]{rob6.png}
-    \caption{UC: Paslaugų užsakymas}
-    \label{fig:rob6}
+    \caption{UC: Vartotojas nori užsisakyti paslaugas}
 \end{figure}
 \vskip 1cm
 
@@ -363,7 +342,7 @@
 \begin{figure}[h]
     \centering
     \includegraphics[width=1.0\textwidth]{Rob10.png}
-    \caption{UC: Orų peržiūra}
+    \caption{UC: Vartotojas peržiūri orų prognozes}
     \label{fig:rob10}
 \end{figure}
 \vskip 1cm
@@ -388,7 +367,7 @@
     \centering
     \includegraphics[width=1.0\textwidth]{Robostiškumo14.png}
     \caption{UC: Vartotojas žiūri žemėlapį}
-    \label{fig:rob14}
+    \label{fig:rob14-2}
 \end{figure}
 \vskip 1cm
 
@@ -403,7 +382,19 @@
 
 
 \section{Eskizinio projekto peržiūra}
-\subsection{Pataisytos robustiškumo diagramos}
+\subsection{Pakeitimai}
+
+Pataisyti reikalavimai ir robustiškumo diagramos yra praeituose skyriuose.
+\begin{longtable}{ | p{0.2\textwidth}|p{0.2\textwidth}|p{0.5\textwidth}| }  \hline
+	Pataisymo nr. & Use Case numeris & Klaidos aprašas \\ \hline
+	1 & 1 & Ištrintas užduotyje esantis NFR ir pridėtas į NFR sąrašą\\ \hline
+	2 & 2 & Ištrintas užduotyje esantis NFR, pakeistas į FR ir pridėtas į FR sąrašą\\ \hline
+	3 & 5 & Aktorius pakeistas iš administratoriaus į vartotoją\\ \hline
+	4 & 6 & Pakeisti alternatyvūs scenarijai, pataisytas pagrindinis scenarijus\\ \hline
+	5 & 8 & Pridėtas alternatyvus scenarijus\\ \hline
+	6 & 14 & Išimtas vienas metodas, kadangi turi būti rodoma tik dabartinės trasos informacija\\ \hline
+\end{longtable}
+
 \subsection{Pataisyta Domain diagrama}
 \begin{figure}[h]
     \centering
@@ -416,17 +407,25 @@
 
 \section{Techninė architektūra}
 \subsection{sistemos architektūra}
-Sistema išskaidyta į 3 sluoksnius, View, controller ir model. View sluoksnyje talpiname vartotojo ir administratoriaus grafinius interfeisus, kurie bendrauja su Controller esančiais komponentais. Controller sluoksnyje esantys komponentai yra tarpiniai tarp grafinio interfeiso ir back-end, komponentai esantys jame gavę grafinio interfeiso signalus juos apdoroja ir kreipiasi į Model, kuriame esantys komponentai pagrinde skirti duomeų bazės redagavimui. Norint atvaizduoti atnaujintą informaciją vartotojui, model esantys komponentai perduoda informaciją į controller ir pastarasis perduoda informaciją view, kur ją išvysta vartotojas. 
-\subsection{Išdestymo diagrama}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.0\textwidth]{KomponentuDiagrama.png}
+    \caption{Komponentų diagrama}
+    \label{fig:KomponentuDiagrama}
+\end{figure}
+Sistema išskaidyta į 3 sluoksnius, View, Controller ir Model. View sluoksnyje talpiname vartotojo ir administratoriaus grafinius interfeisus, kurie bendrauja su Controller esančiais komponentais. Controller sluoksnyje esantys komponentai yra tarpiniai tarp grafinio interfeiso ir back-end. Komponentai, esantys jame, gavę grafinio interfeiso signalus juos apdoroja ir kreipiasi į Model, kuriame esantys komponentai pagrinde skirti duomenų bazės redagavimui. Norint atvaizduoti atnaujintą informaciją vartotojui, Model esantys komponentai perduoda informaciją į Controller ir pastarasis perduoda informaciją View, kur ją išvysta vartotojas.
+\pagebreak
+\subsection{Išdėstymo diagrama}
 	\begin{figure}[h]
     \centering
     \includegraphics[width=1.0\textwidth]{Deployment.png}
-    \caption{Pataisyta Domain diagrama}
+    \caption{Išdėstymo diagrama}
     \label{fig:domainfixed}
 \end{figure}
+\pagebreak
 \subsection{Architektūriniai sprendimai}
-\subsubsection{Front-end} Front-end'o kūrimui pasirinkome Javascript biblioteką ReactJS. Šią biblioteką pasirinkome dėl jos modularaus dizaino. Su React savo interfeisa galėsime išskaidyti į komponentus kas komandai leis lengviau įgyvendinti jį. Beto už šios bibliotekos vystyma yra atsakingi Facebook ir Instagram kas suteiks mums patikimumo norint ateityje keisti interfeisą. Ši biblioteka yra open source kas leis mums nemokamai naudoti juos.
-\subsubsection{Back-end} Back-end'us rasyti naudosime ASP.NET Web API framework'a. Nes su šiuo framework'u dėl kelių priežasčių. Pirma - komanda jau naudojo šią technologija kituose projektuose ir yra susipažinusi kaip framework'as veikia. Antra - šis framework'as yra pakankamai lengvai naudojamas, paprasta kurti tiek mažas tiek didelias sisterma, todėl tai užtikrins plėtimasi ateityje. Trečia - kaina, šiuo metu ASP.Net framework'a programuotojams yra suteikiamas nemokamai. Nors šis framework'as ir nėra open source tačiau projektui nėra numatyta jokių išskirtinių elementų.
+\subsubsection{Front-end} Front-end'o kūrimui pasirinkome Javascript biblioteką ReactJS. Šią biblioteką pasirinkome dėl jos moduliaraus dizaino. Su React savo interfeisą galėsime išskaidyti į komponentus, kas leis komandai lengviau įgyvendinti jį. Be to, už šios bibliotekos vystymą yra atsakingi Facebook ir Instagram, kas suteiks mums patikimumo norint ateityje keisti interfeisą. Ši biblioteka yra open source, kas leis mums nemokamai naudoti juos.
+\subsubsection{Back-end} Back-end'ą rašyti naudosime ASP.NET Web API framework'a. Pasirinkome šį framework'ą dėl kelių priežasčių. Pirma - komanda jau naudojo šią technologija kituose projektuose ir yra susipažinusi, kaip framework'as veikia. Antra - šis framework'as yra pakankamai lengvai naudojamas, paprasta kurti tiek mažas, tiek didelias sistermas, todėl tai užtikrins plėtimąsi ateityje. Trečia - kaina, šiuo metu ASP.Net framework'as programuotojams yra suteikiamas nemokamai. Nors šis framework'as ir nėra open source, tačiau projektui nėra numatyta jokių išskirtinių elementų.
 
 
 \end{document}
