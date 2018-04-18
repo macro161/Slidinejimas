@@ -1,2 +1,20 @@
 \BOOKMARK [1][-]{section.1}{Anotacija}{}% 1
-\BOOKMARK [1][-]{section.2}{testas}{}% 2
+\BOOKMARK [1][-]{section.2}{Reikalavimai}{}% 2
+\BOOKMARK [2][-]{subsubsection.2.0.1}{Pataisyta funkcinių reikalavimų specifikacija}{section.2}% 3
+\BOOKMARK [3][-]{subsubsection.2.0.2}{Pataisyta nefunkcinių reikalavimų specifikacija}{subsubsection.2.0.1}% 4
+\BOOKMARK [1][-]{section.3}{Dalykinė sritis}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Dalykinės srities žodynas}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Pataisyta dalykinės srities diagrama}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.3}{Reikalavimų/esybių atsekamumo matrica}{section.3}% 8
+\BOOKMARK [1][-]{section.4}{Užduotys}{}% 9
+\BOOKMARK [2][-]{subsection.4.1}{Use\040case\040diagramos}{section.4}% 10
+\BOOKMARK [1][-]{section.5}{Robustiškumo analizė}{}% 11
+\BOOKMARK [1][-]{section.6}{Eskizinio projekto peržiūra}{}% 12
+\BOOKMARK [2][-]{subsection.6.1}{Pakeitimai}{section.6}% 13
+\BOOKMARK [2][-]{subsection.6.2}{Pataisyta\040Domain\040diagrama}{section.6}% 14
+\BOOKMARK [1][-]{section.7}{Techninė architektūra}{}% 15
+\BOOKMARK [2][-]{subsection.7.1}{sistemos architektūra}{section.7}% 16
+\BOOKMARK [2][-]{subsection.7.2}{Išdėstymo diagrama}{section.7}% 17
+\BOOKMARK [2][-]{subsection.7.3}{Architektūriniai sprendimai}{section.7}% 18
+\BOOKMARK [3][-]{subsubsection.7.3.1}{Front-end}{subsection.7.3}% 19
+\BOOKMARK [3][-]{subsubsection.7.3.2}{Back-end}{subsection.7.3}% 20

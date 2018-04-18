@@ -4,4 +4,40 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.}Anotacija}{2}{section.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.}testas}{3}{section.2}
+\contentsline {section}{\numberline {2.}Reikalavimai}{3}{section.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.0.1.}Pataisyta funkcinių reikalavimų specifikacija}{3}{subsubsection.2.0.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.0.2.}Pataisyta nefunkcinių reikalavimų specifikacija}{4}{subsubsection.2.0.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.}Dalykinė sritis}{8}{section.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.}Dalykinės srities žodynas}{8}{subsection.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.}Pataisyta dalykinės srities diagrama}{9}{subsection.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.}Reikalavimų/esybių atsekamumo matrica}{9}{subsection.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.}Užduotys}{10}{section.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.}Use case diagramos}{10}{subsection.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.}Robustiškumo analizė}{11}{section.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.}Eskizinio projekto peržiūra}{19}{section.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.}Pakeitimai}{19}{subsection.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.}Pataisyta Domain diagrama}{19}{subsection.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.}Techninė architektūra}{20}{section.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1.}sistemos architektūra}{20}{subsection.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2.}Išdėstymo diagrama}{21}{subsection.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.}Architektūriniai sprendimai}{22}{subsection.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.3.1.}Front-end}{22}{subsubsection.7.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.3.2.}Back-end}{22}{subsubsection.7.3.2}
