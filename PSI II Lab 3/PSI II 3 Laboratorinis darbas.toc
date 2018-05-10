@@ -6,10 +6,38 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.}Sistemos detalus projektas}{3}{section.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.}Detalaus projekto peržiūra}{4}{section.3}
+\contentsline {subsection}{\numberline {2.1.}Sistemos užduotys}{3}{subsection.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.}Testavimo planas ir scenarijai}{5}{section.4}
+\contentsline {subsubsection}{\numberline {2.1.1.}Užduočių diagramos}{3}{subsubsection.2.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.}Sistemos techninė architektūra}{6}{section.5}
+\contentsline {subsubsection}{\numberline {2.1.2.}Robastiškumo diagramos}{4}{subsubsection.2.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.}Sistemos realizacija}{7}{section.6}
+\contentsline {subsubsection}{\numberline {2.1.3.}Sekų diagramos}{4}{subsubsection.2.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.}Sistemos struktūra}{4}{subsection.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.1.}Klasių diagrama}{4}{subsubsection.2.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.}Detalaus projekto peržiūra}{5}{section.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.}Peržiūra}{5}{subsection.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.}Atsekamumas}{5}{subsection.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.}Testavimo planas ir scenarijai}{6}{section.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.}Programinių vienetų testai}{6}{subsection.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.}Sistemos užduočių testai}{6}{subsection.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.}Sistemos techninė architektūra}{7}{section.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.}Sistemos komponentų diagrama(galutinė pataisyta)}{7}{subsection.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.}Išdėstymo diagrama(galutinė pataisyta)}{7}{subsection.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.}Sistemos realizacija}{8}{section.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.}Duomenų bazės schema}{8}{subsection.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.}Pradiniai programų kodai ir aprašas}{8}{subsection.6.2}

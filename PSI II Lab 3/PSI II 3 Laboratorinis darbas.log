@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6500 64-bit) (preloaded format=xelatex 2017.10.31)  17 APR 2018 10:40
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6500 64-bit) (preloaded format=xelatex 2017.10.31)  10 MAY 2018 13:15
 entering extended mode
 **"./PSI II 3 Laboratorinis darbas.tex"
 ("PSI II 3 Laboratorinis darbas.tex"
@@ -1433,36 +1433,45 @@ File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 ] [2
 
-] [3
+]
+File: useCaseVartotojas.png Graphic file (type bmp)
+<useCaseVartotojas.png>
+File: useCaseAdministratorius.png Graphic file (type bmp)
+<useCaseAdministratorius.png>
+ [3
 
-] [4
-
-] [5
+] [4] [5
 
 ] [6
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 62.
- [7
+] [7
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 62.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
+ [8
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
 
 ("PSI II 3 Laboratorinis darbas.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 62.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 62.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 93.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 93.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to '"PSI II 3 Laboratorinis darbas".run.x
 ml'.
 \openout1 = `"PSI II 3 Laboratorinis darbas.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29965 strings out of 427823
- 545614 string characters out of 3152321
- 1038313 words of memory out of 3000000
- 33644 multiletter control sequences out of 15000+200000
- 543550 words of font info for 88 fonts, out of 3000000 for 9000
+ 29989 strings out of 427823
+ 546112 string characters out of 3152321
+ 1041313 words of memory out of 3000000
+ 33663 multiletter control sequences out of 15000+200000
+ 543558 words of font info for 89 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  67i,11n,96p,10522b,3426s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on PSI II 3 Laboratorinis darbas.pdf (8 pages).
+Output written on PSI II 3 Laboratorinis darbas.pdf (9 pages).
