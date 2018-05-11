@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6630 64-bit) (preloaded format=xelatex 2018.4.22)  11 MAY 2018 20:19
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6630 64-bit) (preloaded format=xelatex 2018.4.22)  11 MAY 2018 20:22
 entering extended mode
 **"./PSI II 3 Laboratorinis darbas.tex"
 ("PSI II 3 Laboratorinis darbas.tex"
@@ -1657,16 +1657,20 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 ] [20
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 298.
- [21
+] [21
+
+] [22
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 298.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 301.
+ [23
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 301.
 
 ("PSI II 3 Laboratorinis darbas.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 298.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 298.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 301.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 301.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1685,4 +1689,4 @@ Here is how much of TeX's memory you used:
  1328 hyphenation exceptions out of 8191
  67i,11n,96p,10565b,787s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on PSI II 3 Laboratorinis darbas.pdf (22 pages).
+Output written on PSI II 3 Laboratorinis darbas.pdf (24 pages).
