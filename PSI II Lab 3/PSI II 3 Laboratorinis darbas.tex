@@ -285,7 +285,21 @@
 
 \section{Sistemos techninė architektūra}
 	\subsection{Sistemos komponentų diagrama}
+			\begin{figure}[h]
+    				\centering
+    				\includegraphics[width=0.75\textwidth]{KomponentuDiagrama.png}
+    				\caption{Komponentų diagrama}
+    				\label{fig:Komponentų diagrama}
+			\end{figure}
+
+	Sistema išskaidyta į 3 sluoksnius, View, Controller ir Model. View sluoksnyje talpiname vartotojoir administratoriaus grafinius interfeisus, kurie bendrauja su Controller esančiais komponentais. Controller sluoksnyje esantys komponentai yra tarpiniai tarp grafinio interfeiso ir back-end. Komponentai, esantys jame, gavę grafinio interfeiso signalus juos apdoroja ir kreipiasi į Model, kuriame esantys komponentai pagrinde skirti duomenų bazės redagavimui. Norint atvaizduoti atnaujintą informaciją vartotojui, Model esantys komponentai perduoda informaciją į Controller ir pastarasis perduoda informaciją View, kur ją išvysta vartotojas.
 	\subsection{Išdėstymo diagrama}
+			\begin{figure}[h]
+    				\centering
+    				\includegraphics[width=0.75\textwidth]{Deployment.png}
+    				\caption{Komponentų diagrama}
+    				\label{fig:Komponentų diagrama}
+			\end{figure}
 
 \section{Sistemos realizacija}
 	\subsection{Duomenų bazės schema}
