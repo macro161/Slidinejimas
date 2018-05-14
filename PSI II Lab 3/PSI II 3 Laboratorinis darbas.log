@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6630 64-bit) (preloaded format=xelatex 2018.4.22)  15 MAY 2018 02:11
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6630 64-bit) (preloaded format=xelatex 2018.4.22)  15 MAY 2018 02:51
 entering extended mode
 **"./PSI II 3 Laboratorinis darbas.tex"
 ("PSI II 3 Laboratorinis darbas.tex"
@@ -1287,10 +1287,6 @@ LaTeX Warning: Label `fig:Vartotojas palygina savo statistiką trasoje' multiply
 LaTeX Warning: Label `fig:Paslaugų peržiūra' multiply defined.
 
 
-LaTeX Warning: Label `fig:Vartotojas peržiūri sutarčių ataskaita' multiply defi
-ned.
-
-
 LaTeX Warning: Label `fig:Vartotojas užsisako paslaugas' multiply defined.
 
 
@@ -1319,6 +1315,9 @@ LaTeX Warning: Label `fig:Vartotojas peržiūri žemėlapį' multiply defined.
 
 LaTeX Warning: Label `fig:Vartotojas keičia asmeninius duomenis' multiply defin
 ed.
+
+
+LaTeX Warning: Label `fig:Komponentų diagrama' multiply defined.
 
 )
 \openout1 = `"PSI II 3 Laboratorinis darbas.aux"'.
@@ -1576,7 +1575,7 @@ File: rob14.png Graphic file (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[4] [5] [6] [7] [8] [9] [10]
+[4] [5] [6] [7] [8] [9]
 File: seq1.png Graphic file (type bmp)
 <seq1.png>
 File: seq2.png Graphic file (type bmp)
@@ -1637,13 +1636,13 @@ File: seq14.png Graphic file (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11
+[10
 
-] [12] [13] [14] [15] [16] [17
+] [11] [12] [13] [14] [15] [16
+
+] [17
 
 ] [18
-
-] [19
 
 ]
 File: KomponentuDiagrama.png Graphic file (type bmp)
@@ -1654,21 +1653,21 @@ File: Deployment.png Graphic file (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[20
+[19
 
-] [21] [22
+] [20] [21
 
-] [23
-
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 299.
- [24
+] [22
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 299.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 300.
+ [23
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 300.
  ("PSI II 3 Laboratorinis darbas.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 299.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 299.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 300.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 300.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1679,12 +1678,12 @@ ml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30680 strings out of 427836
- 560826 string characters out of 3152479
- 1065641 words of memory out of 3000000
- 34309 multiletter control sequences out of 15000+200000
+ 30679 strings out of 427836
+ 560782 string characters out of 3152479
+ 1066641 words of memory out of 3000000
+ 34308 multiletter control sequences out of 15000+200000
  543558 words of font info for 89 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  67i,11n,96p,10565b,787s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on PSI II 3 Laboratorinis darbas.pdf (25 pages).
+Output written on PSI II 3 Laboratorinis darbas.pdf (24 pages).
