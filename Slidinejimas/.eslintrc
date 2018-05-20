@@ -25,6 +25,7 @@
     "semi": ["error", "always"],
     "comma-dangle": ["error", "always-multiline"],
     "no-var": "error",
+    "no-console": 0,
     "prefer-const": "error",
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",

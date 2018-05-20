@@ -43,6 +43,7 @@ class MasterAdmin extends React.Component {
   }
 
   render() {
+    console.log(this.props.admins);
     return (
       <div>
         <title>Master Admin</title>
@@ -50,7 +51,7 @@ class MasterAdmin extends React.Component {
         <div className='page-frame'>
           <span className="admin-page-title">Paslaugu sarasas</span>
           <br />
-          <AdminTable RemoveAdmin={this.props.dispatchRemoveAdmin} admins={this.props.admins} />
+          <AdminTable admins={this.props.admins} />
         </div>
       </div>
     );

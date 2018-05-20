@@ -11,9 +11,9 @@ export default class AdminTable extends React.Component{
     return this.props.admins.map(admin => {
       return (
         <AdminTableRow
-          key={admin}
-          Login={admin}
-          RemoveAdmin = {this.props.RemoveAdmin}
+          key = {admin.Id}
+          Pavadinimas = {admin.Pavadinimas}
+          Paveiksliukas = {admin.Paveiksliukas}
         />);
     });
   }
@@ -33,5 +33,4 @@ export default class AdminTable extends React.Component{
 }
 AdminTable.propTypes = {
   admins : PropTypes.any,
-  RemoveAdmin: PropTypes.func,
 };

@@ -1,6 +1,6 @@
 import { post, getAll } from './http';
 
-const guestsAPIurl = 'http://localhost:65399/api/user/';
+const guestsAPIurl = 'http://localhost:65399/api/Paslaugos/';
 
 export function deleteUser(name) {
   let responseCode;
