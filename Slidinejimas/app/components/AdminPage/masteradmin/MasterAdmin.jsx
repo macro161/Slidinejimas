@@ -1,7 +1,5 @@
 import React from 'react';
-import Button from 'material-ui/Button';
 import AdminTable from './AdminTable';
-import TextField from 'material-ui/TextField';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as actions from '../../actions/admin';
@@ -50,17 +48,7 @@ class MasterAdmin extends React.Component {
         <title>Master Admin</title>
         <br />
         <div className='page-frame'>
-          <span className="admin-page-title">List of Admins</span>
-          <hr />
-          <label >   Login:  </label>
-          <TextField className='admin-nick' value={this.state.Name} onChange={this.handleNameChange}></TextField>
-          <label >&emsp;&emsp;&emsp;&emsp;Password:  </label>
-          <TextField type="password" value={this.state.Password} onChange={this.handlePassChange}></TextField>
-          <label>&emsp;&emsp;&emsp;&emsp;</label>
-          <Button className='add-location-button' variant='raised' color="secondary" onClick={this.addAdmin} >
-            <div className='bigger-font' >ADD ADMIN</div>
-          </Button>
-          <hr />
+          <span className="admin-page-title">Paslaugu sarasas</span>
           <br />
           <AdminTable RemoveAdmin={this.props.dispatchRemoveAdmin} admins={this.props.admins} />
         </div>

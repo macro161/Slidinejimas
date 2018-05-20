@@ -1,5 +1,4 @@
 import React from 'react';
-import logoImage from './images/logo.png';
 import {Link} from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -13,11 +12,10 @@ class AdminHeader extends React.Component {
 
   render() {
     return <header className="main-header">
-      <LinkButton name="Report" link="/report" />
-      <LinkButton name="Sites" link="/sites" />
-      <LinkButton name="Master Admin" link="/MasterAdmin" />
+      <LinkButton name="Statistika" link="/report" />
+      <LinkButton name="Trasos" link="/sites" />
+      <LinkButton name="Paslaugos" link="/MasterAdmin" />
       <LinkButton name="Log Out" link="/" onClick={this.props.dispatchLogOut} />
-      <img className="header-image logo" src={logoImage}/> 
     </header>;  
   }
 }

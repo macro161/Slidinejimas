@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Spinner from '../common/Spinner';
 import { Route } from 'react-router';
