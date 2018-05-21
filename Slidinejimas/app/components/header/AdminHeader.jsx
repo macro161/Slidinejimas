@@ -12,9 +12,7 @@ class AdminHeader extends React.Component {
 
   render() {
     return <header className="main-header">
-      <LinkButton name="Statistika" link="/report" />
-      <LinkButton name="Trasos" link="/sites" />
-      <LinkButton name="Paslaugos" link="/MasterAdmin" />
+      <LinkButton name="Paslaugos" link="/sites" />
       <LinkButton name="Log Out" link="/" onClick={this.props.dispatchLogOut} />
     </header>;  
   }

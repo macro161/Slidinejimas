@@ -24,6 +24,7 @@ export default class AdminTable extends React.Component{
           <tr>
             <th className="login-title">Pavadimas</th>
             <th className="remove"> Paveiksliukas</th>
+            <th className="remove"> Kaina </th>
           </tr>
           {this.renderSites()}
         </tbody>
