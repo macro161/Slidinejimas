@@ -8,14 +8,13 @@
 \BOOKMARK [1][-]{section.5}{Detalaus projekto peržiūra}{}% 8
 \BOOKMARK [2][-]{subsection.5.1}{Peržiūra}{section.5}% 9
 \BOOKMARK [2][-]{subsection.5.2}{Atsekamumas}{section.5}% 10
-\BOOKMARK [1][-]{section.6}{Testavimo\040planas\040ir\040scenarijai}{}% 11
-\BOOKMARK [2][-]{subsection.6.1}{Programinių vienetų testai}{section.6}% 12
-\BOOKMARK [2][-]{subsection.6.2}{Sistemos užduočių testai}{section.6}% 13
-\BOOKMARK [1][-]{section.7}{Sistemos techninė architektūra}{}% 14
-\BOOKMARK [2][-]{subsection.7.1}{Sistemos komponentų diagrama}{section.7}% 15
-\BOOKMARK [2][-]{subsection.7.2}{Išdėstymo diagrama}{section.7}% 16
-\BOOKMARK [1][-]{section.8}{Sistemos\040realizacija}{}% 17
-\BOOKMARK [2][-]{subsection.8.1}{Duomenų bazės schema}{section.8}% 18
-\BOOKMARK [2][-]{subsection.8.2}{Pradiniai programų kodai ir aprašas}{section.8}% 19
-\BOOKMARK [1][-]{section.9}{Reikalavimų specifikacija}{}% 20
-\BOOKMARK [1][-]{section.10}{Žodynas}{}% 21
+\BOOKMARK [1][-]{section.6}{Testavimo\040scenarijai}{}% 11
+\BOOKMARK [1][-]{section.7}{Sistemos techninė architektūra}{}% 12
+\BOOKMARK [2][-]{subsection.7.1}{Sistemos komponentų diagrama}{section.7}% 13
+\BOOKMARK [2][-]{subsection.7.2}{Išdėstymo diagrama}{section.7}% 14
+\BOOKMARK [1][-]{section.8}{Sistemos\040realizacija}{}% 15
+\BOOKMARK [2][-]{subsection.8.1}{Duomenų bazės schema}{section.8}% 16
+\BOOKMARK [1][-]{section.9}{Reikalavimų specifikacija}{}% 17
+\BOOKMARK [2][-]{subsubsection.9.0.1}{Pataisyta funkcinių reikalavimų specifikacija}{section.9}% 18
+\BOOKMARK [3][-]{subsubsection.9.0.2}{Pataisyta nefunkcinių reikalavimų specifikacija}{subsubsection.9.0.1}% 19
+\BOOKMARK [1][-]{section.10}{Žodynas}{}% 20
