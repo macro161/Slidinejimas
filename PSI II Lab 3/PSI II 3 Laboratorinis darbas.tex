@@ -349,6 +349,119 @@ Peržiūros metu sutvarkėme savo robastiškumo ir sekų diagramas, kad jos atit
 
 \section{Reikalavimų specifikacija}
 
+\subsubsection{Pataisyta funkcinių reikalavimų specifikacija}
+\begin{enumerate}
+	\item Sistema seka vartotojų laiką, praleistą trasoje, pasinaudodama sekimo prietaisu.
+	\item Sistema suteikia galimybę vartotojui įsidėti pinigų į virtualią piniginę.
+	\begin{enumerate}
+		\item Top-up metodu.
+		\item Pervedimo būdu.
+	\end{enumerate}
+	\item Sekimo prietaisas fiksuoja greičiausią laiką, per kurį vartotojas įveikė trasą.
+	\begin{enumerate}
+		\item sistema saugo greičiausią laiką, per kurį vartotojas įveikė trasą.
+	\end{enumerate}
+	\item Vartotojo trasų laikai rodomi internetinėje aplikacijoje.
+	\item Sistema internetinės aplikacijos pagalba vartotojui suteikia galimybę peržiūrėti orus.
+	\begin{enumerate}
+		\item Sistema turi pateikti dabartines oro sąlygas.
+		\item Sistema turi pateikti ateinančių dienų orų prognozę.
+		\begin{enumerate}
+			\item temperaturą.
+			\item drėgmę.
+			\item kritulius.
+			\item vėjo greitį.
+		\end{enumerate}
+	\end{enumerate}
+	\item Internetinėje aplikacijoje vartotojas gali rašyti žinutes kitiems kurorto svečiams, administracijai ir maisto į kambarį tarnybai.
+	\item Sistema vartotojui suteikia galimybę rašyti atsiliepimą apie jo viešnagę kurorte ir skirti viešą vertinimą kurortui.
+	\item Internetinė aplikacija suteikia vartotojui galimybę peržvlegti statistiką.
+	\begin{enumerate}
+		\item Vartotojas turi galėti peržiūrėti savo statistiką.
+		\item Vartotojas turi galėti peržiūrėti kurorto statistiką, jeigu ji patvirtinta administratoriaus.
+		\begin{enumerate}
+			\item Administratorius turi galėti patvirtinti arba atmesti naują statistiką apie kurortą.
+		\end{enumerate}
+	\end{enumerate}
+	\item Sistema vartotojui suteikia galimybę peržiūrėti paslaugų kainas, tiekėjų sąrašą ir kiekvienos įrangos technines charakteristikas.
+	\item Sistema per aplikaciją vartotojui suteikia galimybę užsisakyti paslaugas.
+	\begin{enumerate}
+		\item Užsisakyti maisto į viešbučio kambarį.
+		\item Rezervuoti slidinėjimo įrangą.
+	\end{enumerate}
+	\item Vartotojas turi galimybę užrezervuoti slidinėjimo trasą nurodant: trasos pavadinimą, telefono numerį, slidinėtojų skaičių ir rezervacijos laikotarpį.
+	\item Vartotojas gali matyti informaciją apie slidinėjimo trasą: pavadinimą, sunkumą, rūšį, nuomos kainą, užimtumą.
+	\item \textit{Sistema vartotojui suteikia galimybę peržiūrėti jo užsakytas paslaugas}
+	\item Sistema suteikia galimybę keisti vertinimą.
+	\item Sistema suteikia galimybę pasirinkti laikotarpį, kuriuo filtruoti lankytas trasas.
+	
+\end{enumerate}
+
+
+\subsubsection{Pataisyta nefunkcinių reikalavimų specifikacija}
+\begin{enumerate}
+
+	
+	\item Sistema neleidžia vertinti kurorto kelis kartus tam pačiam asmeniui dažniau nei kartą per 2 mėnesius.
+	\item Sistema leidžia vartotojui už paslaugas atsiskaityti e-bankininkyste.
+	\item Slidinėjimo trasų įrangos bei kambarių pavadinimams maksimaliai skiriama 64 simboliai.
+	\item Slidinėjimo trasos ilgis vaizduojamas vieno skaičiaus po kablelio tikslumu
+	\begin{enumerate}
+		\item Ilgio matavimo vienetas - kilometras
+	\end{enumerate}
+	\item Slidinėjimo trasos statumas vaizduojamas vieno skaičio po kablelio tikslumu
+	\begin{enumerate}
+		\item Statumo matavimo vienetas - procentai
+	\end{enumerate}
+	\item Slidinėjimo trasų, įrangos bei apgyvendinimo įstaigos laisvų vietų skaičius rodomas vienetų tikslumu.
+	\item Slidinėjimo trasų, įrangos bei apgyvendinimo įstaigos kainos pateikiamos centų po kablelio tikslumu (10,11eu)
+	\item Data turi būti vaizduojama formatu YYYY-MM-DD
+	\begin{enumerate}
+		\item YYYY - metai
+		\item MM - mėnuo
+		\item DD - diena
+	\end{enumerate}
+	\item Laikas turi būti vaizduojamas formatu hh:mm 24 valandų formatu (21:47)
+	\begin{enumerate}
+		\item hh - valandos 24 valandų formatu
+		\item mm - minutės
+	\end{enumerate}
+	\item Svečių skaičiui rezervacijos formoje maksimaliai skiriama 3 skaičiai
+	\item Orų temperatūra rodoma vienetų tikslumu. Matavimo vienetas - celsijus
+	\item Įrangos dydžiai - europietiški. Vaizduojama vienetų tikslumu
+	\item Keičiant naršyklės dydį, tinklapio vaizdas pritaikomas automatiškai(Responsive design).
+	\item Sistema turi veikti 95proc laiko per dieną. Tai yra leidžiama neveikti 1 valandą 10 min.	
+	\item Vartotojui rezervuojant paslaugas sistema turi patikrinti, ar duomenys įvesti korektiškai
+	\item Vartotojui rezervuojant paslaugas sistema rezervacijai turi priskirti unikalų numerį.
+	\item Modifikuojama tinklapio atsarginė kopija po kiekvieno informacijos atnaujinimo apie slidinėjimo kurortą, orų prognozes, slidinėjimo trasas, įrangą, apgyvendinimo įstaigą, jų užimtumą bei po kiekvienos esybės registracijos ir įvestos informacijos pakeitimo.
+	\item Sistemoje turi būti įdiegtos apsaugos priemonės nuo duomenų sugadinimo, praradimo, klaidingų duomenų įvedimo į duomenų bazėje.
+	\item Po kiekvienos sėkmingos operacijos pakeitimai turi būti išsaugoti duomenų bazėje.
+	\item Nepavykus prisijungti arba negavus duomenų iš duomenų bazės, sistema turi informuoti vartotoją, parodydamas klaidos pranešimą
+	\item Didžiausia leistina tinklalapio apkrova yra 10000 vartotojų vienu metu
+	\item Tinklalapio didžiausias leistinas reakcijos laikas, neįvertinant interneto greičio, turi būti ne didesnis kaip 2 sekundės.
+	\item Užklausos vykdymo laikas turi būti ne didesnis nei 3 sekundės
+	\item Konkrečios slidinėjimo trasos, įrangos, kambario, jų užimtumo paieškai duomenų bazėje turi būti sugaišta ne ilgiau nei 3 sekundės
+	\item Tinklapis pasiekiamas prisijungiant iš bet kurio IP adreso
+	\item Pradinėje sistemoje turi būti administratoriaus prisijungimo duomenys
+	\item Pasirinkimų lentelė turi turėti bent 5 pradines užpildytas eilutes su informacija apie slidinėjimo trasas, įrangą, kambarius. Šią informaciją įveda įgaliotas įmonės administratorius interfeisu.
+	\item Sistemos turi funkcionuoti lietuvių ir anglų kalbomis
+	\item Įmonės darbuotojai turi būti apmokomi naudotis sistema
+	\item Pakeitimai turi būti įvykdyti ne vėliau nei per 7 darbo dienas po sėkmingo testavimo.
+	\item Visi vartotojo atliekami veiksmai turi būti saugomi laikinoje duomenų bazėje, kad atradus klaidą tinklalapyje būtų galima testavimo metu atkurti konkrečia klaidą
+	\item Pastebėtos ar esybės praneštos klaidos turi būti ištaisytos kaip galima greičiau.
+	\item Į vartotojo atsiųstus laiškus su pastebėjimai ir skundais reikia atsakyti automatine žinute.
+	\item Sistema atnaujinti reikia tuo metu, kai yra mažiausias vartotojų srautas
+	\item Internetinė aplikacija turi veikti bet kuriame įrenginyje, kuris turi naršyklę, palaikančią HTML5 standartą.
+	\item Visi duomenys apie sistemą saugomi duomenų bazėje, o prie jos prieigą turi tik įgalioti asmenys.
+	\item Atsarginė duomenų bazės kopija turi būti daroma reguliariai kas 7 darbo dienas.
+	\item Jeigu esybė neaktyvi ilgiau nei 15 minučių, vartotojas automatiškai atjungiamas.
+	\item Kuriant sistemą projekto komandai draudžiama naudotis nelegalia programine įranga
+	\item Duomenų perdavimas ir saugojimas neturi pažeisti LR asmens duomenų teisinės apsaugos įstatymo.
+	\item Esybių asmeniniai duomenys turi būti įslaptinti t.y. tinklapyje negali būti saugomi nekoduoti duomenys
+	\item Minimali sąskaitos papildymo suma yra 3€
+
+\end{enumerate}
+
 \section{Žodynas}
 \begin{enumerate}
 	\item Internetinė aplikacija - Mūsų kuriama android programėlė
