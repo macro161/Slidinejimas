@@ -65,13 +65,6 @@
     				\caption{Vartotojo užduočių diagrama}
     				\label{fig:VartotojoUseCasel}
 			\end{figure}
-
-			\begin{figure}[h]
-    				\centering
-    				\includegraphics[width=0.75\textwidth]{useCaseAdministratorius.png}
-    				\caption{Administratoriaus užduočių diagrama}
-    				\label{fig:AdministratoriausUseCasel}
-			\end{figure}
 \pagebreak
 
 	\subsubsection{Robastiškumo diagramos}
@@ -319,6 +312,20 @@ Peržiūros metu sutvarkėme savo robastiškumo ir sekų diagramas, kad jos atit
     				\label{fig:Testas: Vartotojas keičia profilio duomenis}
 			\end{figure}
 
+			\begin{figure}[h]
+    				\centering
+    				\includegraphics[width=1\textwidth]{testPlanPartOne.png}
+    				\caption{Testas: Papildomas testavimo planas}
+    				\label{fig:Testas:Papildomas testavimo planas}
+			\end{figure}
+
+			\begin{figure}[h]
+    				\centering
+    				\includegraphics[width=1\textwidth]{testPlanPartTwo.png}
+    				\caption{Testas: Papildomas testavimo planas}
+    				\label{fig:Testas:Papildomas testavimo planas}
+			\end{figure}
+
 \section{Sistemos techninė architektūra}
 	\subsection{Sistemos komponentų diagrama}
 			\begin{figure}[h]
@@ -329,6 +336,7 @@ Peržiūros metu sutvarkėme savo robastiškumo ir sekų diagramas, kad jos atit
 			\end{figure}
 
 	Sistema išskaidyta į 3 sluoksnius: View, Controller ir Model. View sluoksnyje talpiname vartotojo ir administratoriaus grafinius interfeisus, kurie bendrauja su Controller esančiais komponentais. Controller sluoksnyje esantys komponentai yra tarpiniai tarp grafinio interfeiso ir back-end. Komponentai, esantys jame, gavę grafinio interfeiso signalus juos apdoroja ir kreipiasi į Model, kuriame esantys komponentai pagrinde skirti duomenų bazės redagavimui. Norint atvaizduoti atnaujintą informaciją vartotojui, Model esantys komponentai perduoda informaciją į Controller ir pastarasis perduoda informaciją View, kur ją išvysta vartotojas.
+	\pagebreak
 	\subsection{Išdėstymo diagrama}
 			\begin{figure}[h]
     				\centering
@@ -340,12 +348,20 @@ Peržiūros metu sutvarkėme savo robastiškumo ir sekų diagramas, kad jos atit
 	\subsection{Duomenų bazės schema}
 	\begin{figure}[h]
     				\centering
+    				\includegraphics[width=1\textwidth]{Database_2.png}
+    				\caption{Duomenų E-R modelis}
+			\end{figure}
+			
+			\begin{figure}[h]
+    				\centering
     				\includegraphics[width=1\textwidth]{Database2.png}
     				\caption{Duomenų bazės schema}
 			\end{figure}
+			
+			\pagebreak
 	\subsection{Pradiniai programų kodai ir aprašas}
 
-\section{Reikalavimų specifikacija}
+\section{Reikalavimų speciTai tu tomai fikacija}
 
 \subsubsection{Pataisyta funkcinių reikalavimų specifikacija}
 \begin{enumerate}
