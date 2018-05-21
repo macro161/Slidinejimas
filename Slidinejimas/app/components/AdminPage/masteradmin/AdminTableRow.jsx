@@ -11,7 +11,7 @@ export default class AdminTableRow extends React.Component{
       <tr>
         <th>{this.props.Pavadinimas}</th>
         <th>
-          <img className='icon' src={'data:image/jpeg;base64,' + this.props.Paveiksliukas} onClick='alertIt()' />
+          <img className='icon' src={'data:image/jpeg;base64,' + this.props.Paveiksliukas} onClick={handleClick} />
           
         </th>
        
@@ -19,12 +19,15 @@ export default class AdminTableRow extends React.Component{
     );
   }
 
-  alertIt()
-  {
-    alert('I am an alert box!');
-
-  }
+  
 }
+
+function handleClick(e){
+  e.preventDefault();
+  alert('dasdsadasd');
+    
+}
+
 AdminTableRow.propTypes = {
   Paveiksliukas: PropTypes.any,
   Pavadinimas: PropTypes.any,
